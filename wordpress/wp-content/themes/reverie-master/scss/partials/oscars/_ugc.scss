@@ -1,0 +1,569 @@
+.supportMessage {
+    display: none;
+    background-color: #f5f5f5;
+    min-height: 220px;
+}
+.grayness {
+    background-color:#f5f5f5;
+}
+
+#UGC-FORM {
+
+    $ugcGray: #f5f5f5;
+    .image-depillarboxer{
+        @media #{$small-only}{
+            margin-top:2rem;
+            margin-bottom:2rem;
+        }
+        margin-left:auto;
+        margin-right:auto;
+        overflow:hidden;
+    img#finalPage {
+        max-width:none;
+        height:100%;
+        width: 196%;
+
+    left: -48%;
+    position: relative;
+    }
+    }
+    overflow: hidden;
+    position: relative;
+    height: 230px;
+    p {
+        font-size: rem-calc(16);
+    }
+
+    .loader {
+        display: none;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 200px;
+        background-color: #fff;
+        z-index: 1000000;
+
+        img {
+            margin: 70px auto 0;
+            width: 15px;
+        }
+
+        &.show {
+            display: block;
+        }
+    }
+    #start-over {
+        img {
+            max-width: 30px;
+            height:30px;
+        }
+    }
+    #second_step, #third_step, #fourth_step, #fifth_step {
+        //display: none;
+        //position: absolute;
+        position: relative;
+        right: -3000px;
+        width: 100%;
+        top: 0;
+    }
+
+    .t-and-c {
+        font-family: $font-family-trim-thin;
+        text-transform: uppercase;
+        font-size: rem-calc(12);
+    }
+
+    .ugc {
+        padding: rem-calc(50) rem-calc(80);
+        background-color: $ugcGray;
+        min-height: 220px;
+        position: absolute;
+
+        //NO GLOW IN SAFARI + CROME
+        textarea, input {
+            outline: none;
+            -webkit-border-radius: 0;
+            border-radius: 0;
+        }
+
+        textarea,
+        input[type="text"],
+        input[type="button"],
+        input[type="submit"] {
+            -webkit-appearance: none;
+            border-radius: 0;
+        }
+
+        input[type="text"] {
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid $dark-gray;
+            width: 100%;
+            font-family: $font-family-serif-regular;
+            font-size: rem-calc(16);
+            padding-right: rem-calc(30);
+
+            &::-ms-clear {
+                display: none;
+            }
+        }
+
+        textarea {
+            background-color: transparent;
+            border: 2px solid $light-gray;
+            width: 100%;
+            height: 80px;
+            font-family: $font-family-serif-regular;
+            font-size: rem-calc(16);
+            padding: 10px 0 20px 10px;
+            resize: none;
+        }
+
+        input[type="submit"], .button {
+            padding: 12px 30px 12px;
+            display: block;
+            background-color: $footer-light-gray;
+            font-family: $font-family-trim-thin;
+            color: $dark-gray;
+            margin: 0;
+            font-size: rem-calc(12);
+            letter-spacing: rem-calc(2);
+            border: 1px solid #9f9f9f;
+            cursor: pointer;
+
+            @media #{$medium-up} {
+                &#sumbit_no_image {
+                    margin-left: 25px !important;
+                }
+            }
+
+            //SMOOTH FONT IN IE
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                font-family: $font-family-trim-light;
+            }
+
+            &:hover {
+                background-color: #4b4b4b;
+                outline: 0 none;
+                color: white;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+
+        .share-copy {
+            display: block;
+            background-color: $footer-light-gray;
+            font-family: $font-family-trim-thin;
+            color: $dark-gray;
+            margin: 0;
+            font-size: rem-calc(12);
+            letter-spacing: rem-calc(2);
+            cursor: pointer;
+            text-transform: uppercase;
+            height: 28px;
+            a {
+                font-size: rem-calc(16);
+                 @media #{$small-only} {
+                    margin:0 10px;
+                }
+            }
+        }
+
+        input[type="file"] {
+            display: none;
+        }
+
+        .counter {
+            font-family: $font-family-trim-regular;
+            font-size: 16px;
+            color: #b1b1b1;
+            position: absolute;
+            right: 7px;
+            top: 0;
+        }
+
+        .area {
+            top: 100px;
+        }
+
+        .error {
+            color: #8a1529;
+        }
+
+        .errors {
+            color: #8a1529;
+        }
+
+        h3 {
+            font-family: $font-family-trim-thin;
+            text-transform: uppercase;
+            font-size: rem-calc(24);
+            line-height: rem-calc(24);
+            letter-spacing: rem-calc(4);
+            color: black;
+            margin-top: 0;
+
+            //SMOOTH FONT IN IE
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                font-family: $font-family-trim-light;
+            }
+        }
+
+        .close {
+            top: 35px;
+
+            //width: 100%;
+            //position:relative;
+            height: 42px;
+            padding-top: 13px;
+            position: absolute;
+            right: 25px;
+            cursor: pointer;
+        }
+
+        .close:before {
+            content: "";
+            display: block;
+            width: 28px;
+            height: 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.5);
+            transform: rotate(45deg);
+            transform-origin: center;
+            -webkit-transform: rotate(45deg);
+            -webkit-transform-origin: center;
+        }
+
+        .close:after {
+            content: "";
+            display: block;
+            width: 28px;
+            height: 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.5);
+            transform: rotate(-45deg);
+            transform-origin: center;
+            -webkit-transform: rotate(-45deg);
+            -webkit-transform-origin: center;
+        }
+    }
+
+    .ugc-step-one {
+        h1 {
+            font-family: $font-family-trim-thin;
+            text-transform: uppercase;
+            font-size: rem-calc(36);
+            letter-spacing: rem-calc(4);
+            color: black;
+
+            //SMOOTH FONT IN IE
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                font-family: $font-family-trim-light;
+            }
+        }
+
+        #submit_first {
+            margin-top: rem-calc(37);
+        }
+    }
+
+    .ugc-step-two {
+        @media #{$large-up} {
+            padding: rem-calc(50) rem-calc(50) rem-calc(50) rem-calc(150);
+        }
+        .button:last-child {
+            padding: 13px;
+        }
+        p {
+            font-size: rem-calc(16);
+        }
+
+        label.button:first-child {
+            padding-bottom: 14px;
+        }
+    }
+
+    .no-image .ugc-step-three {
+        .ugc-submission-form {
+            float: none;
+            margin-left: auto !important;
+            margin-right: auto !important;
+
+            .row {
+                .column {
+                    width: 100%;
+                }
+
+                .large-8 {
+                    width: 100%;
+                }
+            }
+
+            .first-name {
+                margin-right: 2% !important;
+                width: 47% !important;
+            }
+
+            .last-name {
+                width: 51% !important;
+            }
+        }
+
+        .desktop-preview {
+            display: none;
+        }
+    }
+
+
+    .ugc-step-three {
+        @media #{$large-up} {
+            padding: rem-calc(50) rem-calc(50) rem-calc(50) rem-calc(70);
+
+            .first-name {
+                margin-right: 2%;
+                width: 38%;
+            }
+        }
+
+        #first, #last {
+            //margin-bottom: rem-calc(45);
+            width: 100%;
+        }
+
+        .errors {
+            margin-bottom: rem-calc(45);
+            display: block;
+        }
+
+        .mobile-preview {
+            margin: 10px 0;
+
+            .no-image & {}
+        }
+
+        label {
+            font-family: $font-family-trim-thin;
+            text-transform: uppercase;
+            font-size: rem-calc(12);
+            letter-spacing: rem-calc(2);
+            color: black;
+            display: block;
+
+            //SMOOTH FONT IN IE
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                font-family: $font-family-trim-light;
+            }
+        }
+    }
+
+    .ugc-step-four {
+        @media #{$large-up} {
+            padding: rem-calc(50) rem-calc(50) rem-calc(50) rem-calc(150);
+            min-height: 250px;
+        }
+
+        .continue-btn {
+            font-family: $font-family-trim-thin;
+            text-transform: uppercase;
+            font-size: rem-calc(14);
+            text-align: left;
+            cursor: pointer;
+
+            //SMOOTH FONT IN IE
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                font-family: $font-family-trim-light;
+            }
+        }
+
+        input[type="button"] {
+            display: none;
+        }
+
+        label.submit {
+            margin-bottom: 20px;
+            margin-top: 22px;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .ugc-step-five {
+        #download {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media #{$medium-only} {
+    #UGC-FORM {
+        .ugc-step-three {
+            .first-name {
+                margin-right: 2%;
+                width: 48%;
+            }
+        }
+
+        #second_step {
+            top: 0;
+        }
+
+        #third_step {
+            top: 0;
+        }
+
+        #fourth_step {
+            top: 0;
+        }
+    }
+}
+
+@media #{$small-only} {
+    #UGC-FORM {
+        .mobile-hr {
+            margin-bottom: 20px;
+            margin-top: 58px;
+        }
+
+        .ugc {
+               .share-copy {
+            background-color:white;
+        }
+            padding: rem-calc(20);
+
+            input[type="submit"], .button {
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            .close {
+                left: 0;
+                padding-left: 20px !important;
+            }
+        }
+        input[type="text"]{
+            padding-left:1px;
+        }
+        .loader {
+            height: 400px;
+            z-index: 10000;
+        }
+
+        .ugc-step-one {
+            h1 {
+                font-size: rem-calc(24);
+            }
+
+            #submit_first {
+                margin-top: 35px;
+            }
+        }
+    
+        .ugc-step-two {
+            background-color: white;
+
+            h3 {
+                font-size: rem-calc(17);
+                line-height: rem-calc(17);
+            }
+
+            p {
+                font-size: rem-calc(16);
+                line-height: 1.6;
+            }
+
+            input[type="submit"], .button {
+                margin-top: 25px;
+                background-color: white;
+            }
+        }
+
+        /*        #third_step {
+                    top:-672px;
+                    height:1500px;
+                }
+                #fourth_step {
+                    top:-690px;
+                }*/
+        #preview {
+            padding-bottom: 20px;
+        }
+
+        .ugc-step-three {
+            background-color: white;
+
+            h3 {
+                font-size: rem-calc(16);
+            }
+
+            input[type="submit"], .button {
+                background-color: white;
+            }
+
+            #m-preview {
+                margin-top: 40px;
+            }
+        }
+
+
+        .no-image .ugc-step-three {
+            .ugc-submission-form {
+                float: none;
+                margin-left: auto !important;
+                margin-right: auto !important;
+
+                .row {
+                    .column {
+                        width: 100%;
+                    }
+
+                    .large-8 {
+                        width: 100%;
+                    }
+                }
+
+                .first-name {
+                    width: 100% !important;
+                }
+
+                .last-name {
+                    width: 100% !important;
+                }
+            }
+
+            .desktop-preview {
+                display: none;
+            }
+        }
+
+        .ugc-step-four {
+            background-color: white;
+
+            label.submit {
+                margin-bottom: 20px;
+                background-color: white;
+            }
+
+            h3 {
+                padding-top: 30px;
+            }
+        }
+
+        .ugc-step-five {
+            background-color: white;
+        }
+
+        .mobile-hr {
+            background-color: $light-gray;
+            height: 1px;
+            width: 100%;
+        }
+    }
+}
+.ie9, .oldie {
+      #UGC-module, #UGC, .ugc-cta {
+    display:none;
+    }
+}

@@ -1,0 +1,132 @@
+.home-email-form {
+    /*background-image:url(#{$themefolder}/img/explore-email.jpg);*/
+    margin-bottom: rem-calc(10);
+
+    margin-top: 40px;
+    margin-bottom: 80px;
+    background-color: $footer-light-gray;
+    border-top: 2px solid black;
+    padding: 38px;
+    padding-bottom: 22px;
+    letter-spacing: .25px;
+    text-align: center;
+    color: #686868;
+    overflow: hidden;
+
+    @media #{$small-only} {
+        padding: 25px;
+        padding-top: 20px;
+        margin-top: 65px;
+        margin-bottom: 65px;
+        min-height: unset;
+    }
+
+    .row {
+        margin-top: 0;
+    }
+
+    p {
+        line-height: 1rem;
+        font-size: 15px;
+        margin-bottom: 1.6rem;
+        margin-top: 1rem;
+
+        @media #{$small-only} {
+            font-size: 17px;
+            line-height: 1.5rem;
+        }
+    }
+
+    h3 {
+        display: inline-block;
+        text-align: right;
+        line-height: 1.8rem;
+        font-size: 32px;
+
+        @media #{$small-only} {
+            font-size: 23px;
+        }
+
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color: #4b4b4b;
+
+        .gold {
+            color: $darkgoldlink;
+        }
+
+        vertical-align: middle;
+        padding-right: 20px;
+    }
+
+    form {
+        display: inline-block;
+        overflow: hidden;
+        text-align: left;
+        clear: both;
+        position: relative;
+        vertical-align: middle;
+
+        button.button {
+            padding: 10px;
+            padding-top: 12px;
+            display: block;
+            background-color: $footer-light-gray;
+            margin: 0;
+            border: 1px solid #9f9f9f;
+
+            @media #{$medium-up} {
+                text-align: center;
+                width: 145px;
+
+                span {
+                    background-image: url(#{$themefolder}/img/rightArrowForEmailForm.png);
+                    background-position: right 5px center;
+                    background-repeat: no-repeat;
+                    padding-right: 20px;
+                    line-height: 1.6rem;
+                }
+
+                background-repeat: no-repeat;
+                &:focus {
+                    outline: 0;
+                };
+
+               &:hover {
+                    background-color: $primary-color;
+
+                    span {
+                        background-image: url(#{$themefolder}/img/rightArrowForEmailFormHovered.png);
+                        color: white;
+                    }
+
+                    outline: 0;
+                }
+            }
+
+            @media #{$small-only} {
+                width: 135px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            float: right;
+
+            span {
+                font-family: $font-family-sans-serif;
+                text-transform: uppercase;
+                color: #4b4b4b;
+                font-size: 15px;
+                letter-spacing: 1.35px;
+            }
+        }
+    }
+}
+
+@media #{$small-only} {
+    .home-email-form {
+        margin-top:6px;
+        margin-bottom:rem-calc(60);
+    }
+
+}

@@ -1,0 +1,18 @@
+.article-content{
+	overflow:hidden;
+} 
+.play-button {
+	display:block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	color:white;
+	z-index:2;
+	img {
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		z-index:2;
+
+	}
+}

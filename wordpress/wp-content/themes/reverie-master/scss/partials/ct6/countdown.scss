@@ -1,0 +1,135 @@
+.page-ct6.row {
+    text-align: left;
+    .title-section {
+        margin-top:rem-calc(60);
+    }
+    &.title-section-border {
+        margin-bottom:rem-calc(30);
+    }
+    @media #{$medium-only}{
+        padding-left:10px;
+        padding-right:10px;
+       
+    }
+    &:last-of-type {
+        @media #{$medium-up} {
+            margin-bottom:100px;
+
+        }
+    }
+}
+
+.ct6-blurb {
+    font-style:italic;
+    font-size:1rem;
+    margin-bottom:rem-calc(70);
+    margin-top:rem-calc(0);
+    @media #{$small-only} {
+        width:66%;
+    }
+}
+
+.ct6-tile {
+
+    @media #{$medium-up} {
+        display: inline-block;
+        position: relative;
+        margin: rem-calc(0);
+
+    }
+    @media #{$small-only} {
+        
+            padding-left:1rem;
+            padding-right:1rem;
+        
+        margin-bottom:2rem;
+
+    }
+    div.caption {
+        color:$black;
+        margin-top:rem-calc(12);
+        font-size: rem-calc(20);
+        margin-left:0;
+        font-family: $font-family-serif;
+         @media #{$small-only} {
+           
+            margin-top:rem-calc(14);
+         }
+        &.hide {
+            display:none;
+        }
+    }
+    @media #{$medium-up} {
+        div.caption {
+            position: absolute;
+        }
+        &.tile-1 {
+            
+            padding-right:10px;
+        }
+        &.tile-2 {
+            vertical-align: bottom;
+    
+        }
+        &.tile-4 {
+            vertical-align: 200%;
+            width: 30%;
+            
+            padding-right:10px;
+            right:30%;
+
+        }
+        &.tile-3 {
+            left:30%;
+            width: 30%;
+            vertical-align: top;
+            margin-top: 10px;
+            
+            padding-right:10px;
+        }
+        &.tile-5 {
+            
+            width: 40%;
+            margin-top: 5rem;
+            
+            @media #{$medium-up} {
+                padding-bottom:31px;
+                &.has-countdown {
+                    padding-bottom:0px;
+                }
+            }
+            
+        }
+    }
+    .countdown-cover {
+        filter: grayscale;
+        
+        -webkit-filter: grayscale;
+        opacity:.2;
+    }
+    .ct6-tile-image {
+        position: relative;
+
+        .countdown {
+            .countdown-label {
+                letter-spacing: 1.5px;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+            font-family: $font-family-sans-serif;
+            position: absolute;
+            color: black;
+            font-size: 2rem;
+            text-align: center;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+        }
+        &.hide-countdown {
+            .countdown-value {
+                display: none;
+            }
+        }
+        ;
+    }
+}

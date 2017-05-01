@@ -1,0 +1,290 @@
+@import "./partials/home/index";
+.home-video-poster {
+    cursor: pointer;
+    @include darken-hover();
+    z-index: 1;
+}
+
+.play-button {
+    pointer-events: none;
+}
+
+.main-content {
+    margin: rem-calc(107) auto 0;
+    @media #{$small-only} {
+        margin: rem-calc(60) auto 0;
+    }
+    //max-width: 75rem;
+    width: 100%;
+}
+
+.home {
+    .home-row {
+        margin: rem-calc(30) auto;
+    }
+    .home-component {
+        margin-bottom: rem-calc(50);
+    }
+}
+
+.home-cta {
+    .cta {
+        color: #817440;
+        text-transform: uppercase;
+        font-family: $font-family-trim-light;
+        //font-size: rem-calc(18);
+    }
+    a {
+        text-decoration: none;
+        color: #817440;
+        font-size: rem-calc(16);
+    }
+}
+
+.title-section {
+    font-family: $font-family-trim-light;
+    text-transform: uppercase;
+    color: $dark-gray;
+    font-size: rem-calc(20);
+    letter-spacing: 1px;
+    span {
+        @media #{$medium-only} {
+            margin-left: 10px;
+        }
+    }
+}
+
+.title-section-border {
+    border-bottom: 1px solid $grayline;
+    margin-left: 0;
+    opacity: 0;
+}
+
+.caption, .big-caption {
+    &.smaller-p {
+        p:last-child {
+            font-size: rem-calc(14);
+        }
+    }
+    p {
+        margin-bottom: 0;
+        padding-bottom: 10px;
+        line-height: 100%;
+    }
+    p:first-child {
+        color: $medium-gray;
+        font-family: $font-family-trim-light;
+        font-size: 80%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-bottom: 6px;
+    }
+    p:last-child {
+        padding-bottom: 30px;
+    }
+    p.latest-caption-p {
+        font-family: $font-family-serif-regular;
+        font-size: rem-calc(20);
+        margin-bottom: 0px;
+        text-transform: none;
+        color: $dark-gray;
+        letter-spacing: 0;
+    }
+    p.produced-with {
+        margin-top: -3px;
+        font-size: rem-calc(14);
+    }
+    p.produced-with {}
+}
+
+.the-latest-component {
+    @media #{$medium-up}{
+        padding-top:10px;
+    }
+    .desktop-cta {
+        text-transform: uppercase;
+        font-family: $font-family-trim-light;
+        text-align: right;
+        font-size: 1rem;
+        margin-top: -1.5rem;
+        @media #{$medium-only} {
+            padding-right: 10px;
+        }
+        a {
+            color: #817440
+        }
+    }
+    .the-latest {
+        .columns,
+        .column {
+            @media #{$medium-up} {
+                padding-left: rem-calc(12);
+            }
+        }
+        .caption {
+            padding-left: 0.4rem;
+            padding-top: 18px;
+            @media #{$medium-up} {
+                p.last-of-type {
+                    padding-bottom: 0;
+                }
+            }
+        }
+        .latest-padding-top {
+            margin-top: rem-calc(80);
+        }
+        .padding-bottom-12 {
+            padding-bottom: rem-calc(12);
+        }
+        .negative-padding-12 {
+            padding-top: 0;
+        }
+        /*    .latest-explore {
+        margin-top: -32px;
+    }*/
+    }
+}
+
+.js-iframe-target {
+    position: relative;
+}
+
+// .latest-header {
+//     float: left;
+//     max-width: 43% !important;
+// }
+.spotlight-assembly,
+.experience-design,
+.experience-cadillac {
+    h3 {
+        font-size: 28px;
+    }
+    .small-grey {
+        border-bottom: 2px solid #4b4b4b;
+        content: "";
+        display: block;
+        width: 2rem;
+    }
+    .right-col {
+        padding-left: rem-calc(50);
+    }
+    p {
+        margin-top: rem-calc(30);
+        margin-bottom: rem-calc(26);
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    .experience-copy {
+        padding-top: rem-calc(80);
+        @media #{$medium-only} {
+            padding-top: rem-calc(25);
+        }
+        .cta > .learn-more {
+            font-size: 16px;
+            letter-spacing: .15px;
+             @media #{$small-only} {
+                font-size:14px;
+             }
+        }
+    }
+    @media #{$medium-up} {
+        h3 {
+            font-size: 22px;
+            line-height: 1em;
+            margin-bottom: 20px;
+            @include hoverstate();
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.5em;
+        }
+    }
+    @media #{$large-up} {
+        h3 {
+            font-size: 28px;
+            line-height: 1.25em;
+        }
+        p {}
+    }
+    @media #{$small-only} {
+        h3 {
+            margin-top: 13px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-top: rem-calc(15);
+            margin-bottom: rem-calc(0);
+        }
+        .experience-copy {
+            padding-top: rem-calc(0);
+        }
+        .cta {
+            margin-top: rem-calc(10);
+            letter-spacing: .5px;
+            
+        }
+    }
+}
+.spotlight-assembly{
+    h3 {
+        margin-bottom:10px;
+    }
+}
+.learn-more {
+    color: #817440;
+    text-transform: uppercase;
+    font-family: $font-family-trim-light;
+    font-size: 1.125rem;
+    @media #{$small-only} {
+        font-size: rem-calc(13);
+    }
+}
+
+@media #{$small-only} {
+    .experience-design,
+    .experience-cadillac {
+        .right-col {
+            padding-left: 0;
+        }
+    }
+    .explore-more-mobile {
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+        width: 90%;
+        margin-top: 10px;
+        color: #817440;
+        background-color: #f5f5f5;
+        padding: rem-calc(15);
+        margin-bottom: rem-calc(5);
+
+        a {
+            letter-spacing: 1.5px;
+            font-size: rem-calc(12);
+        }
+    }
+    .the-latest-mobile {
+        margin-bottom: 0;
+        .slick-dots {
+            margin-bottom: 0;
+        }
+        .slick-slide {
+            margin: 0 3px;
+        }
+        .slick-dots li button:before {
+            font-size: rem-calc(10);
+        }
+    }
+    .title-section {
+        font-size: rem-calc(16);
+    }
+    .home {
+        .home-row {
+            margin-bottom: rem-calc(53);
+        }
+        .home-component {
+            margin-bottom: rem-calc(53);
+        }
+
+    }
+}

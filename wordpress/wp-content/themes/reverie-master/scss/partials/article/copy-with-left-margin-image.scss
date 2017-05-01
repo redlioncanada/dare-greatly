@@ -1,0 +1,95 @@
+.article-copy-with-left-margin-image {
+    max-width: 100%;
+    .article-left-margin-image {
+        width: 42%;
+        overflow: hidden;
+        text-align: right;
+    }
+    img {
+        max-width: none;
+    }
+    .article-left-margin-image-with-play-button {
+        iframe {
+            z-index: 1000;
+        }
+    }
+    .article-left-margin-caption {
+        width: 100%;
+        font-family:$font-family-serif-regular,serif;
+        color:#4b4b4b;
+        font-size:rem-calc(16);
+        margin-top:rem-calc(15);
+    }
+    .article-left-margin-cta {
+        width: 100%;
+        color: #686868;
+        font-family: $font-family-sans-serif;
+        text-transform: uppercase;
+        font-size: rem-calc(12);
+        @media #{$small} {
+            font-size: rem-calc(14);
+        }
+        letter-spacing:rem-calc(1.5);
+        a {
+            color: #817440;
+            text-decoration: underline;
+        }
+    }
+    .article-left-margin-image-copy {
+        /*width: 33%;*/
+    }
+    /*margin-bottom: rem-calc(80);*/
+}
+
+@media #{$small} {
+    .article-left-margin-caption {
+        font-size:rem-calc(14);
+    }
+    .article-left-margin-caption-and-cta {
+        text-align: left;
+    }
+    img {
+        width: 100%;
+    }
+    .article-left-margin-caption-and-cta {
+        width: 80%;
+        margin-bottom: rem-calc(35);
+
+        padding-left: rem-calc(0) !important;
+        padding-right: rem-calc(0) !important;
+    }
+    .article-left-margin-image-copy {
+        /*width: 80% !important;*/
+        padding-left: rem-calc(0) !important;
+    }
+    .article-left-margin-image {
+        width: 100% !important;
+        text-align: center !important;
+    }
+}
+
+@media #{$medium-up} {
+    .article-left-margin-caption-and-cta {
+        text-align: right;
+    }
+    .article-left-margin-caption-and-cta {
+        width: 100%;
+    }
+    .article-left-margin-image-copy {
+        padding-left: rem-calc(60) !important;
+        /*width: 45% !important;*/
+    }
+    .article-left-margin-image {
+        width: 42% !important;
+    }
+}
+
+@media #{$large} {
+    .article-left-margin-image-copy {
+        padding-left: rem-calc(60) !important;
+        /*width: 30% !important;*/
+    }
+    .article-left-margin-image {
+        width: 42% !important;
+    }
+}

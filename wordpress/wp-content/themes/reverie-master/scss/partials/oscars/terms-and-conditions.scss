@@ -1,0 +1,26 @@
+.page-terms-and-conditions {
+margin-top:100px;
+	@media #{$medium-up} {
+		margin-top:150px;	
+	}
+	
+
+	h2 {
+		font-size:rem-calc(42);
+
+	}
+	h3, b {
+
+		font-size: 1rem;
+		text-transform:uppercase;
+		font-family:$font-family-sans-serif;
+		letter-spacing:1.25px;
+		font-weight:bold;
+	}
+	p {
+	font-size:rem-calc(18);
+	}
+	@media #{$medium-only} {
+		padding-left:5spx;
+	}
+}

@@ -1,0 +1,13 @@
+.article-colophon {
+    .article-credit-label {
+        font-family: SerifWebSemiBold;
+        font-weight: bold;
+    }
+    
+    .columns {
+        @media #{$small-only} {
+            padding-bottom: rem-calc(20);
+            border-bottom: 1px solid #c8c8c8;
+        }
+    }
+}

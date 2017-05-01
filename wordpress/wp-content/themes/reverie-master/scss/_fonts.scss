@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'TrimWebThin';
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Thin.eot');
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Thin.eot?') format('embedded-opentype'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Thin.woff') format('woff'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Thin.ttf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TrimWebLight';
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Light.eot');
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Light.eot?') format('embedded-opentype'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Light.woff') format('woff'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Light.ttf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/*@font-face {
+    font-family: 'CadillacTrimV1 Medium';
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Medium.eot');
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Medium.eot?') format('embedded-opentype'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Medium.woff') format('woff'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Medium.ttf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}*/
+
+@font-face {
+    font-family: 'TrimWebRegular';
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Regular.eot');
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Regular.eot?') format('embedded-opentype'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Regular.woff') format('woff'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*@font-face {
+    font-family: 'CadillacTrimV1 SemiBold';
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-SemiBold.eot');
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-SemiBold.eot?') format('embedded-opentype'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-SemiBold.woff') format('woff'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-SemiBold.ttf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CadillacTrimV1 Bold';
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Bold.eot');
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Bold.eot?') format('embedded-opentype'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Bold.woff') format('woff'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-Bold.ttf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CadillacTrimV1 ExtraBold';
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-ExtraBold.eot');
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-ExtraBold.eot?') format('embedded-opentype'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-ExtraBold.woff') format('woff'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/trim/CadillacTrimV1-ExtraBold.ttf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}*/
+
+
+/*.CadillacTrimV1thin {
+    font-family: 'CadillacTrimV1 Thin';
+    font-weight: 100;
+    font-style: normal;
+}
+
+.CadillacTrimV1light {
+    font-family: 'CadillacTrimV1 Light';
+    font-weight: 200;
+    font-style: normal;
+}
+
+.CadillacTrimV1regular {
+    font-family: 'CadillacTrimV1 Regular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.CadillacTrimV1medium {
+    font-family: 'CadillacTrimV1 Medium';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.CadillacTrimV1semibold {
+    font-family: 'CadillacTrimV1 SemiBold';
+    font-weight: 600;
+    font-style: normal;
+}
+
+.CadillacTrimV1bold {
+    font-family: 'CadillacTrimV1 Bold';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.CadillacTrimV1extrabold {
+    font-family: 'CadillacTrimV1 ExtraBold';
+    font-weight: 800;
+    font-style: normal;
+}*/
+
+
+@font-face {
+    font-family: 'SerifWebRegular';
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/serif/CadillacSerifWeb-Regular.eot');
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/serif/CadillacSerifWeb-Regular.eot?') format('embedded-opentype'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/serif/CadillacSerifWeb-Regular.woff') format('woff'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/serif/CadillacSerifWeb-Regular.ttf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SerifWebMediumItalic';
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/serif/CadillacSerifWeb-MediumItalic.eot');
+    src: url('/wp-content/themes/reverie-master/webfonts/cadillac/serif/CadillacSerifWeb-MediumItalic.eot?') format('embedded-opentype'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/serif/CadillacSerifWeb-MediumItalic.woff') format('woff'),
+    url('/wp-content/themes/reverie-master/webfonts/cadillac/serif/CadillacSerifWeb-MediumItalic.ttf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+$font-family-trim-regular: "TrimWebRegular", $font-family-sans-serif;
+$font-family-trim-thin: "TrimWebThin", $font-family-sans-serif;
+$font-family-trim-light: "TrimWebLight", $font-family-sans-serif;
+$font-family-serif-regular: "SerifWebRegular", $font-family-serif;
+$font-family-serif-medium-italic: "SerifWebMediumItalic", $font-family-serif;
+
+$home-description: #4b4b4b;

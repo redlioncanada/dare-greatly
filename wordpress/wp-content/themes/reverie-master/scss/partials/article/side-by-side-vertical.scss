@@ -1,0 +1,23 @@
+.side-by-side-vertical {
+    .article-caption {
+        margin-top: 0.9375rem; 
+        font-size:rem-calc(16);
+        
+    }
+}
+
+.article-side-by-side-vertical-mobile {
+    .slick-dots li button:before {
+        font-size: rem-calc(10);
+    }
+    .slick-dots {
+        @media #{$small-only} {
+            margin-bottom: 0;
+        }
+    }
+    &.slick-slider {
+        @media #{$small-only} {
+            margin-bottom: 0 !important;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.article-mondrian-a {
+	@media #{$small-only} { 
+			/*padding-top:rem-calc(30);*/
+		}
+	.article-mondrian-caption{
+		
+		position:relative;
+		@media #{$small-only} { 
+			
+			left:auto;
+			font-size:rem-calc(14);
+		}
+	}
+	.article-mondrian {
+		position:relative;
+	}
+	
+}

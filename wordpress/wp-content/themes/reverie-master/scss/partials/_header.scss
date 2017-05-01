@@ -1,0 +1,261 @@
+.sticky-header {
+    .menu-header-container {
+        display: inline-block;
+        white-space: nowrap;
+    }
+    -webkit-transform: translateZ(500000px);
+    -ms-transform: translateZ(500000px);
+    .row {
+        position: relative;
+    }
+
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    height: $headerheight;
+
+    @media #{$small-only} {
+        height: 60px;
+    }
+
+    background-color: rgba(255, 255, 255, 0.95);
+    vertical-align: middle;
+
+    img.cadillac-logo-expanded {
+        position: absolute;
+        margin-top: rem-calc(23px);
+        width: 85px;
+        height: 58px;
+
+        @media #{$small-only} {
+            margin-top: rem-calc(15px);
+            width: 45px;
+            height: 29px;
+            left: 5px;
+        }
+        @media #{$medium-only} {
+            margin-left:10px;
+        }
+    }
+
+    img.cadillac-logo-collapsed {
+        width: 133px;
+        height: 24px;
+        opacity: 0;
+        vertical-align: middle;
+        margin-top: 19px;
+        @media #{$medium-only} {
+            margin-left:10px;
+        }
+    }
+
+    .header-logo-lockup {
+        position: relative;
+    }
+
+    .header-menuburger {
+        cursor:pointer;
+        position: absolute;
+        right: 5px;
+        top: 45px;
+        border-top: 1px solid $grayline;
+        border-bottom: 1px solid $grayline;
+        font-family: $font-family-sans-serif;
+        text-transform: uppercase;
+        opacity: 0;
+        padding-top:1px;
+
+        @media #{$medium-only} {
+            margin-right:10px;
+        }
+
+        @media #{$small-only} {
+            opacity: 1;
+            right: 10px;
+            top: 16px;
+        }
+    }
+
+    h1 {
+        font-family: $font-family-sans-serif;
+        position: absolute;
+        
+        letter-spacing: rem-calc(3);
+        text-transform: uppercase;
+        padding-left: 0;
+        display: inline-block;
+        vertical-align: middle;
+
+        &.collapsed {
+            opacity: 0;
+            height: rem-calc(30px);
+            font-size: rem-calc(20);
+            top: rem-calc(15px);
+            margin-left: 28px;
+
+            @media #{$medium-only} {
+                font-size: 16px;
+                width: 59%;
+                letter-spacing: 0;
+                padding-top: 6px;
+            }
+
+        }
+
+        &.expanded {
+            padding-top: rem-calc(15);
+            font-size: rem-calc(24);
+            height: rem-calc(60px);
+            top: rem-calc(23px);
+            left: rem-calc(115px);
+            opacity: 1;
+
+            @media #{$medium-only} {
+                font-size: 22px;
+                padding-top: rem-calc(23);
+                letter-spacing: 0;
+            }
+            @media only screen and (max-width: 734px) and (min-width: 641px){
+                font-size:16px;
+                margin-top:9px;
+            }
+
+            @media #{$small-only} {
+                letter-spacing: rem-calc(2);
+                padding-top: rem-calc(4);
+                height: rem-calc(30px);
+                font-size: rem-calc(18);
+                top: rem-calc(11px);
+                left: rem-calc(75px);
+            }
+        }
+    }
+
+    .article-header-main-nav {
+        text-align: right;
+        position: absolute;
+        padding-right: 0;
+        margin-top: rem-calc(43);
+        right: 0;
+        @media #{$medium-only} {
+            margin-top:rem-calc(54);
+        }
+        @media only screen and (max-width: 675px) and (min-width: 655px){
+            right: 20px;
+        }
+         @media only screen and (max-width: 654px) and (min-width: 641px){
+            right: 10px;
+         }
+
+        .menu-header-container {
+            font-family: $font-family-sans-serif;
+            text-transform: uppercase;
+
+            a {
+                &.current_page_item, &:hover {
+                    border-bottom: 1px solid $grayline;
+                    color: #000;
+                    padding-bottom:rem-calc(3);
+                }
+                &:hover {
+                    border-bottom: 1px solid $darkgoldlink;
+                };
+                @include hoverstate();
+                margin-right: rem-calc(20);
+                letter-spacing: 1px;
+
+                &:last-of-type {
+                    text-transform: none;
+                    
+                    color: #817440;
+                    font-size: 14px;
+                    margin-right: 0;
+                    position:relative;
+                    margin-left:20px;
+
+                    &:before {
+                        content: "|";
+                        font-size: 20px;
+                        color: $grayline;
+                        margin-right: rem-calc(22);
+                        position:absolute;
+                        top:rem-calc(-6);
+                        left:rem-calc(-25);
+                    }
+                }
+
+            
+            }
+        }
+    }
+
+    .article-header-cta {
+        text-align: left;
+        font-family: $font-family-sans-serif;
+        margin-top: rem-calc(43);
+        text-transform: none;
+        margin-left: rem-calc(18);
+
+        a {
+            color: #817440;
+        }
+    }
+
+    .article-header-nav-divider {
+        width: 1px;
+        background-color: #c8c8c8;
+        height: 22px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    a.header-dropdown-current-choice {
+        font-size: 13px;
+        padding-left: 20px;
+        font-family: $font-family-sans-serif;
+        padding-right: 20px;
+        background-image: url(#{$themefolder}/img/dropdown_arrow.png);
+        background-repeat: no-repeat;
+        background-position: right 0px center;
+        @media #{$medium-only}{
+            margin-right:10px;
+        }
+        @media only screen and (max-width: 654px) and (min-width: 641px){
+            font-size: 10px;
+            
+         }
+        @include hoverstate();
+    }
+
+    ul.header-dropdown-menu {
+        width: 92px !important;
+        margin-left: 13px;
+
+        li {
+            font-size: 12px;
+            padding-left: 0px;
+            text-align: center;
+            @media only screen and (max-width: 654px) and (min-width: 641px){
+                text-align:left;
+            a {
+                
+                font-size:10px;
+                
+            }
+            }
+        }
+
+        margin-top: 5px;
+        font-family: $font-family-sans-serif;
+
+        &:before {
+            display: none;
+        }
+
+        &:after {
+            display: none;
+        }
+    }
+}

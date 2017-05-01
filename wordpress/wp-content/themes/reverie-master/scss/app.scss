@@ -1,0 +1,109 @@
+@import "settings";
+
+$themefolder: "/wp-content/themes/reverie-master";
+// Or selectively include components
+@import //   "../../../../../bower_components/foundation/scss/foundation/components/accordion",
+//   "../../../../../bower_components/foundation/scss/foundation/components/alert-boxes",
+ "../../../../../bower_components/foundation/scss/foundation/components/block-grid",
+//   "../../../../../bower_components/foundation/scss/foundation/components/breadcrumbs",
+//   "../../../../../bower_components/foundation/scss/foundation/components/button-groups", 
+"../../../../../bower_components/foundation/scss/foundation/components/buttons", //  "../../../../../bower_components/foundation/scss/foundation/components/clearing",
+"./foundation_overrides/dropdown", //  "../../../../../bower_components/foundation/scss/foundation/components/dropdown-buttons",
+//   "../../../../../bower_components/foundation/scss/foundation/components/flex-video",
+//   "../../../../../bower_components/foundation/scss/foundation/components/forms",
+"../../../../../bower_components/foundation/scss/foundation/components/grid",
+//   "../../../../../bower_components/foundation/scss/foundation/components/inline-lists",
+//   "../../../../../bower_components/foundation/scss/foundation/components/joyride",
+//   "../../../../../bower_components/foundation/scss/foundation/components/keystrokes",
+//   "../../../../../bower_components/foundation/scss/foundation/components/labels",
+//   "../../../../../bower_components/foundation/scss/foundation/components/magellan",
+//   "../../../../../bower_components/foundation/scss/foundation/components/orbit",
+//   "../../../../../bower_components/foundation/scss/foundation/components/pagination",
+//   "../../../../../bower_components/foundation/scss/foundation/components/panels",
+//   "../../../../../bower_components/foundation/scss/foundation/components/pricing-tables",
+//   "../../../../../bower_components/foundation/scss/foundation/components/progress-bars",
+"../../../../../bower_components/foundation/scss/foundation/components/reveal", //"./foundation_overrides/reveal",
+//   "../../../../../bower_components/foundation/scss/foundation/components/side-nav",
+//   "../../../../../bower_components/foundation/scss/foundation/components/split-buttons", 
+//   "../../../../../bower_components/foundation/scss/foundation/components/sub-nav",
+//   "../../../../../bower_components/foundation/scss/foundation/components/switch",
+//   "../../../../../bower_components/foundation/scss/foundation/components/tables",
+//   "../../../../../bower_components/foundation/scss/foundation/components/tabs",
+//   "../../../../../bower_components/foundation/scss/foundation/components/thumbs",
+//   "../../../../../bower_components/foundation/scss/foundation/components/tooltips",
+//   "../../../../../bower_components/foundation/scss/foundation/components/top-bar",
+"../../../../../bower_components/foundation/scss/foundation/components/type",
+"../../../../../node_modules/cropperjs/src/scss/cropper",
+//   "../../../../../bower_components/foundation/scss/foundation/components/offcanvas",
+"../../../../../bower_components/foundation/scss/foundation/components/visibility";
+
+//sss
+
+
+
+
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+    > .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@mixin hoverstate() {
+    &:hover {
+        color: $darkgoldlink;
+    }
+    ;
+}
+
+;
+@mixin darken-hover {
+  //  &:hover {
+       // filter: grayscale; turned off as of CG-388
+       // filter: brightness(60%);
+       // -webkit-filter: grayscale;
+       // -webkit-filter: brightness(60%);
+        
+   // }
+}
+
+a:hover,
+a:focus {
+    color: $darkgoldlink;
+}
+
+//@import "style.scss";  original reverie stylesheet, no longer necessary
+@import "fonts";
+
+/* tracking pixel fix bug -- without this, an injected pixel busts the footer */
+
+img[width='1'] {
+    display:none !important;
+}
+
+$headerheight: rem-calc(106);
+$grayline: #c8c8c8;
+$fa-font-path:"#{$themefolder}/webfonts/font-awesome/";
+@import "./partials/article/index";
+@import "./slick/slick.scss";
+@import "./slick/slick-theme.scss";
+@import "./partials/home";
+@import "./partials/mobile-menu";
+@import "./partials/footer";
+@import "./partials/header";
+@import "./partials/explore";
+@import "./partials/about";
+@import "./partials/ct6/index";
+@import "./partials/preoscars";
+@import "./partials/oscars/index";
+@import "../../../../../bower_components/font-awesome/scss/font-awesome";

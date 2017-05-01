@@ -1,0 +1,25 @@
+.article-top-button {
+	position:fixed;
+	bottom:100px;
+	right:10px;
+	cursor:pointer;
+	font-size:14px;
+	border: 1px solid $grayline;
+	
+	height:31px;
+	background-color:rgba(255,255,255,.9);
+	text-transform: uppercase;
+	padding-left:12px;
+	padding-top:4px;
+	padding-right:35px;
+	letter-spacing: 1.5px;
+	font-family:$font-family-sans-serif;
+	z-index:998;
+	img {
+		position:absolute;
+		width:13px;
+		height:7px;
+		top:11px;
+		right:12px;
+	}
+}

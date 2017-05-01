@@ -1,0 +1,50 @@
+{
+    "name": "dare-greatly phase 2",
+    "description": "Website for Cadillac client, code name dare-greatly",
+    "license": "proprietary",
+    "repositories": [{
+        "type": "composer",
+        "url": "https://wpackagist.org"
+    }, {
+        "type": "artifact",
+        "url": "packages/"
+    }],
+    "require": {
+        "php": ">=5.4",
+        "wpackagist-plugin/captcha": "4.1.8",
+        "wpackagist-plugin/redirection": "2.4.3",
+        "wpackagist-plugin/minimum-password-strength": "1.1.2",
+        "wpackagist-plugin/bulletproof-security": "dev-trunk",
+        "wpackagist-plugin/wp-maintenance-mode": "2.0.3",
+        "fancyguy/wordpress-monolog": "dev-master",
+        "wpackagist-plugin/advanced-custom-fields": "dev-master",
+        "wpackagist-plugin/minqueue": "1.1.2",
+        "elm/easy-load-more": "*",
+        "wpackagist-plugin/wordpress-popular-posts": "dev-master",
+        "wpackagist-plugin/codepress-admin-columns": "dev-master",
+        "wpackagist-plugin/json-api": "dev-master",
+        "wpackagist-plugin/simple-custom-post-order": "dev-master",
+        "wpackagist-plugin/wordpress-importer": "dev-master",
+        "wpackagist-plugin/w3-total-cache": "dev-master",
+        "wpackagist-plugin/wordpress-seo": "*",
+        "related/related-links": "*",
+        "acf/acf-image-crop-add-on": "3.0",
+        "acf/acf-repeater": "1.1.1",
+        "acf/acf-options-page": "1.2.0",
+        "acf/acf-flexible-content": "1.1.1",
+        "deliciousbrains/wp-amazon-s3-and-cloudfront": "1.0.0",
+        "deliciousbrains/wp-amazon-web-services": "1.0.0",
+        "wpackagist-plugin/wp-mail-smtp": "dev-trunk",
+        "wpackagist-plugin/post-expirator": "2.1.4",
+        "wp-help/wp-help": "*",
+        "wpackagist-plugin/enhanced-media-library": "2.0.4.8",
+        "realloc/multisite-language-switcher": "*"
+    },
+    "extra": {
+        "installer-paths": {
+            "wordpress/wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ]
+        }
+    }
+}

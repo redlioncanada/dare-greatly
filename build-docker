@@ -1,0 +1,2 @@
+docker build -t mysql-local osx-docker-mysql/
+docker build -t nginx-local nginx-php-fpm/

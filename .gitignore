@@ -1,0 +1,123 @@
+###Composer###
+
+composer.lock
+composer.phar
+vendor/
+
+# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock
+
+###OSX###
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Docs 
+# Folders containing PSDs, pdfs, etc.
+
+docs/
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+###SublimeText###
+
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
+
+# sftp configuration file
+sftp-config.json
+
+###MYSQL###
+
+db/
+
+###SASS###
+
+.sass-cache
+*.css.map
+
+
+###Compass###
+
+.sass-cache
+
+
+###Wordpress###
+
+*.log
+sitemap.xml
+sitemap.xml.gz
+/wp-content/
+# wordpress/wp-content/advanced-cache.php
+wordpress/wp-content/backup-db/
+wordpress/wp-content/backups/
+wordpress/wp-content/blogs.dir/
+wordpress/wp-content/cache/
+!wordpress/wp-content/cache/.gitkeep
+wordpress/wp-content/upgrade/
+#wordpress/wp-content/uploads/
+wordpress/wp-content/wp-cache-config.php
+wordpress/wp-content/w3tc-config/
+wordpress/wp-content/bps-backup/
+# Project
+#wp-config.php
+public/local-config.php
+public/content/plugins/
+#.htaccess
+/css
+wordpress/wp-content/themes/reverie-master/css/app.css
+vendor.js
+*dg.js
+*.js.map
+#/local-config.php
+/wordpress/local-config.php
+/node_modules
+/vendor
+/public/wordpress
+/wordpress/wp-content/uploads
+/wordpress/wp-content/plugins
+/wp/
+/wordpress/wp-content/w3tc-config
+bower_components
+wordpress/plugins/
+#casper snapshots
+pkt*.png
+build
+dist
+mysqlwpadmin
+test.php
+logo-desktop.jpg
+wordpress/nginx.conf
+wordpress/wp-content/themes/dploy
+wordpress/wp-content/db.php
+wordpress/wp-content/themes/preprod.dare-greatly.com_error_log
+wordpress/wp-content/themes/reverie-master/functions.php.bak
+wordpress/wp-content/themes/reverie-master/page-those-who-dare.php
+wordpress/wp-content/themes/reverie-master/img/000-default.conf

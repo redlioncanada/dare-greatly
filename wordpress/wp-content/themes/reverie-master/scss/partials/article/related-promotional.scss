@@ -1,0 +1,114 @@
+        .no-vehicle-spotlight {
+            margin-bottom: 0px;
+        }
+        
+        a.article-related-link {
+            text-decoration: none;
+            color:#4b4b4b;
+        }
+        .article-related-list {
+                h3.article-related-list-label {
+                    @media #{$small-only} {
+                        font-size: rem-calc(18);
+                        text-align: center;
+                        margin-top: rem-calc(8);
+                        margin-bottom: rem-calc(30);
+                    }
+                    font-size: rem-calc(16);
+                    font-family: $font-family-sans-serif;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid #cfcfcf;
+                    margin-bottom: rem-calc(23);
+                    padding-bottom: rem-calc(10);
+                }
+                .article-related-unit {
+                    .article-related-unit-image {
+                        position: relative;
+                        img {
+                            @include darken-hover();
+                        }
+                    }
+                    margin-bottom: rem-calc(40);
+                      @media #{$small-only} {
+                        margin-bottom:rem-calc(20);
+                      }
+                    .article-related-unit-title {
+                        font-size: rem-calc(19);
+                        
+                        margin-top: rem-calc(0);
+                    }
+                    .article-related-unit-category {
+                        font-family: $font-family-sans-serif;
+                        text-transform: uppercase;
+                        font-size: rem-calc(12);
+                        margin-top: rem-calc(20);
+                        @media #{$small-only} {
+                               margin-top: rem-calc(18);
+                               margin-bottom:rem-calc(2);
+                        }
+                    }
+                    .article-related-unit-produced-with {
+                        a {
+                            text-decoration:none;
+                            color:unset;
+                            @include hoverstate();
+                        }
+                        p.produced-with {
+                            margin-top:-5px;
+                        font-size:rem-calc(14);
+                        }
+                    }
+                    @media #{$small-only} {
+                     &:first-of-type {
+                   // margin-top:40px;
+                     
+                        margin-top:20px;
+                     }
+                     }
+                }
+               
+            }
+        .article-related-promotional {
+            h3.article-promotional-title {
+                font-size: rem-calc(24);
+                margin-bottom: rem-calc(16);
+                padding-bottom: rem-calc(10);
+                @media #{$small-only} {
+                    font-size: rem-calc(18);
+                    text-align: center;
+                    margin-top: rem-calc(0);
+                    margin-bottom: rem-calc(8);
+                }
+                a {
+                    color: #817440;
+                    text-decoration: none;
+                }
+            }
+            .article-promotional-cta {
+                @media #{$small-only} {
+                    font-size: rem-calc(14);
+                    text-align: center;
+                    margin-top: 1.225rem;
+                    margin-bottom: rem-calc(0);
+                }
+                font-family: $font-family-sans-serif;
+                text-transform:uppercase;
+                font-size:rem-calc(12);
+                margin-top:rem-calc(20);
+            }
+            
+        }
+        
+        .article-related-unit.large-3 {
+            margin-bottom: rem-calc(30);
+            @media #{$medium-up} {
+                width: 33.33%;
+                margin-bottom: rem-calc(60);
+            }
+        }
+        .header-spacing {
+            margin-top:40px;
+            @media #{$small-only} {
+            margin-top:20px;
+            }
+        }

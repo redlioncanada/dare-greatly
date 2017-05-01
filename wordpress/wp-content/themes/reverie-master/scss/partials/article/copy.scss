@@ -1,0 +1,16 @@
+.article-copy {
+
+    p,
+    div.img-holder {
+        @media #{$small-only} {
+            line-height: 28px;
+            letter-spacing: rem-calc(.5);
+        }
+    }
+    .img-holder {
+    	
+        font-size: $paragraph-font-size;
+        line-height: $paragraph-line-height;
+        margin-bottom: $paragraph-margin-bottom;
+    }
+}

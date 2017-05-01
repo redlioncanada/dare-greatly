@@ -1,0 +1,118 @@
+How to implement webfonts on websites
+
+Upload the webfonts (EOT, Woff and TTF) to your web server and use the CSS code example below. Replace the example URL with its appropriate path on your web server.
+
+/* Webfonts: Copyright © 2012 by Letters From Sweden. All rights reserved. To obtain a license, please see: http://lettersfromsweden.se/webfonts */
+
+@font-face {
+    font-family: 'CadillacTrimV1 Thin';
+    src: url('fonts/CadillacTrimV1-Thin.eot');
+    src: url('fonts/CadillacTrimV1-Thin.eot?') format('embedded-opentype'),
+    url('fonts/CadillacTrimV1-Thin.woff') format('woff'),
+    url('fonts/CadillacTrimV1-Thin.ttf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CadillacTrimV1 Light';
+    src: url('fonts/CadillacTrimV1-Light.eot');
+    src: url('fonts/CadillacTrimV1-Light.eot?') format('embedded-opentype'),
+    url('fonts/CadillacTrimV1-Light.woff') format('woff'),
+    url('fonts/CadillacTrimV1-Light.ttf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CadillacTrimV1 Medium';
+    src: url('fonts/CadillacTrimV1-Medium.eot');
+    src: url('fonts/CadillacTrimV1-Medium.eot?') format('embedded-opentype'),
+    url('fonts/CadillacTrimV1-Medium.woff') format('woff'),
+    url('fonts/CadillacTrimV1-Medium.ttf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CadillacTrimV1 Regular';
+    src: url('fonts/CadillacTrimV1-Regular.eot');
+    src: url('fonts/CadillacTrimV1-Regular.eot?') format('embedded-opentype'),
+    url('fonts/CadillacTrimV1-Regular.woff') format('woff'),
+    url('fonts/CadillacTrimV1-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CadillacTrimV1 SemiBold';
+    src: url('fonts/CadillacTrimV1-SemiBold.eot');
+    src: url('fonts/CadillacTrimV1-SemiBold.eot?') format('embedded-opentype'),
+    url('fonts/CadillacTrimV1-SemiBold.woff') format('woff'),
+    url('fonts/CadillacTrimV1-SemiBold.ttf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CadillacTrimV1 Bold';
+    src: url('fonts/CadillacTrimV1-Bold.eot');
+    src: url('fonts/CadillacTrimV1-Bold.eot?') format('embedded-opentype'),
+    url('fonts/CadillacTrimV1-Bold.woff') format('woff'),
+    url('fonts/CadillacTrimV1-Bold.ttf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CadillacTrimV1 ExtraBold';
+    src: url('fonts/CadillacTrimV1-ExtraBold.eot');
+    src: url('fonts/CadillacTrimV1-ExtraBold.eot?') format('embedded-opentype'),
+    url('fonts/CadillacTrimV1-ExtraBold.woff') format('woff'),
+    url('fonts/CadillacTrimV1-ExtraBold.ttf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+.CadillacTrimV1thin {
+    font-family: 'CadillacTrimV1 Thin';
+    font-weight: 100;
+    font-style: normal;
+}
+
+.CadillacTrimV1light {
+    font-family: 'CadillacTrimV1 Light';
+    font-weight: 200;
+    font-style: normal;
+}
+
+.CadillacTrimV1regular {
+    font-family: 'CadillacTrimV1 Regular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.CadillacTrimV1medium {
+    font-family: 'CadillacTrimV1 Medium';
+    font-weight: 500;
+    font-style: normal;
+}
+
+.CadillacTrimV1semibold {
+    font-family: 'CadillacTrimV1 SemiBold';
+    font-weight: 600;
+    font-style: normal;
+}
+
+.CadillacTrimV1bold {
+    font-family: 'CadillacTrimV1 Bold';
+    font-weight: bold;
+    font-style: normal;
+}
+
+.CadillacTrimV1extrabold {
+    font-family: 'CadillacTrimV1 ExtraBold';
+    font-weight: 800;
+    font-style: normal;
+}

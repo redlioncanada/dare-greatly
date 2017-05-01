@@ -1,0 +1,224 @@
+@mixin transition($radius) {
+    -moz-transition: $radius;
+    -ms-transition: $radius;
+    -o-transition: $radius;
+    transition: $radius;
+}
+
+#color_widget {
+    width: 100%;
+    height: 429px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+
+    li {
+        float: left;
+        width: 9.8%;
+        margin: 0 rem-calc(5) 0 0;
+        height: 100%;
+        position: relative;
+
+        @include transition(all 300ms);
+
+        cursor: pointer;
+
+        &#c1 {
+            background-image: url("/wp-content/themes/reverie-master/img/colorizer/white_swatch.jpg");
+
+            .info {
+                color: #4b4b4b;
+            }
+        }
+
+        &#c2 {
+            background-image: url("/wp-content/themes/reverie-master/img/colorizer/blue_swatch.jpg");
+        }
+
+        &#c3 {
+            background-image: url("/wp-content/themes/reverie-master/img/colorizer/black_swatch.jpg");
+        }
+
+        &#c4 {
+            background-image: url("/wp-content/themes/reverie-master/img/colorizer/pure_white_swatch.jpg");
+
+            .info {
+                color: #4b4b4b;
+            }
+        }
+
+        &#c5 {
+            background-image: url("/wp-content/themes/reverie-master/img/colorizer/red_swatch.jpg");
+        }
+
+        &#c6 {
+            background-image: url("/wp-content/themes/reverie-master/img/colorizer/cream_swatch.jpg");
+
+            .info {
+                color: #4b4b4b;
+            }
+        }
+
+        &#c7 {
+            background-image: url("/wp-content/themes/reverie-master/img/colorizer/last_black_swatch.jpg");
+        }
+
+        &.active {
+            width: 35%;
+        }
+
+        .info {
+            // display: none;
+            visibility: hidden;
+            opacity: 0;
+            bottom: 19px;
+            color: #ffffff;
+            font-size: 13px;
+            position: absolute;
+            right: 20px;
+
+            @include transition(all 300ms);
+        }
+
+        &.active .info {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+@media #{$small-up} {
+    #color_widget {
+        display: block;
+    }
+}
+
+@media #{$small-only} {
+    #color_widget {
+        display: block;
+        height: 317px;
+
+        li {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 5px;
+
+            .info {
+                bottom: auto;
+                visibility: visible;
+                opacity: 1;
+                right: auto;
+                padding-left: 10px;
+                padding-top: 10px;
+            }
+
+            i {
+                padding-right: 2px;
+            }
+
+            &.active {
+                width: 100%;
+            }
+
+            br {
+                display: none;
+            }
+
+            &#c1 {
+                background-image: url("/wp-content/themes/reverie-master/img/colorizer/m_crystalwhite.jpg");
+            }
+
+            &#c2 {
+                background-image: url("/wp-content/themes/reverie-master/img/colorizer/m_adriaticblue.jpg");
+            }
+
+            &#c3 {
+                background-image: url("/wp-content/themes/reverie-master/img/colorizer/m_darkgranite.jpg");
+            }
+
+            &#c4 {
+                background-image: url("/wp-content/themes/reverie-master/img/colorizer/m_radiantsilver.jpg") !important;
+            }
+
+            &#c5 {
+                background-image: url("/wp-content/themes/reverie-master/img/colorizer/m_redpassion.jpg") !important;
+            }
+
+            &#c6 {
+                background-image: url("/wp-content/themes/reverie-master/img/colorizer/m_silvercoast.jpg");
+            }
+
+            &#c7 {
+                background-image: url("/wp-content/themes/reverie-master/img/colorizer/m_stellarblack.jpg");
+            }
+        }
+    }
+}
+
+@media #{$medium-only} {
+    #color_widget {
+        display: block;
+        height: 317px;
+
+        li {
+            width: 100%;
+            height: 40px;
+            margin-bottom: 5px;
+
+            .info {
+                bottom: auto;
+                visibility: visible;
+                opacity: 1;
+                right: auto;
+                padding-left: 10px;
+                padding-top: 10px;
+            }
+
+            i {
+                padding-right: 2px;
+            }
+
+            &.active {
+                width: 100%;
+            }
+
+            br {
+                display: none;
+            }
+
+            &#c1 {
+                background-image: url("/wp-content/themes/reverie-master/img/colorizer/m_crystalwhite.jpg");
+            }
+
+            &#c2 {
+                background-image: url("/wp-content/themes/reverie-master/img/colorizer/m_adriaticblue.jpg");
+            }
+
+            &#c3 {
+                background-image: url("/wp-content/themes/reverie-master/img/colorizer/m_darkgranite.jpg");
+            }
+
+            &#c4 {
+                background-image: url("/wp-content/themes/reverie-master/img/colorizer/m_radiantsilver.jpg") !important;
+            }
+
+            &#c5 {
+                background-image: url("/wp-content/themes/reverie-master/img/colorizer/m_redpassion.jpg") !important;
+            }
+
+            &#c6 {
+                background-image: url("/wp-content/themes/reverie-master/img/colorizer/m_silvercoast.jpg");
+            }
+
+            &#c7 {
+                background-image: url("/wp-content/themes/reverie-master/img/colorizer/m_stellarblack.jpg");
+            }
+        }
+    }
+}
+
+@media #{$large-only} {
+    #color_widget li.active {
+        width: 34%;
+    }
+}

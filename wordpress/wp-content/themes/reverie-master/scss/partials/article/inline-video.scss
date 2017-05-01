@@ -1,0 +1,41 @@
+.article-inline-video {
+    .article-inline-video-poster {
+        @include darken-hover;
+
+        z-index: 1;
+    }
+}
+
+.article-inline-video-caption {
+    width: 100%;
+    font-family: $font-family-serif-regular, serif;
+    font-size: rem-calc(16);
+    color: #4b4b4b;
+    margin-top: rem-calc(15);
+}
+
+.article-inline-video-cta {
+    width: 100%;
+    color: #686868;
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
+    font-size: rem-calc(12);
+    letter-spacing: rem-calc(1.5);
+
+    a {
+        color: #817440;
+        text-decoration: underline;
+    }
+}
+
+@media #{$small-only} { 
+    .article-inline-video-caption {
+        //font-size: rem-calc(14);
+    }
+
+    .article-inline-video-cta {
+        font-size: rem-calc(14);
+    }
+}
+
+

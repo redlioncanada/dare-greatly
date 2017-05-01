@@ -1,0 +1,37 @@
+.article-component {
+	
+	margin-bottom:2.1rem;
+	@media #{$small-only} { margin-bottom:rem-calc(35); }
+	letter-spacing: .15px;
+	p:last-child {
+		margin-bottom:0;
+	}
+	.article-caption {
+
+        margin-top:rem-calc(22);
+		font-family:$font-family-serif-regular,serif;
+		font-size:rem-calc(16);
+		letter-spacing:rem-calc(.5);
+    	color:#4b4b4b;
+
+        
+	}
+	a {
+		color:#817440;
+		text-decoration:none;
+		&.no-gold {
+			color:#4b4b4b;
+			text-decoration: none;
+		}
+		//@include hoverstate();
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.presented-with {
+		span {
+			color:#686868;
+		}
+	}
+}
+

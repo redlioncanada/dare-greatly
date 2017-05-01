@@ -1,0 +1,182 @@
+    .trending {
+        &.home-row {
+            margin-top:0 !important;
+           
+
+        }
+        .caption p {
+           
+            font-size:20px;
+        }
+        .first-col {
+            margin-top: rem-calc(200);
+        }
+        .right-col {
+            margin-top: rem-calc(100);
+        }
+        .caption {
+            padding-left:0;
+
+            padding-top:18px;
+            p:last-of-type {
+                padding-bottom:30px;
+            };
+
+        }
+    }
+    
+    /*#trending-title {
+        margin-bottom:22px;
+    }
+
+     @media #{$medium-up} {
+        #trending-title {
+            margin-bottom:0;
+        }            
+    }
+*/
+    
+    #trending-dropdown {
+        @include dropdown-container(list, true);
+        &:focus {
+            outline: none;
+        }
+    }
+    
+    .trending-dropdown-column {
+        position: relative;
+        @media #{$small-only} {
+            margin-bottom:22px;
+            margin-top:22px;
+        }
+    }
+    
+    .dropdown-container {
+        
+        text-align: left;
+        padding: 0px;
+        width: 210px;
+        right: 5px;
+        position: absolute;
+        top: -45px;
+        font-family: $font-family-sans-serif;
+        font-size: 14px;
+        color: $darkgoldlink;
+        text-transform: uppercase;
+        background-color: $footer-light-gray;
+        @media #{$small-only} {
+            position: static;
+            width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+            top:0;
+        }
+        .dropdown-current-range {
+            vertical-align: center;
+            background-image: url(#{$themefolder}/img/dropdown_arrow.png);
+            background-position: right 20px center;
+            background-repeat: no-repeat;
+            padding-top: 12px;
+            padding-bottom:8px;
+            padding-left:18px;
+            letter-spacing:2px;
+            color:#817440;
+            cursor:pointer;
+            @media #{$small-only} {
+                width: unset;
+                padding-left: 10px;
+                padding-top: 10px;
+            }
+        }
+
+        .trending-dropdown li {
+            cursor: pointer;
+            padding-left: 18px;
+            color:#4b4b4b;
+            &:last-of-type {
+                padding-bottom:7px;
+            }
+            &:first-of-type {
+                padding-top:7px;
+            };
+            &.disabled {
+                pointer-events: none;
+                cursor: default;
+                color: $grayline !important;
+            }
+
+            &:hover {
+                background-color: $footer-light-gray;
+                color:unset;
+            }
+        }
+    }
+    
+    .block-a {
+        display: inline-block;
+        position: relative;
+    }
+    
+    @media #{$small-only} {
+        .trending.show-for-small-only {
+            .trending-sub:last-of-type {
+                margin-bottom:7px;
+            }
+            .small-trending-info {
+                
+                opacity:0;
+                background-color: rgba(0, 0, 0, 0.8);
+                height: 100%;
+                overflow:hidden;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                color: white;
+                padding: rem-calc(15) 0 0 rem-calc(15);
+                p {
+                   
+                    width:90%;
+                    
+                }
+
+                .title {
+                    font-size: rem-calc(16);
+                    width: 90%;
+                    margin-bottom:6px;
+                    color:white;
+                        line-height: 1.25rem;
+                    
+                }
+                .tag {
+                    font-family: $font-family-trim-regular;
+                    font-size: rem-calc(12);
+                    letter-spacing: 0px;
+                    text-transform: uppercase;
+                    margin-bottom:6px;
+                    color:white;
+                       
+                    
+                }
+                .produced-with {
+                     line-height: 1rem;
+                     color:white !important;
+                     font-size:14px;
+                     margin-bottom:6px;
+                     a {
+                        color:unset;
+                     }
+                }
+
+                
+                .learn-more {
+                    font-size: rem-calc(12);
+                    color:#B5A36A;
+                }
+
+            }
+            .small-trending-info.tapped {
+                opacity:1;
+                display: block;
+            }
+        }
+    }

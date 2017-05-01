@@ -1,0 +1,84 @@
+
+.oscars-twitter {
+
+    background-color: $white-smoke;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    @media #{$small-only} {
+        text-align: center;
+    }
+    .oscars-twitter-icon {
+        margin-left: 10px;
+        position: relative;
+        font-size: 36px;
+        color: #55acee;
+        @media #{$small-only} {
+            margin-top: 0px;
+        }
+    }
+    .tweet {
+        
+        .twitter-identity {
+            margin-left: -1rem;
+            .twitter-name {
+                font-weight: bold;
+                font-family: $font-family-sans-serif;
+            }
+            .twitter-handle {}
+        }
+        padding-left:20px;
+        padding-right:20px;
+        @media #{$medium-up} {
+        	padding-right: 36px;
+            .tweet-text {
+                margin-left: -1rem;
+            }
+            .twitter-identity {
+                margin-left: -1rem;
+            }
+        }
+        @media #{$small-only} {
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+    }
+    .button-column {
+        .button {
+            margin-bottom: 0;
+            background-color: $white-smoke;
+            border: 1px solid #c8c8c8;
+            font-family: $font-family-sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #4b4b4b;
+            @media #{$small-only}{
+                font-size: 13px;
+                width:90%;
+            }
+            
+            &:hover {
+                background-color: #4b4b4b;
+                color: white;
+            }
+            ;
+        }
+    }
+
+    @media #{$medium-up} {
+        .valign-middle {
+            min-height:100px;
+            display: table;
+            > .columns {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            > .columns,
+            > [class*="column"] + [class*="column"]:last-child {
+                float: none;
+            }
+        }
+    }
+}
+.ie9 .oscars-twitter, .oldie .oscars-twitter {
+    display:none;
+}

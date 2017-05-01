@@ -1,0 +1,139 @@
+.oscars-marquee-wrapper {
+    width: 100%;
+    padding-bottom: 31.5%;
+    &.oscars-cinemagraph {
+        padding-bottom: 0;
+    }
+    @media #{$small-only} {
+        padding-bottom: 62%;
+        margin-bottom: rem-calc(12);
+    }
+    max-height: rem-calc(500);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: rem-calc(35);
+    position: relative;
+    .pillarboxed-video {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media #{$small-only} {
+    .overlay-dare-greatly {
+        display: none;
+    }
+}
+
+.hero-video .play-button .play-button-inside {
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.hero-image .play-button-inside,
+.oscars-hero-cinemagraph .play-button-inside {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.oscars-hero-cinemagraph .play-button {
+    left: 0;
+    width: 100%;
+}
+
+.oscars-marquee-wrapper {
+    .play-button img {
+        transform: none;
+        -webkit-transform: none;
+        -ms-transform: none;
+        width: 65px;
+        height: 65px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        @media #{$medium-up} {
+            margin-top: 50px;
+        }
+    }
+}
+
+.overlay-dare-greatly {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    letter-spacing: 3px;
+    font-family: $font-family-sans-serif;
+}
+
+.oscars-marquee-wrapper > div.play-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.oscars-hero-cinemagraph {
+    background-size: cover;
+    margin-bottom: 20px;
+    max-height: 223px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media #{$medium} {
+    .oscars-hero-cinemagraph {
+        margin-bottom: 60px;
+        background-image: none !important;
+        max-height: 500px;
+    }
+    .content {
+        visibility: hidden;
+        video {
+            display: none;
+            width: 100%;
+            position: absolute;
+        }
+    }
+}
+
+.hero-video {
+    cursor: pointer;
+}
+
+.page-id-2848,
+.page-id-2488 {
+    hero-background-image-target {
+        @include darken-hover;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        @media #{$small-only} {
+            background-color: black;
+            background-position: -9999px -9999px
+        }
+    }
+}
+
+@media #{$small-only} {
+    .oscars-marquee-wrapper {
+        margin-bottom: rem-calc(20);
+    }
+}

@@ -1,0 +1,340 @@
+$small-and-portrait: "#{$small-only} and (orientation: portrait)";
+$small-and-landscape: "#{$small-only} and (orientation: landscape)";
+.grid-lightbox {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    -webkit-transform: translateZ(1000000px);
+    .backing {
+        background-color: black;
+        opacity: .5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .copy-stack {
+        margin-top: 30%;
+        @media #{$medium-up} {
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        @media #{$medium-only} {
+            margin-top: 40%;
+        }
+        @media #{$small-and-landscape} {
+            margin-top: 10%;
+        }
+        @media #{$small-and-portrait} {
+            margin-top: 10%;
+            margin-bottom: 60px;
+        }
+    }
+    .close-x {
+        font-family: $font-family-sans-serif;
+        cursor: pointer;
+        bottom: 10%;
+        position: absolute;
+        width: 100%;
+        background-image:url(#{$themefolder}/img/oscars/lightbox-close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 22px 22px;
+    }
+    .close-x.ie10 {
+        
+        background-image:none;
+        &:after{
+            content:"×";
+            font-size:26px;
+            color:#817440;
+            font-weight:bold;
+            } 
+        
+    }
+    .grid-lightbox-content {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        top: 50%;
+        max-width: 1366px;
+        margin: auto;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        @media #{$small-and-portrait} {
+            transform: none;
+            -webkit-transform: none;
+            top: 0;
+        }
+    }
+    .grid-lightbox-image img {
+        width: 50%;
+        height: 50%;
+        @media #{$small-and-portrait} {
+            width: 100%;
+            height: inherit;
+            height: 50%;
+        }
+    }
+    .dontyoudare {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: $font-family-sans-serif;
+        color: #9c9c9c;
+        font-size: 1rem;
+        @media #{$small-only} {
+            font-size: rem-calc(14);
+        }
+    }
+    .the-dare {
+        font-size: 36px;
+        @media #{$small-only} {
+            font-size: rem-calc(20);
+        }
+        @media #{$medium-only} {
+            font-size: rem-calc(24);
+        }
+        &:after {
+            content: "";
+            border-bottom: 2px solid #4b4b4b;
+            display: block;
+            width: 25px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            @media #{$medium-only} {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        @media only screen and (max-width:700px) and (orientation:landscape),
+        #{$small-only} {
+            &.smaller-do:after {
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        @media only screen and (max-width: 320px) {
+            font-size: rem-calc(14);
+            &:after {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            ;
+            &.smaller-do {
+                font-size: 12px;
+            }
+            &.smaller-do:after {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .the-blurb {
+        font-size: rem-calc(18);
+        margin-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        @media #{$medium-only} {
+            font-size: rem-calc(14);
+            &.smaller-do {
+                margin-top: 20px;
+                font-size: 13px;
+            }
+        }
+        @media only screen and (max-width:700px) and (orientation:landscape),
+        #{$small-only} {
+            &.smaller-do {
+                font-size: rem-calc(12);
+                margin-top: 20px;
+            }
+        }
+        @media only screen and (max-width: 320px) {
+            font-size: 14px;
+            margin-top: 15px;
+            &.smaller-do {
+                font-size: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
+    .grid-lightbox-copy {
+        text-align: center;
+        background-color: white;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        @media #{$small-and-portrait} {
+            width: 100%;
+            left: 0;
+            height: inherit;
+            position: fixed;
+            top: 50%;
+            min-height: 50%;
+        }
+    }
+}
+
+.oscars-ugc-grid {
+    max-width: 1366px;
+    margin: auto;
+    .grid-intro {
+        text-align: center;
+        line-height: rem-calc(40) !important;
+        &:after {
+            content: "";
+            border-bottom: 2px solid #4b4b4b;
+            display: block;
+            width: 25px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        @media #{$small-only} {
+            font-size: rem-calc(28);
+            width: 80%;
+            line-height: 1.5rem;
+            margin: auto;
+            margin-top: 50px;
+        }
+        @media #{$medium-only} {
+            font-size: rem-calc(20);
+            line-height: 1.5rem !important;
+            margin: auto;
+        }
+    }
+    .grid-tile>.grid-intro {
+        margin-top: 50%;
+        padding: 20px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .grid-tile {
+        position: relative;
+        text-align: center;
+        width: 33.333%;
+        @media #{$small-only} {
+            width: 50%;
+        }
+        max-width:455px;
+        max-height:455px;
+        overflow:hidden;
+        .front {
+            overflow:hidden;
+        }
+        .front,
+        .back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            @media #{$small-only} {
+                width: 100%;
+            }
+            max-width:455px;
+            max-height:455px;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transition: -webkit-transform 0.3s;
+            transition: transform 0.3s;
+        }
+        .back {
+            background: #fff;
+            cursor: pointer;
+            border: 1px solid #e5e5e5;
+            -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+            &.ie10 {
+                -webkit-transform: none;
+                transform: none;
+                opacity: 0;
+            }
+            .main-copy {
+                position: relative;
+                top: 40%;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                .dontyoudare {
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-family: $font-family-sans-serif;
+                    color: #9c9c9c;
+                    font-size: 1rem;
+                }
+                .the-dare {
+                    font-size: 36px;
+                }
+                @media #{$small-only} {
+                    .dontyoudare {
+                        font-size: .5rem;
+                    }
+                    .the-dare {
+                        font-size: 1rem;
+                    }
+                }
+                @media #{$medium-only} {
+                    .dontyoudare {
+                        font-size: .75rem;
+                    }
+                    .the-dare {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .readmore {
+                @media #{$small-only} {
+                    font-size: .5rem;
+                }
+                position: absolute;
+                font-family: $font-family-sans-serif;
+                text-transform: uppercase;
+                font-size: 1rem;
+                text-align: center;
+                letter-spacing:2px;
+                width: 100%;
+                bottom: 1rem;
+                font-size: rem-calc(14);
+                color: #817440;
+                cursor:pointer;
+            }
+        }
+        &.effect__hover:hover .front {
+            -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+        }
+        &.effect__hover:hover .back {
+            -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+        }
+        &.effect__hover {
+            .back.ie10,
+            .front.ie10 {
+                -webkit-transform: none;
+                transform: none;
+            }
+            .back.ie10.enabled:hover,
+            .front.ie10.enabled:hover {
+                -webkit-transform: none;
+                transform: none;
+                opacity: 1;
+            }
+        }
+    }
+    .infinite-load {
+        text-align: center;
+        width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: $font-family-sans-serif;
+        color: #cbcbcb;
+        font-size: 1rem;
+        margin: 50px auto;
+    }
+}

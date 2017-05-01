@@ -1,0 +1,2 @@
+docker run -dit --name mysql-local -p  "3306:3306" -v ${PWD}/db:/var/lib/mysql -e MYSQL_ADMIN_PASS="orangutan" -e MYSQL_USER_NAME="wordpressuser" -e MYSQL_USER_PASS="orangutan" -e MYSQL_USER_DB="dg" -e IMPORT_DB="true" mysql-local || docker start mysql-local  
+docker run -it -p 80:80 --link mysql-local:db -v $PWD/wordpress:/var/www/html nginx-local
