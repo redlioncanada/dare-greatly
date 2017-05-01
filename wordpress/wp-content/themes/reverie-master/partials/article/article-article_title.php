@@ -27,7 +27,7 @@ function image_tag_with_size_or_text($image_object,$text,$max_height){
 ?>
 
 <div class="row article-component" role="main">
-	<div class="inner-grid large-6 medium-8 small-8 small-centered  large-collapse medium-collapse small-collapse columns article-title-and-slug">
+	<div class="inner-grid large-8 medium-8 small-8 small-centered  large-collapse medium-collapse small-collapse columns article-title-and-slug">
 		<div class='article-category-and-date-slug'>
 		<span class='article-category'><?php echo $main_category ?></span>
 		<span class='article-date'><?php echo $article_date ?></span>

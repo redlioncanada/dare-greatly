@@ -160,7 +160,6 @@ function addLocalIfNotDefined(condition, local) {
     try{(new g(100,"r","QSI_S_ZN_5cFoezj2kv4n9uB","//zn_5cfoezj2kv4n9ub-generalmotors.siteintercept.qualtrics.com/WRSiteInterceptEngine/?Q_ZID=ZN_5cFoezj2kv4n9uB&Q_LOC="+encodeURIComponent(window.location.href))).start()}catch(i){}})();
     </script><div id='ZN_5cFoezj2kv4n9uB'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
     <!--END SITE INTERCEPT-->
-
     </body>
 
     </html>

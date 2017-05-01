@@ -12,7 +12,7 @@ if(!$share_copy){
 <div class='row article-component article-tags-and-share'>
     <div class='columns medium-8 large-6 medium-centered small-8 small-centered'>
         <div class='row medium-collapse'>
-            <div class='columns article-share end push-6 medium-4 medium-uncentered '>
+            <div class='columns article-share end push-6 medium-4 small-10 medium-uncentered '>
                 <span class='article-share-title'><?php echo $share_copy; ?></span>
                 <a href="#" id="shareFacebook" title="Follow us on Facebook" data-share-facebook> <i class="fa fa-facebook"></i> </a>
                 <a href="#" id="shareTwitter" title="Follow us on Twitter" class="btn btn-default" data-share-twitter data-share-text=""> <i class="fa fa-twitter"></i> </a>

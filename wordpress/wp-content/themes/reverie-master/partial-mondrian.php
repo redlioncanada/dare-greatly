@@ -37,7 +37,8 @@ if ( $the_query->have_posts() ) {
 
 
     <div class='home-mondrian-summary medium-offset-6' style="pointer-events:visible;">
-        <h3><?php echo $mondrian_title ?></h3>
+<!--         <h3><?php// echo $mondrian_title ?></h3> -->
+            <h3>Dare Greatly</h3>
         <div class="small-grey"></div>
         <p><?php echo $mondrian_summary ?></p><div class="cta"><a href="<?php echo $mondrian_link;?>"><?php echo $mondrian_CTA; ?></a></div>
     </div>
@@ -48,7 +49,7 @@ if ( $the_query->have_posts() ) {
         <img src='<?php echo $mondrian_image;?>'>
     </div>
     <div class='home-mondrian-summary columns medium-3 medium-offset-3'>
-        <h3><a class="no-gold" href="<?php echo $mondrian_link;?>"><?php echo $mondrian_title ?></a></h3>
+        <h3><a class="no-gold" href="<?php echo $mondrian_link;?>"><?php //echo $mondrian_title ?>Dare Greatly</a></h3>
         <div class="small-grey"></div>
         <p><?php echo $mondrian_summary ?></p>
         <div class="cta"><a href="<?php echo $mondrian_link;?>"><?php echo $mondrian_CTA; ?></a></div>

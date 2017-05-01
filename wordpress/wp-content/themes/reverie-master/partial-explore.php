@@ -49,7 +49,8 @@ $maxInRow = 3;
 		$wp_query->the_post(); 
 			$main_category = get_group_a($post->ID);
 
-		$hasMailingList = ($nth_row == 0 and $nth_post_in_row == 1 and $paged == 1 and $show_explore_email_submission_form);
+		// $hasMailingList = ($nth_row == 0 and $nth_post_in_row == 1 and $paged == 1 and $show_explore_email_submission_form);
+		$hasMailingList = false;
 		$mailing_list_block = ($nth_row == 0 and $nth_post_in_row == 0 and $paged == 1 and $show_explore_email_submission_form); // the whole block that has a mailing button
 		if(($nth_row % 6 == 0 and $nth_post_in_row == 0) or ($nth_row % 6 == 3 and $nth_post_in_row == 1)){
 			$whichsize = 'large-6 ';
