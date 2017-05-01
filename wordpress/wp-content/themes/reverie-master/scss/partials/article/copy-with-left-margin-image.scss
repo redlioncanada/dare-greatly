@@ -1,7 +1,7 @@
 .article-copy-with-left-margin-image {
     max-width: 100%;
     .article-left-margin-image {
-        width: 42%;
+        width: 45%;
         overflow: hidden;
         text-align: right;
     }
@@ -60,7 +60,7 @@
     }
     .article-left-margin-image-copy {
         /*width: 80% !important;*/
-        padding-left: rem-calc(0) !important;
+        padding-left: 4.5rem !important;
     }
     .article-left-margin-image {
         width: 100% !important;
@@ -76,20 +76,64 @@
         width: 100%;
     }
     .article-left-margin-image-copy {
-        padding-left: rem-calc(60) !important;
+        padding-left: 4.5rem !important;
         /*width: 45% !important;*/
     }
     .article-left-margin-image {
-        width: 42% !important;
+        width: 45% !important;
     }
 }
 
 @media #{$large} {
     .article-left-margin-image-copy {
-        padding-left: rem-calc(60) !important;
+        padding-left: 4.5rem !important;
         /*width: 30% !important;*/
     }
     .article-left-margin-image {
-        width: 42% !important;
+        width: 45% !important;
+    }
+}
+
+//Storms Additions
+@media only screen and (min-width: 64.0625em){
+    .withImage{
+        display: inline;
+        float: left;
+        width: 40%;
+        margin-left: 6% !important;
+    }
+        .rightMarginImage{
+        display: inline;
+        float: right;
+        width: 50% !important;
+        margin-bottom: 5%;
+    }
+}
+
+
+@media only screen and (min-width: 40.0625em){
+        .withImage{
+            display: inline;
+            float: left;
+            width: 35%;
+            margin-left: 10% !important;
+    }
+        .rightMarginImage{
+        display: inline;
+        float: right;
+        width: 47%;
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 40em){
+    .article-left-margin-image-with-play-button{
+        margin-bottom: 50px;
+    }
+    .article-related-unit-title{
+        margin-left: 5%;
+    }
+    .article-related-unit-category{
+        margin-left:5%;
     }
 }

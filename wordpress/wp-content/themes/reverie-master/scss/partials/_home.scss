@@ -175,7 +175,8 @@
         line-height: 1.4;
     }
     .experience-copy {
-        padding-top: rem-calc(80);
+        margin-top: -8px;
+        padding-top: 0rem;
         @media #{$medium-only} {
             padding-top: rem-calc(25);
         }
@@ -227,7 +228,7 @@
 }
 .spotlight-assembly{
     h3 {
-        margin-bottom:10px;
+        margin-bottom:20px;
     }
 }
 .learn-more {
@@ -287,4 +288,12 @@
         }
 
     }
+}
+
+//Storms additions
+@media only screen and (min-width: 64.0625em){
+    .spotlight-subheader {
+    margin-top: 60px;
+}
+
 }
