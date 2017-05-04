@@ -36,7 +36,7 @@ if ( $the_query->have_posts() ) {
         <img class='mondrian-mask' src='<?php echo get_template_directory_uri(); ?>/img/home/mondrian_mask_<?php echo $mondrian_mask; ?>.png'>
     </div>
 
-    <?php $mondrian_mask == "C": ?>
+    <?php if($mondrian_mask == "C"): ?>
         <div class='home-mondrian-summary medium-offset-5' style="pointer-events:visible;">
     <?php else: ?>
         <div class='home-mondrian-summary medium-offset-6' style="pointer-events:visible;">

@@ -1,0 +1,16 @@
+.canada150-divider {
+	background-color: $white-smoke;
+	border-top: 2px solid $black;
+	padding: 30px 0;
+
+	.canada150-divider-title {
+		font-family: $font-family-trim-regular;
+		text-transform: uppercase;
+	}
+
+	.canada150-divider-body {
+		padding: 0 17%;
+		margin-bottom: 0;
+		line-height: 1.5em;
+	}
+}
