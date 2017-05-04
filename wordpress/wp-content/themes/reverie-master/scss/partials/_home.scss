@@ -175,7 +175,8 @@
         line-height: 1.4;
     }
     .experience-copy {
-        padding-top: rem-calc(80);
+        margin-top: -8px;
+        padding-top: 0rem;
         @media #{$medium-only} {
             padding-top: rem-calc(25);
         }
@@ -209,7 +210,7 @@
     @media #{$small-only} {
         h3 {
             margin-top: 13px;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
         p {
             margin-top: rem-calc(15);
@@ -217,6 +218,7 @@
         }
         .experience-copy {
             padding-top: rem-calc(0);
+            margin-left: 6%;
         }
         .cta {
             margin-top: rem-calc(10);
@@ -227,7 +229,7 @@
 }
 .spotlight-assembly{
     h3 {
-        margin-bottom:10px;
+        margin-bottom:12px;
     }
 }
 .learn-more {
@@ -236,7 +238,7 @@
     font-family: $font-family-trim-light;
     font-size: 1.125rem;
     @media #{$small-only} {
-        font-size: rem-calc(13);
+        font-size: 14px;
     }
 }
 
@@ -287,4 +289,12 @@
         }
 
     }
+}
+
+//Storms additions
+@media only screen and (min-width: 64.0625em){
+    .spotlight-subheader {
+    margin-top: 60px;
+}
+
 }

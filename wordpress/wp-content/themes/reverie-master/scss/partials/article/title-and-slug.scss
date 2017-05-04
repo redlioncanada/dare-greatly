@@ -33,7 +33,7 @@
         letter-spacing: rem-calc(1.25);
     }
         .article-category::after {
-            content: "|";
+            content: " |";
             margin: 0 10px;
               @media #{$small-only} {
 
