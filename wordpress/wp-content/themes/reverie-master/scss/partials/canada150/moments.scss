@@ -24,15 +24,6 @@
 			padding: 0 30px;
 		}
 
-		.canada150-moment-number {
-			position: absolute;
-			font-size: 7rem;
-			line-height: 7rem;
-			font-family: $font-family-trim-regular;
-			font-weight: bold;
-			color: $goldlink;
-		}
-
 		.canada150-moment-title {
 			font-size: 28px;
 		    line-height: 1.25em;
@@ -44,6 +35,28 @@
 		    font-size: 1rem;
 		    color: $black;
 		    line-height: 1.5em;
+		}
+
+		.canada150-moment-image {
+			position: relative;
+
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 1;
+				max-width: 100%;
+			}
+
+			.canada150-moment-number {
+				position: absolute;
+				font-size: 7rem;
+				line-height: 7rem;
+				font-family: $font-family-trim-regular;
+				font-weight: bold;
+				color: $goldlink;
+				z-index: 2;
+			}
 		}
 
 		.small-grey {
@@ -77,6 +90,11 @@
 	.canada150-moment-template-1 {
 		@include image-template(630);
 
+		.canada150-moment-image {
+			width: 630px;
+			height: 300px;
+		}
+
 		.canada150-moment-number {
 			right: 13%;
 			top: -21%;
@@ -89,6 +107,11 @@
 
 	.canada150-moment-template-2 {
 		@include image-template(550);
+
+		.canada150-moment-image {
+			width: 550px;
+			height: 400px;
+		}
 
 		.canada150-moment-number {
 			left: 20%;
@@ -103,6 +126,11 @@
 	.canada150-moment-template-3 {
 		@include image-template(450);
 
+		.canada150-moment-image {
+			width: 450px;
+			height: 420px;
+		}
+
 		.canada150-moment-number {
 			left: 10%;
 			top: -18%;
@@ -115,6 +143,11 @@
 
 	.canada150-moment-template-4 {
 		@include image-template(600);
+
+		.canada150-moment-image {
+			width: 600px;
+			height: 300px;
+		}
 
 		.canada150-moment-number {
 			left: 45%;
@@ -129,6 +162,11 @@
 	.canada150-moment-template-5 {
 		@include image-template(550);
 
+		.canada150-moment-image {
+			width: 550px;
+			height: 350px;
+		}
+
 		.canada150-moment-number {
 			right: 25%;
 			top: -20%;
@@ -141,6 +179,11 @@
 
 	.canada150-moment-template-6 {
 		@include image-template(500);
+
+		.canada150-moment-image {
+			width: 500px;
+			height: 420px;
+		}
 
 		.canada150-moment-number {
 			left: 15%;

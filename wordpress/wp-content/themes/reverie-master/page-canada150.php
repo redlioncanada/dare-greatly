@@ -7,7 +7,7 @@ get_header(); ?>
 <script>
 $(function() {
 	$('img.lazyload').lazyload({
-		threshold: 200
+		threshold: 300
 	})
 })
 </script>
@@ -34,6 +34,7 @@ $(function() {
 		include(locate_template('partial-canada150-divider.php'));
 	}
 
+	include(locate_template('partial-canada150-rangepicker.php'));
 	include(locate_template('partial-canada150-moments.php'));
 	?>
 </div>

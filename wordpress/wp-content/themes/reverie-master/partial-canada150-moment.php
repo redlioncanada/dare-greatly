@@ -14,7 +14,7 @@
 <div class="<?php echo $classes; ?>">
 	<div class="canada150-moment-image columns">
 		<div class="canada150-moment-number"><?php echo $index; ?></div>
-		<img class="lazyload" data-original="<?php echo $imageURL; ?>">
+		<img class="lazyload" src="<?php echo get_template_directory_uri() ?>/img/placeholder.jpg" ?>" data-original="<?php echo $imageURL; ?>">
 	</div>
 	<div class="canada150-moment-content columns">
 		<h3 class="canada150-moment-title"><?php echo $title; ?></h3>

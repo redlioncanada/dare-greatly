@@ -111,6 +111,7 @@ addLocalIfNotDefined(window.TimelineMax, '/wp-content/themes/reverie-master/js/f
 addLocalIfNotDefined(window.TimelineMax && window.com.greensock.plugins.ScrollToPlugin, '/wp-content/themes/reverie-master/js/fallbacks/ScrollToPlugin.min.js');
 addLocalIfNotDefined(window.jQuery && window.jQuery().lazyload, '/wp-content/themes/reverie-master/js/fallbacks/jquery.lazyload.js');
 addLocalIfNotDefined(window.jQuery && window.jQuery().slick, '/wp-content/themes/reverie-master/js/fallbacks/slick.min.js');
+addLocalIfNotDefined(window.jQuery && window.jQuery().jRange, '/wp-content/themes/reverie-master/js/fallbacks/jquery.range.min.js');
 
 function addLocalIfNotDefined(condition, local) {
     if (!condition) {
