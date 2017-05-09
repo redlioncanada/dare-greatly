@@ -1,0 +1,68 @@
+.canada150-projects {
+	margin-top: 40px;
+
+	.projects-left, .projects-inner-left {
+		padding-left: 0;
+		padding-right: 0.4125rem;
+	}
+
+	.projects-right, .projects-inner-right {
+		padding-right: 0;
+		padding-left: 0.4125rem;
+	}
+
+	.canada150-project {
+		.canada150-project-text-container {
+			padding: 15px 0 0 0;
+		}
+
+		.canada150-project-text {
+			margin: 0;
+			line-height: 1.125rem;
+		}
+
+		.canada150-project-cta {
+			display: block;
+			color: $goldlink;
+			text-transform: uppercase;
+			font-family: $font-family-sans-serif;
+       		font-size:rem-calc(16);
+       		padding-top: 3px;
+		}
+	}
+
+	.canada150-project-1 {
+		margin-top: 40px;
+
+		.canada150-project-text-container {
+			max-width: 50%;
+		}
+	}
+
+	.canada150-project-3 {
+		margin-top: 30px;
+	}
+
+	.canada150-project-4 {
+		margin-top: -65px;
+	}
+
+	.canada150-project-5 {
+		margin-top: 30px;
+	}
+
+	.canada150-announcing {
+		margin: 80px 0;
+
+		.canada150-announcing-title {
+			font-family: $font-family-trim-light;
+			text-transform: uppercase;
+			padding-bottom: 10px;
+		}
+
+		.canada150-announcing-body {
+			margin-bottom: 0;
+			line-height: 1.125rem;
+		}
+	}
+}

@@ -1,0 +1,76 @@
+@mixin reset-background() {
+	background-color: transparent;
+	background-image: initial;
+ 	filter: initial;
+}
+
+.canada150-rangepicker {
+	margin: 50px 0;
+
+	.slider-container {
+		margin: 0 auto;
+
+		.background-bar {
+			position: absolute;
+			height: 2px;
+			top: 6px;
+			width: 100%;
+			background-color: #c8c8c8;
+		}
+
+		.back-bar {
+			height: 15px;
+			@include reset-background();
+
+			.selected-bar {
+				@include reset-background();
+			}
+
+			&:before {
+				content: " ";
+			    position: absolute;
+			    background-color: #c8c8c8;
+			    width: 8px;
+			    top: 2.5px;
+			    left: -1px;
+			    height: 8px;
+			    border-radius: 8px;
+			}
+
+			&:after {
+				content: " ";
+			    position: absolute;
+			    background-color: #c8c8c8;
+			    width: 8px;
+			    top: 2.5px;
+			    right: -7px;
+			    height: 8px;
+			    border-radius: 8px;
+			}
+
+		}
+
+		.pointer {
+			font-family: $font-family-trim-regular;
+			@include reset-background();
+			border: 3px solid $goldlink;
+			top: -1px;
+			height: 16px;
+			width: 16px;
+		}
+
+		.scale {
+			display: none;
+		}
+
+		.preview, .pointer-label {
+			font-size: 28px;
+			font-family: $font-family-trim-regular;
+			top: -33px;
+		}
+
+		.pointer-label {
+			color: $goldlink;
+		}
+	}
+}
