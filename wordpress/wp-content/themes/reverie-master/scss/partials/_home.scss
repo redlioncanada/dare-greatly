@@ -209,7 +209,7 @@
     }
     @media #{$small-only} {
         h3 {
-            margin-top: 13px;
+            margin-top: 1.5rem;
             margin-bottom: 12px;
         }
         p {
@@ -218,7 +218,7 @@
         }
         .experience-copy {
             padding-top: rem-calc(0);
-            margin-left: 6%;
+            margin-left: 5.5%;
         }
         .cta {
             margin-top: rem-calc(10);
@@ -298,3 +298,12 @@
 }
 
 }
+
+@media #{$small-only} {
+    .mobile-stuff{
+        padding-left: 5% !important;
+    }
+    .mobile-stuff-ex{
+        padding-left: 5% !important;
+    }
+    }

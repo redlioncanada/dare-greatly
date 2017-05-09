@@ -44,8 +44,8 @@ if ( $the_query->have_posts() ) {
     </div>
 </div>
 
-<div class='small-10 small-centered columns show-for-small-only'>
-    <div class='large-centered medium-10 small-10 medium-centered small-centered columns show-for-small-only'>
+<div class='small-10 show-for-small-only'>
+    <div class='large-centered medium-10 small-10 medium-centered show-for-small-only'>
         <img src='<?php echo $mondrian_image;?>'>
     </div>
     <div class='home-mondrian-summary columns medium-3 medium-offset-3'>

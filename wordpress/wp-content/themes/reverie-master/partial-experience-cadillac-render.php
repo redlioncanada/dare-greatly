@@ -1,7 +1,7 @@
 
 
     <div class="row">
-        <div class="title-section text-left columns large-5 small-only-text-center">
+        <div class="title-section text-left columns large-5 small-only-text-left mobile-stuff-ex">
             <span><?php echo $experience_cadillac->title; ?></span>
         </div>
     </div>

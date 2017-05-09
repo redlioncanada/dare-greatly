@@ -42,7 +42,7 @@ if( have_rows('spotlight_articles') ):
 ?>
 
     <div class="row spotlight-subheader">
-        <div class="title-section text-left small-only-text-center" style="padding-left: 0.3125rem;">
+        <div class="title-section text-left small-only-text-left mobile-stuff" style="padding-left: 0.3125rem;">
             <span><?php echo get_field('spotlight_title');?></span>
         </div>
     </div>
