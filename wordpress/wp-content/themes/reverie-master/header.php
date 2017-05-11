@@ -79,7 +79,7 @@
                 ?>
                 </ul>
                 <?php if ($show_localization_menu):?>
-                    <div class='mobile-menu-panel mobile-dropdown animate-on'>
+                    <div class='mobile-menu-panel mobile-dropdown animate-on' style="display:none;">
                         <div class='mobile-dropdown-label'>Region</div>
                         <a data-dropdown="mobile-dropdown" class='mobile-dropdown-current-choice' aria-controls="mobile-dropdown" aria-expanded="false">
                             <div class='current-choice-label'>
@@ -140,7 +140,7 @@
 
                 ?>
                         <?php if($show_localization_menu) : ?>
-                            <a data-dropdown="header-dropdown" class='header-dropdown-current-choice' aria-controls="header-dropdown" aria-expanded="false">
+                            <a data-dropdown="header-dropdown" class='header-dropdown-current-choice hide' aria-controls="header-dropdown" aria-expanded="false">
                                 <?php echo $localization_title; ?>
                             </a>
                             <ul id="header-dropdown" class="f-dropdown header-dropdown-menu" data-dropdown-content aria-hidden="true"  aria-autoclose='true'  tabindex="-1">
