@@ -1,29 +1,37 @@
 <div class="canada150-rangepicker">
 	<input type="hidden" class="slider-input" value="150" />
 </div>
+<div class="canada150-rangepicker-anchored">
+	<div class="canada150-rangepicker-container"><input type="hidden" class="slider-input" value="150" /></div>
+</div>
 <script>
 	$(function() {
-		var init = false
-
 		$('.slider-input').jRange({
 			from: 150,
 			to: 1,
 			width: 620,
-			onstatechange: function(value) {
-				if (!init) {	//don't trigger on initial load
-					init = true
-					return
-				}
+			value: 150,
+			ondragend: goToMoment,
+			onbarclicked: goToMoment
+		})
 
-				$('html, body').animate({
-					scrollTop: $('.canada150-moment-' + value).offset().top - 150
-				})
+		var pickerElement = $('.canada150-rangepicker')
+		$(window).scroll(function() {
+			var scrollTop = $(window).scrollTop(),
+				top = pickerElement.offset().top,
+				height = pickerElement.height()
+
+			if (scrollTop > top - height) {
+				$('.canada150-rangepicker-anchored').addClass('show')
+			} else {
+				$('.canada150-rangepicker-anchored').removeClass('show')
 			}
 		})
 
-		$(window).scroll(function() {
-			var scrollTop = $(window).scrollTop()
-			console.log(scrollTop)
-		})
+		function goToMoment(val) {
+			$('html, body').animate({
+				scrollTop: $('.canada150-moment-' + val).offset().top - 150
+			})
+		}
 	})
 </script>

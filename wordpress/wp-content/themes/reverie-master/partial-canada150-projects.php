@@ -4,48 +4,111 @@
 		$projects_announcing_title = get_field('projects_announcing_title');
 		$projects_announcing_body = get_field('projects_announcing_body');
 ?>
+		<script>
+			$(function() {
+				var lastIndex = -1, animTimeout = false
+				$('.canada150-project-cta').click(function(event) {
+					event.preventDefault()
+					var target = $(event.target).closest('.third'),
+						index = target.attr('data-index')
+
+					if (!!animTimeout) {
+						clearTimeout(animTimeout)
+						animTimeout = false
+					}
+
+					$('.third-content > div').removeClass('expanded')
+					$('.third').removeClass('expanded')
+
+					if (lastIndex !== index) {
+						var shouldRemoveBorder = lastIndex < 3 && index >=3 || lastIndex >=3 && index < 3
+						animTimeout = setTimeout(function() {
+							var element = $('.third-content .content-'+index)
+
+							if (shouldRemoveBorder) { //naive approach
+								$('.third-content').removeClass('expanded')
+							}
+							element.addClass('expanded')
+							element.closest('.third-content').addClass('expanded')
+							$('.canada150-projects').addClass('expanded')
+						}, lastIndex == -1 ? 0 : 500)
+						target.addClass('expanded')
+
+						lastIndex = index
+					} else {
+						$('.canada150-projects').removeClass('expanded')
+						animTimeout = setTimeout(function() {
+							$('.third-content').removeClass('expanded')
+						}, 500)
+						lastIndex = -1
+					}
+				})
+			})
+		</script>
 		<div class='canada150-projects home-component row'>
 			<div class="small-10 small-centered columns">
-				<div class="projects-left small-7 columns">
-					<?php
-						if (array_key_exists(0, $projects)) {
-							$project_number = 0;
-							$project = $projects[$project_number];
-							include(locate_template('partial-canada150-project.php'));
-						}
-					?>
-					<?php if (array_key_exists(2, $projects)): ?>
-						<div class="projects-inner-left small-5 columns">
-							<?php
+				<div class="third-wrapper first-wrapper">
+					<div class="third" data-index="0">
+						<?php
+							if (array_key_exists(0, $projects)) {
+								$project_number = 0;
+								$project = $projects[$project_number];
+								include(locate_template('partial-canada150-project.php'));
+							}
+						?>
+					</div>
+					<div class="third" data-index="1">
+						<?php
+							if (array_key_exists(1, $projects)) {
+								$project_number = 1;
+								$project = $projects[$project_number];
+								include(locate_template('partial-canada150-project.php'));
+							}
+						?>
+					</div>
+					<div class="third" data-index="2">
+						<?php
+							if (array_key_exists(2, $projects)) {
 								$project_number = 2;
 								$project = $projects[$project_number];
 								include(locate_template('partial-canada150-project.php'));
-							?>
-						</div>
-					<?php endif; ?>
-					<?php if (array_key_exists(3, $projects)): ?>
-						<div class="projects-inner-right small-5 columns">
-							<?php
+							}
+						?>
+					</div>
+				</div>
+				<div class="third-content">
+					<div class="content-0">
+					</div>
+					<div class="content-1">
+					</div>
+					<div class="content-2">
+					</div>
+				</div>
+				<div class="third-wrapper">
+					<div class="third" data-index="3">
+						<?php
+							if (array_key_exists(3, $projects)) {
 								$project_number = 3;
 								$project = $projects[$project_number];
 								include(locate_template('partial-canada150-project.php'));
-							?>
-						</div>
-					<?php endif; ?>
+							}
+						?>
+					</div>
+					<div class="third" data-index="4">
+						<?php
+							if (array_key_exists(4, $projects)) {
+								$project_number = 4;
+								$project = $projects[$project_number];
+								include(locate_template('partial-canada150-project.php'));
+							}
+						?>
+					</div>
 				</div>
-				<div class="projects-right small-3 columns">
-					<?php
-						if (array_key_exists(1, $projects)) {
-							$project_number = 1;
-							$project = $projects[$project_number];
-							include(locate_template('partial-canada150-project.php'));
-						}
-						if (array_key_exists(4, $projects)) {
-							$project_number = 4;
-							$project = $projects[$project_number];
-							include(locate_template('partial-canada150-project.php'));
-						}
-					?>
+				<div class="third-content">
+					<div class="content-3">
+					</div>
+					<div class="content-4">
+					</div>
 				</div>
 			</div>
 			<div class="canada150-announcing small-4 left columns">

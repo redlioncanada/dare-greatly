@@ -7,7 +7,8 @@ get_header(); ?>
 <script>
 $(function() {
 	$('img.lazyload').lazyload({
-		threshold: 300
+		threshold: 300,
+		effect: "fadeIn"
 	})
 })
 </script>
