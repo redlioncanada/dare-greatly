@@ -9,6 +9,7 @@
 				var lastIndex = -1, animTimeout = false
 				$('.canada150-project-cta').click(function(event) {
 					event.preventDefault()
+					event.stopImmediatePropagation()
 					var target = $(event.target).closest('.third'),
 						index = target.attr('data-index')
 
@@ -21,11 +22,11 @@
 					$('.third').removeClass('expanded')
 
 					if (lastIndex !== index) {
-						var shouldRemoveBorder = lastIndex < 3 && index >=3 || lastIndex >=3 && index < 3
+						var shouldRemoveBorder = lastIndex < 3 && index >=3 || lastIndex >=3 && index < 3 //naive approach
 						animTimeout = setTimeout(function() {
 							var element = $('.third-content .content-'+index)
 
-							if (shouldRemoveBorder) { //naive approach
+							if (shouldRemoveBorder) {
 								$('.third-content').removeClass('expanded')
 							}
 							element.addClass('expanded')
@@ -43,6 +44,7 @@
 						lastIndex = -1
 					}
 				})
+				return false
 			})
 		</script>
 		<div class='canada150-projects home-component row'>

@@ -6,7 +6,7 @@
 			<?php echo $project['project_description']; ?>
 		</p>
 		<a class="canada150-project-cta" href="<?php echo $project['project_link'] ?>">
-			<div class="indicator"><span class="plus">+</span><span class="minus">-</span></div>
+			<div class="indicator"><span class="plus">+</span><span class="minus">&ndash;</span></div>
 			<span class="link"><?php echo $project['project_link_text']; ?></span>
 		</a>
 	</div>
