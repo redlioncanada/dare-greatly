@@ -11,27 +11,89 @@
 			to: 1,
 			width: 620,
 			value: 150,
+			step: 1,
 			ondragend: goToMoment,
 			onbarclicked: goToMoment
 		})
 
-		var pickerElement = $('.canada150-rangepicker')
-		$(window).scroll(function() {
-			var scrollTop = $(window).scrollTop(),
-				top = pickerElement.offset().top,
-				height = pickerElement.height()
+		var Element = function(selector) {
+			this.jQuery = $(selector)
+			this.top = undefined
+			this.height = undefined
+			this.Update = function() {
+				if (!this.jQuery.length) return
+				this.top = this.jQuery.offset().top
+				this.height = this.jQuery.height()
+			}
+			this.Update()
+		}
 
-			if (scrollTop > top - height) {
-				$('.canada150-rangepicker-anchored').addClass('show')
+		var elements = {
+				inlineSlider: new Element('.canada150-rangepicker'),
+				anchoredSlider: new Element('.canada150-rangepicker-anchored'),
+				moments: cacheMoments()
+			},
+			windowHeight = $(window).height(),
+			scrollTop = $(window).scrollTop(),
+			lastMomentIndex = 0
+
+		var resizeTimeout = undefined
+		$(window).resize(function() {
+			windowHeight = $(window).height()
+
+			if (resizeTimeout !== undefined) {
+				clearTimeout(resizeTimeout)
+				resizeTimeout = undefined
+			}
+			resizeTimeout = setTimeout(function() {  //throttle caching of elements when resizing window manually
+				resizeTimeout = undefined
+				elements.moments = cacheMoments()
+			}, 500)
+		})
+
+		$(window).scroll(function() {
+			scrollTop = $(window).scrollTop()
+
+			if (scrollTop > elements.inlineSlider.top - elements.inlineSlider.height) { //if we've scrolled past the slider element
+				elements.anchoredSlider.jQuery.addClass('show')
 			} else {
-				$('.canada150-rangepicker-anchored').removeClass('show')
+				elements.anchoredSlider.jQuery.removeClass('show')
+			}
+
+			if (scrollTop > elements.inlineSlider.top - elements.inlineSlider.height - windowHeight) {
+				var currentMomentIndex = getCurrentMoment()
+				if (currentMomentIndex !== lastMomentIndex) {
+					$('.slider-input').jRange('setValue', elements.moments.length - currentMomentIndex)
+					lastMomentIndex = currentMomentIndex
+				}
 			}
 		})
 
-		function goToMoment(val) {
+		function goToMoment(index) {
 			$('html, body').animate({
-				scrollTop: $('.canada150-moment-' + val).offset().top - 150
+				scrollTop: elements.moments[index].top
 			})
+		}
+
+		function cacheMoments() {
+			var arr = []
+			for (var index = 0; index < 150; index++) {
+				if (!!elements && 'moments' in elements && !!elements.moments) {
+					elements.moments[index].Update()
+				} else {
+					arr.push(new Element('.canada150-moment-' + (index+1)))
+				}
+			}
+			return arr.length ? arr : elements.moments
+		}
+
+		function getCurrentMoment() {
+			for (var index = 0; index < elements.moments.length; index++) {
+				var moment = elements.moments[elements.moments.length - index - 1]
+
+				if (scrollTop <= moment.top + moment.height / 2 - windowHeight / 2) return Math.max(index - 1, 0)
+			}
+			return false
 		}
 	})
 </script>

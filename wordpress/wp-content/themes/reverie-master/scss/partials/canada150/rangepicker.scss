@@ -54,6 +54,7 @@
 			font-family: $font-family-trim-regular;
 			@include reset-background();
 			border: 3px solid $goldlink;
+			background-color: $goldlink;
 			top: -1px;
 			height: 16px;
 			width: 16px;
@@ -71,6 +72,7 @@
 
 		.pointer-label {
 			color: $goldlink;
+			margin-left: 2px;
 		}
 	}
 }

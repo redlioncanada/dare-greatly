@@ -85,7 +85,6 @@ var makeHeader = function(el) {
                 closeAction();
             }
         } else {
-            console.log("triggered opening somehow");
             openAction();
         }
         lastY = y;
