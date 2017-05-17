@@ -1,16 +1,12 @@
-<?php if( have_rows('moments') ): ?>
-	<div class="canada150-moments row">
+<div class="canada150-moments row">
+<?php
+	$imageLeft = true;
+	include(locate_template('partial-canada150-repeater-data.php'));
 
-	<?php
-		$index = 150;
-		$imageLeft = true;
-		while ( have_rows('moments') ) {
-			the_row();
-			include(locate_template('partial-canada150-moment.php'));
-			$index--;
-			$imageLeft = !$imageLeft;
-		}
-	?>
-
-	</div>
-<?php endif; ?>
+	foreach($moments as $index => $moment) {
+		$momentCount = 150 - $index;
+		include(locate_template('partial-canada150-moment.php'));
+		$imageLeft = !$imageLeft;
+	}
+?>
+</div>

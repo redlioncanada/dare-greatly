@@ -53,15 +53,9 @@ if ( $the_query->have_posts() ) {
     </div>
 </div>
 
-<<<<<<< HEAD
-<div class='small-10 show-for-small-only'>
-    <div class='large-centered medium-10 small-10 medium-centered show-for-small-only'>
-        <img src='<?php echo $mondrian_image;?>'>
-=======
 <div class='small-10 small-centered columns show-for-small-only'>
     <div class='large-centered medium-10 small-10 medium-centered small-centered columns show-for-small-only'>
         <img src='<?php echo $mondrian_image; ?>'>
->>>>>>> c4d25797fcdb0235acac59eb79a488ff186ce863
     </div>
     <div class='home-mondrian-summary columns medium-3 medium-offset-3'>
         <?php if ($show_mondrian_link): ?>
