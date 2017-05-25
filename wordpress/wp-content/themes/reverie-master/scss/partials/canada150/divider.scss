@@ -14,3 +14,15 @@
 		line-height: 1.5em;
 	}
 }
+
+@media screen and (max-width: 39.9375em) {
+	.canada150-divider {
+			.canada150-divider-body {
+				font-size: 1rem;
+			}
+
+			.canada150-divider-title {
+				font-size: 1.5rem;
+			}
+	}
+}

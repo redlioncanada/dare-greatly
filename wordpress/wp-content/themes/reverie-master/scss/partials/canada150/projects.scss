@@ -139,8 +139,74 @@
 	}
 }
 
+.canada150-projects > .show-for-small-only {
+	.third:not(:first-child) {
+		margin-top: 40px;
+	}
+
+	.canada150-project {
+		.canada150-project-text-container {
+			padding: 0 30px;
+		}
+
+		.canada150-project-text {
+			font-size: 1rem;
+		}
+
+		.canada150-project-cta {
+			padding-top: 0;
+			margin-top: 0;
+		}
+
+		.canada150-project-cta .indicator {
+			margin-left: -2px;
+		}
+
+		.canada150-project-cta .link {
+			margin-left: -6px;
+		}
+
+		img {
+			margin-bottom: 10px;
+		}
+	}
+
+	.third.third-left .canada150-project {
+		img {
+			float: left;
+			padding-right: 30px;
+		}
+	}
+
+	.third.third-right .canada150-project {
+		img {
+			float: right;
+			padding-left: 30px;
+		}
+	}
+}
+
 .canada150-projects.expanded {
 	.third:not(.expanded) .canada150-project img {
 		opacity: 0.6;
+	}
+}
+
+@media screen and (max-width: 39.9375em) {
+	.canada150-projects {
+		.third {
+			width: 100%;
+			float: initial;
+			padding: 0;
+		}
+
+		.canada150-announcing {
+			margin: 30px 0 80px 0;
+			padding: 0 40px;
+
+			.canada150-announcing-body {
+				font-size: 1rem;
+			}
+		}
 	}
 }

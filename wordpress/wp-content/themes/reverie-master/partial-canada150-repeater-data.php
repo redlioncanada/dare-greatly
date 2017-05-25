@@ -276,14 +276,12 @@
 		array(
 			"moments_body" => "An accomplished Canadian computer scientist who’s made major contributions to numerous software systems is credited as the father of the Java programming language, which was developed in 1991.",
 			"moments_title" => "Cracking the code.",
-			"moments_image" => 46,
 			"moments_image_size" => 4,
 			"index" => 45,
 		),
 		array(
 			"moments_body" => "Michie Mee was the first Canadian hip-hop MC to sign to a major American label. Her breakthrough album Jamaican Funk – Canadian Style was released in 1991, pioneering hip-hop in Canada for generations to come.",
 			"moments_title" => "Mic drop.",
-			"moments_image" => 45,
 			"moments_image_size" => 3,
 			"index" => 46,
 		),
@@ -404,14 +402,12 @@
 		array(
 			"moments_body" => "In 1976, what was then the tallest freestanding structure in the world opened its doors in Toronto. It was eventually overtaken, but it remains the tallest freestanding structure in the Western hemisphere, and a defining part of the city’s skyline.",
 			"moments_title" => "A towering achievement.",
-			"moments_image" => 67,
 			"moments_image_size" => 6,
 			"index" => 66,
 		),
 		array(
 			"moments_body" => "Originally called the Festival of Festivals, the first Toronto International Film Festival was held in 1976. Since its inception, the festival has grown into one of the world’s premiere film events.",
 			"moments_title" => "Let’s start the show.",
-			"moments_image" => 66,
 			"moments_image_size" => 4,
 			"index" => 67,
 		),
@@ -918,7 +914,7 @@
 	$default_image_folder = "/wp-content/uploads/1/2017/05/";
 	foreach($moments as $key => $value) {
 		if (array_key_exists('moments_image', $value) == false) {
-			$moments[$key]['moments_image'] = $default_image_folder . strval($key + 1) . '.jpg';
+			$moments[$key]['moments_image'] = $default_image_folder . strval(150 - $key) . '.jpg';
 		} else {
 			$moments[$key]['moments_image'] = $default_image_folder . strval($moments[$key]['moments_image']) . '.jpg';
 		}

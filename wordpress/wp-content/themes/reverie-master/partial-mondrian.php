@@ -6,7 +6,8 @@ $mondrian_summary = get_field('featured_article_summary');
 $mondrian_CTA = get_field('mondrian_cta');
 $mondrian_title = get_field('mondrian_title');
 if (!(is_string($mondrian_title) && strlen($mondrian_title) > 0)) {$mondrian_title = "Dare Greatly";}
-$mondrian_link = get_permalink($mondrian_post->ID);
+$mondrian_link = get_field('mondrian_link');
+if (!(is_string($mondrian_link))) {$mondrian_link = get_permalink($mondrian_post->ID);}
 $show_mondrian_link = get_field('show_mondrian_link');
 if ($show_mondrian_link == "No") {
     $show_mondrian_link = false;

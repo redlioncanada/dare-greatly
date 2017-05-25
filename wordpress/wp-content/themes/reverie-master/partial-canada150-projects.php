@@ -48,7 +48,69 @@
 			})
 		</script>
 		<div class='canada150-projects home-component row'>
-			<div class="small-10 small-centered columns">
+			<div class="small-10 small-centered show-for-small-only">
+				<div class="third third-left" data-index="0">
+					<?php
+							if (array_key_exists(0, $projects)) {
+								$project_number = 0;
+								$project = $projects[$project_number];
+								include(locate_template('partial-canada150-project.php'));
+							}
+						?>
+				</div>
+				<div class="third-content">
+					<div class="content-0"></div>
+				</div>
+				<div class="third third-right" data-index="1">
+					<?php
+							if (array_key_exists(1, $projects)) {
+								$project_number = 1;
+								$project = $projects[$project_number];
+								include(locate_template('partial-canada150-project.php'));
+							}
+						?>
+				</div>
+				<div class="third-content">
+					<div class="content-1"></div>
+				</div>
+				<div class="third third-left" data-index="2">
+					<?php
+							if (array_key_exists(2, $projects)) {
+								$project_number = 2;
+								$project = $projects[$project_number];
+								include(locate_template('partial-canada150-project.php'));
+							}
+						?>
+				</div>
+				<div class="third-content">
+					<div class="content-2"></div>
+				</div>
+				<div class="third third-right" data-index="3">
+					<?php
+							if (array_key_exists(3, $projects)) {
+								$project_number = 3;
+								$project = $projects[$project_number];
+								include(locate_template('partial-canada150-project.php'));
+							}
+						?>
+				</div>
+				<div class="third-content">
+					<div class="content-3"></div>
+				</div>
+				<div class="third third-left" data-index="4">
+					<?php
+							if (array_key_exists(4, $projects)) {
+								$project_number = 4;
+								$project = $projects[$project_number];
+								include(locate_template('partial-canada150-project.php'));
+							}
+						?>
+				</div>
+				<div class="third-content">
+					<div class="content-4"></div>
+				</div>
+			</div>
+			<div class="small-10 small-centered columns show-for-medium">
 				<div class="third-wrapper first-wrapper">
 					<div class="third" data-index="0">
 						<?php
@@ -113,7 +175,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="canada150-announcing small-4 left columns">
+			<div class="canada150-announcing small-12 medium-4 left columns">
 				<h4 class="canada150-announcing-title">
 					<?php echo $projects_announcing_title; ?>
 				</h4>

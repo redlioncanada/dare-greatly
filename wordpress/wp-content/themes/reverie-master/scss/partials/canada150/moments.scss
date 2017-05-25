@@ -10,6 +10,14 @@
 	}
 }
 
+@mixin image-template-mobile($width) {
+	$maxImageWidth: 630;
+
+	.canada150-moment-image {
+		width: percentage(($maxImageWidth - ($maxImageWidth - $width)) / $maxImageWidth);
+	}
+}
+
 .canada150-moments {
 	margin-top: 100px;
 
@@ -160,6 +168,141 @@
 
 		&.image-left .canada150-moment-number {
 			right: 15%;
+		}
+	}
+}
+
+@media screen and (max-width: 39.9375em) {
+	.canada150-moments {
+		.canada150-moment:not(:last-child) {
+			margin-bottom: 30px;
+		}
+
+		.canada150-moment {
+			.canada150-moment-image, .canada150-moment-content {
+				float: none;
+				width: 100%;
+				margin-top: 10px;
+			}
+
+			.canada150-moment-image .canada150-moment-number {
+				font-size: 4rem;
+			}
+
+			.canada150-moment-title {
+				font-size: 28px;
+				margin: 0 0 10px 0;
+			}
+
+			.canada150-moment-body {
+				margin-top: 20px;
+			}
+
+			&.image-left {
+				.canada150-moment-image {
+					padding-right: 30px;
+				}
+			}
+
+			&.image-right {
+				.canada150-moment-image {
+					padding-left: 30px;
+				}
+			}
+		}
+
+		.canada150-moment-template-1 {
+			.canada150-moment-number {
+				top: -44%;
+			}
+
+			&.image-left .canada150-moment-number {
+				right: 20%;
+			}
+
+			&.image-right .canada150-moment-number {
+				left: 20%;
+			}
+		}
+
+		.canada150-moment-template-2 {
+			@include image-template-mobile(550);
+
+			.canada150-moment-number {
+				top: -28%;
+			}
+
+			&.image-left .canada150-moment-number {
+				right: 28%;
+			}
+
+			&.image-right .canada150-moment-number {
+				left: 28%;
+			}
+		}
+
+		.canada150-moment-template-3 {
+			@include image-template-mobile(450);
+
+			.canada150-moment-number {
+				top: -28%;
+			}
+
+			&.image-left .canada150-moment-number {
+				right: 20%;
+			}
+
+			&.image-right .canada150-moment-number {
+				left: 20%;
+			}
+		}
+
+		.canada150-moment-template-4 {
+			@include image-template-mobile(600);
+
+			.canada150-moment-number {
+				top: -40%;
+			}
+
+			&.image-left .canada150-moment-number {
+				right: 45%;
+			}
+
+			&.image-right .canada150-moment-number {
+				left: 45%;
+			}
+		}
+
+		.canada150-moment-template-5 {
+			@include image-template-mobile(550);
+
+			.canada150-moment-number {
+				top: -40%;
+			}
+
+			&.image-left .canada150-moment-number {
+				right: 30%;
+			}
+
+			&.image-right .canada150-moment-number {
+				left: 30%;
+			}
+		}
+
+		.canada150-moment-template-6 {
+			@include image-template-mobile(500);
+
+			.canada150-moment-number {
+				top: -28%;
+			}
+
+			&.image-left .canada150-moment-number {
+				right: 25%;
+			}
+
+			&.image-right .canada150-moment-number {
+				left: 25%;
+			}
 		}
 	}
 }

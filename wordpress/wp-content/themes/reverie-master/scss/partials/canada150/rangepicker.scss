@@ -96,3 +96,9 @@
 .canada150-rangepicker-anchored.show {
 	opacity: 1;
 }
+
+@media screen and (max-width: 39.9375em) {
+	.canada150-rangepicker, .canada150-rangepicker-anchored {
+		display: none;
+	}
+}
