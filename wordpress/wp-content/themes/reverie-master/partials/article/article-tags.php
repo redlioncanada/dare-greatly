@@ -47,17 +47,17 @@ function getGroupTags($tags, $errorMsg) {
     
                             Omniture_s.eVar4 = "en"; 
                             
-                            Omniture_s.eVar17 = "microsite_us"; 
+                            Omniture_s.eVar17 = "microsite_ca"; 
                             
                             Omniture_s.eVar18 = "cadillac"; 
                             
-                            Omniture_s.eVar31 = "usa"; 
+                            Omniture_s.eVar31 = "ca"; 
                             
                             Omniture_s.eVar32 = "northamerica"; 
                             
                             Omniture_s.hier1 = "daregreatly,article,<?php echo get_group_a($post->ID); ?>,<?php echo get_group_d($post->ID); ?>,<?php wp_title('|', true, 'right'); ?>"; 
                             
-                            Omniture_s.pageName = "ca:no:us:en:daregreatly:article:<?php echo get_group_a($post->ID);  ?>:<?php echo get_group_d($post->ID); ?>:<?php wp_title('|', true, 'right'); ?>"; 
+                            Omniture_s.pageName = "ca:no:ca:en:daregreatly:article:<?php echo get_group_a($post->ID);  ?>:<?php echo get_group_d($post->ID); ?>:<?php wp_title('|', true, 'right'); ?>"; 
                             
                             Omniture_s.prop10 = "article" 
 
@@ -67,7 +67,7 @@ function getGroupTags($tags, $errorMsg) {
 
                             Omniture_s.prop13 = "<?php wp_title('|', true, 'right'); ?>";
                             
-                            Omniture_s.prop17 = "microsite_us"; 
+                            Omniture_s.prop17 = "microsite_ca"; 
                             
                             Omniture_s.prop18 = "cadillac"; 
                             

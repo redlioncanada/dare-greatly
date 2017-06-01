@@ -23,8 +23,35 @@ This modal will be populated with a call to Axiom Server
                 <h4><?php echo $footer_title;?></h4>
                 <span class="footer-sub"><?php echo $footer_cta;?></span>
             </div>
-            <!-- second block: shares -->
-            <div class="medium-3 small-10 medium-push-4 social-icons-container columns small-only-text-center medium-only-text-right  text-right">
+           
+            <!-- second block: 4 links -->
+            <!-- <div class='footer-links columns medium-pull-3 medium-2 small-only-text-center medium-up-left'>
+        <a class="footer-link  left-column" id="about" href="#" target="_blank">About</a>
+        <a class="footer-link  left-column" id="contact" href="#" target="_blank">Contact Us</a>
+    </div>
+    <div class='footer-links columns medium-pull-3 medium-2 small-only-text-center medium-up-left'>
+        <a class="footer-link" id="privacy" href="http://www.gm.com/privacy/" target="_blank">Privacy Policy</a>
+        <a class="footer-link" id="terms" href="http://www.gm.com/copyright-trademark" target="_blank">Terms of Use</a>
+    </div>  -->
+
+
+      <?php
+
+
+                    $footermenu = wp_nav_menu( array(
+                    'menu' => 'Footer',
+                    'depth' => 0,
+                    'container'=>'div',
+                    'container_class'=> 'footer-links columns medium-5 small-only-text-center medium-up-left',
+                    'items_wrap' => '%3$s',
+                    'echo' => false
+                    
+                    ) );
+echo strip_tags($footermenu, '<a><div>' );
+
+    ?>
+            <!-- third block: shares -->
+            <div class="medium-2 small-10 social-icons-container columns small-only-text-center medium-only-text-right  text-right">
                 <?php if($show_email_submission) : ?>
                 <form class='footer-email show-for-medium-up' action="<?php echo $email_link?>" target="_blank">
                  <!--    <div class='emailinput'>
@@ -58,35 +85,10 @@ This modal will be populated with a call to Axiom Server
                     </form>
                     <?php endif; ?>
             </div>
-            <!-- third block: 4 links -->
-            <!-- <div class='footer-links columns medium-pull-3 medium-2 small-only-text-center medium-up-left'>
-        <a class="footer-link  left-column" id="about" href="#" target="_blank">About</a>
-        <a class="footer-link  left-column" id="contact" href="#" target="_blank">Contact Us</a>
-    </div>
-    <div class='footer-links columns medium-pull-3 medium-2 small-only-text-center medium-up-left'>
-        <a class="footer-link" id="privacy" href="http://www.gm.com/privacy/" target="_blank">Privacy Policy</a>
-        <a class="footer-link" id="terms" href="http://www.gm.com/copyright-trademark" target="_blank">Terms of Use</a>
-    </div>  -->
-
-
-      <?php
-
-
-                    $footermenu = wp_nav_menu( array(
-                    'menu' => 'Footer',
-                    'depth' => 0,
-                    'container'=>'div',
-                    'container_class'=> 'footer-links columns medium-pull-3 medium-4 small-only-text-center medium-up-left',
-                    'items_wrap' => '%3$s',
-                    'echo' => false
-                    
-                    ) );
-echo strip_tags($footermenu, '<a><div>' );
-
-    ?>
 
            
         </div>
+        
         <!-- fourth block: copyright statement and cta for mobile -->
         <div class='full-width footer-legal-section-row collapse'>
             <div class='row'>
