@@ -38,10 +38,6 @@ This modal will be populated with a call to Axiom Server
         <a class="footer-link" id="terms" href="http://www.gm.com/copyright-trademark" target="_blank">Terms of Use</a>
     </div>  -->
 
-    <script>
-    console.log("<?php echo $footer_title ?>")
-    </script>
-
       <?php
       //This is to determine which footer to use depending on what language. If footer_title ever changes this will need to be accounted for.
 
