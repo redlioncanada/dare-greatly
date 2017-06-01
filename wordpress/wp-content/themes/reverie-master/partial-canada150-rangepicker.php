@@ -73,6 +73,10 @@
 			$('html, body').animate({
 				scrollTop: elements.moments[index].top
 			})
+
+			if ('ga' in window) {
+				ga('send', 'event', 'Find151 LP', 'Slider Clicked', index+1)
+			}
 		}
 
 		function cacheMoments() {

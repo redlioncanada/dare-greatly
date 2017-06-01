@@ -1,5 +1,5 @@
 <div class="canada150-project canada150-project-<?php echo ++$project_number; ?>">
-	<img class="show-for-medium" src="<?php echo $project['project_image']['url']; ?>">
+	<img class="hide-for-small-only" src="<?php echo $project['project_image']['url']; ?>">
 	<img class="show-for-small-only" src="<?php echo $project['project_mobile_image']['url']; ?>">
 	<div class="canada150-project-text-container">
 		<p class="canada150-project-text">

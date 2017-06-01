@@ -58,7 +58,7 @@
 							}
 						?>
 				</div>
-				<div class="third-content">
+				<div class="third-content third-content-left">
 					<div class="content-0"></div>
 				</div>
 				<div class="third third-right" data-index="1">
@@ -70,7 +70,7 @@
 							}
 						?>
 				</div>
-				<div class="third-content">
+				<div class="third-content third-content-right">
 					<div class="content-1"></div>
 				</div>
 				<div class="third third-left" data-index="2">
@@ -82,7 +82,7 @@
 							}
 						?>
 				</div>
-				<div class="third-content">
+				<div class="third-content third-content-left">
 					<div class="content-2"></div>
 				</div>
 				<div class="third third-right" data-index="3">
@@ -94,7 +94,7 @@
 							}
 						?>
 				</div>
-				<div class="third-content">
+				<div class="third-content third-content-right">
 					<div class="content-3"></div>
 				</div>
 				<div class="third third-left" data-index="4">
@@ -106,11 +106,11 @@
 							}
 						?>
 				</div>
-				<div class="third-content">
+				<div class="third-content third-content-left">
 					<div class="content-4"></div>
 				</div>
 			</div>
-			<div class="small-10 small-centered columns show-for-medium">
+			<div class="small-10 small-centered columns hide-for-small-only">
 				<div class="third-wrapper first-wrapper">
 					<div class="third" data-index="0">
 						<?php

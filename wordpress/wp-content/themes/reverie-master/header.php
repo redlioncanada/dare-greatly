@@ -77,6 +77,9 @@ twq('track','PageView');
                 r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
                 a.appendChild(r);
             })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+
+            //send google analytics custom pageview event
+            setTimeout(function() {ga('send', 'event', 'Engaged User', 'More than 20 seconds');}, 20000);
         </script>
 
 </head>

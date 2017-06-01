@@ -9,7 +9,32 @@ $(function() {
 	$('img.lazyload').lazyload({
 		threshold: 300,
 		effect: "fadeIn"
+	});
+
+	//send an event to ga for every 10% of page scrolled
+	var win = $(window),
+		doc = $(document),
+		windowHeight = win.height(),
+		documentHeight = doc.height(),
+		lastSection = 0;
+
+	win.resize(function(event) {
+		windowHeight = win.height()
+		documentHeight = doc.height()
 	})
+
+	win.scroll(function(event) {
+		var scrollY = win.scrollTop(),
+			section = Math.floor(((scrollY + windowHeight) / documentHeight) * 10);
+
+		if (section !== lastSection) {
+			if (section > 0 && 'ga' in window) {
+				ga('send', 'event', 'Find151 LP', 'Scroll Reach', section*10);
+			}
+			lastSection = section;
+		}
+	})
+	//end page scroll event
 })
 </script>
 

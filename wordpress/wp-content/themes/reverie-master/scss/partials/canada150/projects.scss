@@ -118,7 +118,7 @@
 
 		.canada150-project-cta:hover {
 			background-color: $goldlink;
-			.plus, .link {
+			.plus, .minus, .link {
 				color: $white;
 			}
 		}
@@ -131,6 +131,17 @@
 			font-family: $font-family-trim-light;
 			text-transform: uppercase;
 			padding-bottom: 10px;
+			position: relative;
+		}
+
+		.canada150-announcing-title:after {
+			content: ' ';
+			height: 1px;
+			width: 500px;
+			bottom: 9px;
+			left: -326px;
+			position: absolute;
+			background-color: #c8c8c8;
 		}
 
 		.canada150-announcing-body {
@@ -158,6 +169,13 @@
 			margin-top: 0;
 		}
 
+		.canada150-project-cta:hover {
+			background-color: initial;
+			.plus, .minus, .link {
+				color: $goldlink;
+			}
+		}
+
 		.canada150-project-cta .indicator {
 			margin-left: -2px;
 		}
@@ -171,11 +189,28 @@
 		}
 	}
 
-	.third.third-left .canada150-project {
-		img {
-			float: left;
-			padding-right: 30px;
+	.third.third-left {
+		.canada150-project {
+			img {
+				float: left;
+				padding-right: 30px;
+			}
 		}
+	}
+
+	.third-content-left:before, .third-content-left:after {
+		content: ' ';
+		position: absolute;
+		height: 1px;
+		left: 0;
+		width: calc(100% - 30px);
+		background-color: $goldlink;
+	}
+
+	.third-content {
+		border-top: initial;
+		border-bottom: initial;
+		margin-bottom: 20px;
 	}
 
 	.third.third-right .canada150-project {
@@ -183,6 +218,17 @@
 			float: right;
 			padding-left: 30px;
 		}
+	}
+
+	.third-content-right:before, .third-content-right:after {
+		content: ' ';
+		position: absolute;
+		height: 1px;
+		left: 30px;
+		width: calc(100% - 30px);
+		background-color: $goldlink;
+		border-top: initial;
+		padding-left: 30px;
 	}
 }
 
@@ -202,7 +248,11 @@
 
 		.canada150-announcing {
 			margin: 30px 0 80px 0;
-			padding: 0 40px;
+			padding: 0 30px;
+
+			.canada150-announcing-title:after {
+				left: -360px;
+			}
 
 			.canada150-announcing-body {
 				font-size: 1rem;
