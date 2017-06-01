@@ -63,19 +63,19 @@ if( $experienceCheck == "Yes" ) {
 	
 							Omniture_s.eVar4 = "en"; 
 							
-							Omniture_s.eVar17 = "microsite_us"; 
+							Omniture_s.eVar17 = "microsite_ca"; 
 							
 							Omniture_s.eVar18 = "cadillac"; 
 							
-							Omniture_s.eVar31 = "usa"; 
+							Omniture_s.eVar31 = "ca"; 
 							
 							Omniture_s.eVar32 = "northamerica"; 
 							
 							Omniture_s.hier1 = "daregreatly,homepage"; 
 							
-							Omniture_s.pageName = "ca:no:us:en:daregreatly:homepage"; 
+							Omniture_s.pageName = "ca:no:ca:en:daregreatly:homepage"; 
 							
-							Omniture_s.prop17 = "microsite_us"; 
+							Omniture_s.prop17 = "microsite_ca"; 
 							
 							Omniture_s.prop18 = "cadillac"; 
 							

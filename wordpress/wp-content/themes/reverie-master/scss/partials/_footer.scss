@@ -47,7 +47,7 @@ footer {
 
     .social-icons-container {
         padding-left:0;
-        padding-right:0;
+        padding-right:0 !important;
         .footer-sub {
             @media #{$medium-up} {
                 display: inline-block;
