@@ -175,13 +175,5 @@
 					</div>
 				</div>
 			</div>
-			<div class="canada150-announcing small-12 medium-4 left columns">
-				<h4 class="canada150-announcing-title">
-					<?php echo $projects_announcing_title; ?>
-				</h4>
-				<p class="canada150-announcing-body">
-					<?php echo $projects_announcing_body; ?>
-				</p>
-			</div>
 		</div>
 <?php endif; ?>

@@ -1,10 +1,6 @@
 <div class="canada150-moments row">
 <?php
 	$imageLeft = true;
-	$site = get_blog_details() -> path;
-	$languageIndex = $site == '/fr/' ? 'fr' : 'en';
-
-	include(locate_template('partial-canada150-repeater-data.php'));
 
 	foreach($moments as $index => $momentData) {
 		$moment = $momentData[$languageIndex];

@@ -40,6 +40,11 @@ $(function() {
 
 <div id="canada150">
 	<?php
+	$site = get_blog_details() -> path;
+	$languageIndex = $site == '/fr/' ? 'fr' : 'en';
+
+	include(locate_template('partial-canada150-repeater-data.php'));
+
 	if (get_field('show_mondrian') == "Yes") {
 		include(locate_template('partial-mondrian.php'));
 	}
@@ -62,6 +67,7 @@ $(function() {
 
 	include(locate_template('partial-canada150-rangepicker.php'));
 	include(locate_template('partial-canada150-moments.php'));
+	include(locate_template('partial-canada150-legal.php'));
 	?>
 </div>
 

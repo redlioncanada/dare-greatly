@@ -3,8 +3,19 @@
 		cursor: initial;
 	}
 
+	@media screen and (max-width: 39.9375em) {
+		.home-mondrian-summary {
+			padding: 0 30px;
+
+			h3 {
+				margin-top: 20px;
+			}
+		}
+	}
+
 	@import './divider';
 	@import './projects';
 	@import './moments';
 	@import './rangepicker';
+	@import './legal';
 }
