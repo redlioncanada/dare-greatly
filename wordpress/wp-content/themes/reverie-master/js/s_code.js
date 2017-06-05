@@ -9,7 +9,7 @@ var s = s_gi(s_account);
 // If the iPad user agent isn't present, dynamically sets the report suite id based upon development or production URL
 if (!isiPad) {
     s.dynamicAccountSelection = true;
-    s.dynamicAccountList = "gmcadillacdev=gm.com"; "gmcadillac=dare-greatly.com";
+    s.dynamicAccountList = "genmotcorgmwpcanadadev=gm.com";
 }
 var Omniture_s_code_version = '1.8.cadillac.02052015';
 var Omniture_s = s_gi(s_account);
@@ -185,8 +185,8 @@ Omniture_s.split = new Function("l", "d", ""
 + "var i,x=0,a=new Array;while(l){i=l.indexOf(d);i=i>-1?i:l.length;a[x"
 + "++]=l.substring(0,i);l=l.substring(i+d.length);}return a");
 /* WARNING: Changing any of the below variables will cause drastic changes to how your visitor data is collected. Changes should only be made when instructed to do so by your account manager.*/
-Omniture_s.visitorNamespace = "gmcadillac";
-Omniture_s.trackingServer = "gmcadillac.112.2o7.net";
+Omniture_s.visitorNamespace = "generalmotorscorporation";
+Omniture_s.trackingServer = "generalmotorscorporation.sc.omtrdc.net";
 /* WARNING: Changing any of the below variables will cause drastic changes to how your visitor data is collected. Changes should only be made when instructed to do so by your account manager.*/
 Omniture_s.loadModule("Survey")
 var s_sv_dynamic_root = "survey.112.2o7.net/survey/dynamic"

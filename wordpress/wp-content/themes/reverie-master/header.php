@@ -40,7 +40,7 @@
         <!--<script src="<?php echo get_template_directory_uri(); ?>/js/vendor.js"></script>-->
         <!--<script src="<?php echo get_template_directory_uri(); ?>/js/dg.js"></script>*/-->
         <script>
-        var s_account = "gmcadillac";
+        var s_account = "genmotcorgmwpcadillaccanada";
         </script>
             <script src="<?php echo get_template_directory_uri(); ?>/js/s_code.js"></script>
             <!-- Facebook Pixel Code -->

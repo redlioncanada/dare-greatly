@@ -15,10 +15,10 @@ This modal will be populated with a call to Axiom Server
   $show_email_submission = get_field('show_email_submission','options') == "Yes";
   $email_placeholder        = get_field('email_placeholder_footer','options');  
   $email_link        = get_field('sign_up_link','options'); 
+    $site = get_blog_details() -> path;
+    $language = $site == '/fr/' ? 'fr' : 'en';
 
-  if(!$footer_title){
-    $footer_title="Dare Greatly";
-  } 
+
 
 ?>
         <div class="inner-grid row medium-uncollapse small-10 medium-10 small-centered ">
@@ -41,7 +41,7 @@ This modal will be populated with a call to Axiom Server
       <?php
       //This is to determine which footer to use depending on what language. If footer_title ever changes this will need to be accounted for.
 
-                 if($footer_title== "L’audace d’oser"){
+                 if($language== "fr"){
 
                     $footermenu = wp_nav_menu( array(
                     'menu' => 'Footer',
@@ -54,7 +54,7 @@ This modal will be populated with a call to Axiom Server
                     ) );
                 } 
 
-                if($footer_title=="Dare Greatly"){
+                if($language== "en"){
 
                     $footermenu = wp_nav_menu( array(
                     'menu' => 'Footer',
@@ -71,12 +71,12 @@ echo strip_tags($footermenu, '<a><div>' );
 
     ?>
             <!-- third block: shares -->
-             <?php if($footer_title== "L’audace d’oser"){ ?>
+             <?php if($language== "fr"){ ?>
   <!--            French div -->
              <div class="medium-2 small-10 social-icons-container columns small-only-text-center medium-only-text-right  text-right">
             <?php } ?>
-            <?php if($footer_title== "Dare Greatly"){ ?>
-  <!--            French div -->
+            <?php if($language== "en"){ ?>
+  <!--            English div -->
              <div class="medium-3 small-10 social-icons-container columns small-only-text-center medium-only-text-right  text-right">
             <?php } ?>
                 <?php if($show_email_submission) : ?>

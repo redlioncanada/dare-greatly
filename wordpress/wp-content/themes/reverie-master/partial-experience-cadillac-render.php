@@ -1,4 +1,9 @@
+<?php
 
+    $site = get_blog_details() -> path;
+    $language = $site == '/fr/' ? 'fr' : 'en';
+
+    ?>
 
     <div class="row">
         <div class="title-section text-left columns large-5 small-only-text-left mobile-stuff-ex">
@@ -12,7 +17,13 @@
             <a class="learn-more" href="<?php echo $experience_cadillac->permalink; ?>"> <img src="<?php echo $experience_cadillac->customImg?>"></a>
         </div>
         <div class="large-3 medium-10 small-9 columns small-centered large-uncentered right-col experience-copy">
+
+        <?php if($language=='en'){ ?>
             <div class="large-9 medium-10 small-10">
+            <?php } ?>
+            <?php if($language=='fr'){ ?>
+            <div class="large-10 medium-10 small-10">
+            <?php } ?>
                 <h3><a href="<?php echo $experience_cadillac->permalink; ?>"><?php  if (empty($experience_cadillac->customTitle)) {
                 echo $experience_cadillac->article->post_title;
             }
