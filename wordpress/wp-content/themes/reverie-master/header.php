@@ -178,7 +178,7 @@ twq('track','PageView');
 
                 ?>
                         <?php if($show_localization_menu) : ?>
-                            <a data-dropdown="header-dropdown" class='header-dropdown-current-choice hide' aria-controls="header-dropdown" aria-expanded="false">
+                            <a data-dropdown="header-dropdown" class='header-dropdown-current-choice' aria-controls="header-dropdown" aria-expanded="false">
                                 <?php echo $localization_title; ?>
                             </a>
                             <ul id="header-dropdown" class="f-dropdown header-dropdown-menu" data-dropdown-content aria-hidden="true"  aria-autoclose='true'  tabindex="-1">

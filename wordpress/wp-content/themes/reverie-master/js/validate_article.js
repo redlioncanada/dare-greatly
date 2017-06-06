@@ -86,7 +86,7 @@ jQuery(function($) {
     function checkTwitterLimit(errors) {
         var twitterField = $('#yoast_wpseo_twitter-description'),
         twitterLength = twitterField.val().length;
-        if(twitterLength > 140) {
+        if(twitterLength > 150) {
             errors.push("Your Twitter Description is currently " +twitterLength+ " characters long. Please shorten it to under 140.");
         }
 
