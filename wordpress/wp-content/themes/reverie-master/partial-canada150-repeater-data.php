@@ -15,7 +15,7 @@
 				"moments_title" => "150 and beyond.",
 			),
 			"fr" => array(
-				"moments_body" => "Le 1er juillet 2017, le Canada fête officiellement le 150<sup>e</sup> anniversaire de la Confédération. C’est l’occasion parfaite de célébrer tous les moments audacieux qui ont contribué à façonner l’identité du pays au cours des 150 dernières années.",
+				"moments_body" => "Le 1<sup>er</sup> juillet 2017, le Canada fête officiellement le 150<sup>e</sup> anniversaire de la Confédération. C’est l’occasion parfaite de célébrer tous les moments audacieux qui ont contribué à façonner l’identité du pays au cours des 150 dernières années.",
 				"moments_title" => "150 ans d’audace."
 			),
 			"moments_image_size" => 1,
@@ -279,7 +279,7 @@
 				"moments_title" => "A masterful lay-up.",
 			),
 			"fr" => array(
-				"moments_body" => "Lors de l’édition 2003 d’un prestigieux tournoi, un célèbre golfeur canadien adopte une stratégie audacieuse : au 15e trou, plutôt que d’attaquer le vert, il frappe un coup d’approche et réussit un oiselet, parvenant par le fait même à rattraper le meneur. L’athlète devient le premier gaucher et le seul Canadien à remporter l’un des quatre principaux championnats de golf.",
+				"moments_body" => "Lors de l’édition 2003 d’un prestigieux tournoi, un célèbre golfeur canadien adopte une stratégie audacieuse : au 15<sup>e</sup> trou, plutôt que d’attaquer le vert, il frappe un coup d’approche et réussit un oiselet, parvenant par le fait même à rattraper le meneur. L’athlète devient le premier gaucher et le seul Canadien à remporter l’un des quatre principaux championnats de golf.",
 				"moments_title" => "Coup de maître."
 			),
 			"moments_image_size" => 2,
@@ -927,7 +927,7 @@
 				"moments_title" => "The Maple Leaf makes its debut.",
 			),
 			"fr" => array(
-				"moments_body" => "Lors de la crise du canal de Suez, on interdit aux gardiens de la paix canadiens l’entrée sur le territoire d’Égypte, en raison du drapeau canadien, sur lequel figure toujours l’Union Jack britannique. Peu de temps après, le nouveau premier ministre du Canada ordonne la création d’un nouveau drapeau : l’unifolié voit le jour en 1965.",
+				"moments_body" => "Lors de la crise du canal de Suez, on interdit aux gardiens de la paix canadiens l’entrée sur le territoire d’Égypte, en raison du drapeau canadien, sur lequel figure toujours l’Union Jack britannique. Peu de temps après, le nouveau premier ministre du Canada ordonne la création d’un nouveau drapeau : l’unifolié voit le jour en 1965<sup>7</sup>.",
 				"moments_title" => "La feuille d’érable fait ses débuts."
 			),
 			"moments_image_size" => 3,
@@ -1119,7 +1119,7 @@
 				"moments_title" => "Escaping the odds.",
 			),
 			"fr" => array(
-				"moments_body" => "C’est pour avoir caché des soldats alliés aux forces armées allemandes alors qu’elle vivait aux Pays-Bas que l’actrice canadienne Mona Parsons est incarcérée dans une prison allemande et condamnée à des travaux forcés. Elle y reste quatre ans avant de s’enfuir, marchant près de 125 km avant de trouver un refuge sûr.",
+				"moments_body" => "C’est pour avoir caché des soldats alliés aux forces armées allemandes alors qu’elle vivait aux Pays-Bas que l’actrice canadienne Mona Parsons est incarcérée dans une prison allemande et condamnée à des travaux forcés. Elle y reste quatre ans avant de s’enfuir, marchant près de 125 km avant de trouver un refuge sûr<sup>6</sup>.",
 				"moments_title" => "Échapper aux probabilités."
 			),
 			"moments_image_size" => 4,
@@ -1383,7 +1383,7 @@
 				"moments_title" => "An important appointment.",
 			),
 			"fr" => array(
-				"moments_body" => "En 1921, première année où les femmes ont le droit de vote, Agnes MacPhail devient la première et seule femme à être élue à la Chambre des communes. La politicienne milite par la suite en faveur de la réforme du système de prisons : elle soutient que les détenus devraient être éduqués et formés, et réclame l’abolition des châtiments corporels.",
+				"moments_body" => "En 1921, première année où les femmes ont le droit de vote, Agnes MacPhail devient la première et seule femme à être élue à la Chambre des communes. La politicienne milite par la suite en faveur de la réforme du système de prisons : elle soutient que les détenus devraient être éduqués et formés, et réclame l’abolition des châtiments corporels<sup>5</sup>.",
 				"moments_title" => "Une nomination capitale."
 			),
 			"moments_image_size" => 4,
@@ -1443,7 +1443,7 @@
 				"moments_title" => "Paying respect.",
 			),
 			"fr" => array(
-				"moments_body" => "Le policier Sam Steele est tellement respecté au sein de sa communauté que son convoi funéraire entraîne l’interruption d’une grève générale dans la ville de Winnipeg. Les travailleurs en grève prennent une pause pour rendre hommage au défunt.",
+				"moments_body" => "Le policier Sam Steele est tellement respecté au sein de sa communauté que son convoi funéraire entraîne l’interruption d’une grève générale dans la ville de Winnipeg. Les travailleurs en grève prennent une pause pour rendre hommage au défunt<sup>4</sup>.",
 				"moments_title" => "Un hommage senti."
 			),
 			"moments_image_size" => 6,
@@ -1733,7 +1733,7 @@ de la surface d’un lac gelé près de Baddeck, en Nouvelle-Écosse, puis monte
 				"moments_title" => "A matter of time.",
 			),
 			"fr" => array(
-				"moments_body" => "L’homme à qui l’on doit le premier timbre-poste au Canada est également un ingénieur notoire qui a participé à la construction des chemins de fer Intercolonial Railway et Canadien Pacifique. Sa contribution la plus marquante à l’histoire du pays – et du reste du monde! – demeure toutefois le système de fuseaux horaires universel, qu’il propose d’établir en 1879.",
+				"moments_body" => "L’homme à qui l’on doit le premier timbre-poste au Canada est également un ingénieur notoire qui a participé à la construction des chemins de fer Intercolonial Railway et Canadien Pacifique. Sa contribution la plus marquante à l’histoire du pays – et du reste du monde! – demeure toutefois le système de fuseaux horaires universel, qu’il propose d’établir en 1879<sup>3</sup>.",
 				"moments_title" => "À l’heure des fuseaux horaires."
 			),
 			"moments_image_size" => 2,
@@ -1745,7 +1745,7 @@ de la surface d’un lac gelé près de Baddeck, en Nouvelle-Écosse, puis monte
 				"moments_title" => "Suffragette city.",
 			),
 			"fr" => array(
-				"moments_body" => "Emily Stowe, docteure et ardente défenseure des droits des femmes, fonde le Club littéraire des femmes de Toronto en 1876. Le nom cache la véritable mission du club : militer pour que les femmes obtiennent le droit de vote.",
+				"moments_body" => "Emily Stowe, docteure et ardente défenseure des droits des femmes, fonde le Club littéraire des femmes de Toronto en 1876. Le nom cache la véritable mission du club : militer pour que les femmes obtiennent le droit de vote<sup>2</sup>.",
 				"moments_title" => "Ce que femme veut…"
 			),
 			"moments_image_size" => 1,
@@ -1781,7 +1781,7 @@ de la surface d’un lac gelé près de Baddeck, en Nouvelle-Écosse, puis monte
 				"moments_title" => "Let there be light.",
 			),
 			"fr" => array(
-				"moments_body" => "Henry Woodward, un étudiant en médecine, invente la toute première ampoule à incandescence avec son partenaire Matthew Evans. Pendant cinq ans, les deux hommes tentent sans grand succès de commercialiser leur invention, puis décident de vendre leur brevet. L’acheteur? Un dénommé Thomas Edison.",
+				"moments_body" => "Henry Woodward, un étudiant en médecine, invente la toute première ampoule à incandescence avec son partenaire Matthew Evans. Pendant cinq ans, les deux hommes tentent sans grand succès de commercialiser leur invention, puis décident de vendre leur brevet. L’acheteur? Un dénommé Thomas Edison<sup>3</sup>.",
 				"moments_title" => "Et la lumière fut."
 			),
 			"moments_image_size" => 4,
@@ -1834,6 +1834,16 @@ de la surface d’un lac gelé près de Baddeck, en Nouvelle-Écosse, puis monte
 Parks Canada Agency, Government of Canada. \"Suez Crisis.\" <i>Parks Canada Agency, Government of Canada</i>. Government of Canada, 12 Apr. 2017. Web. 31 May 2017.
 "
 		),
-		"fr" => array()
+		"fr" => array(
+			"<sup>1</sup>Bibliothèque et Archives Canada. « L’ampoule électrique. » <i>Des inventions incroyables, Un Canada cool, Bibliothèque et Archives Canada</i>. Gouvernement du Canada, 16 novembre 2005. Web. 31 mai 2017.",
+			"<sup>2</sup>Hacker, Carlotta. « Emily Stowe. » <i>L’Encyclopédie canadienne</i>. Toronto : Historica Canada, 2008. Web. 2 avril 2008.",
+			"<sup>3</sup>Regehr, T.D. « Sir Sandford Fleming. » <i>L’Encyclopédie canadienne</i>. Toronto : Historica Canada, 2008. Web. 22 février 2008.",
+			"<sup>4</sup>Stewart, Robert. Sam Steele: <i>Lion of The Frontier</i>. Regina : Centax/Publishing Solutions, PrintWest Group. 1999. Imprimé.",
+			"<sup>5</sup>Bibliothèque et Archives Canada. « Agnes Macphail. » <i>Bibliothèque et Archives Canada</i>. Gouvernement du Canada, 4 mars 2016. Web. 31 mai 2017.",
+			"<sup>6</sup>Anciens Combattants Canada. « Le Canada se souvient - Édition 2013 - Page 3. » <i>Anciens Combattants Canada</i>. Gouvernement du Canada, 23 octobre 2014. Web. 31 mai 2017.",
+			"<sup>7</sup>Parcs Canada. « Lester Bowles Pearson (1897-1972). » Canada.ca. Gouvernement du Canada, 3 avril 2017. Web. 31 mai 2017.
+Parcs Canada, Gouvernement du Canada. « Crise de Suez. » <i>Parcs Canada, Gouvernement du Canada. Gouvernement du Canada</i>, 12 avril 2017. Web. 31 mai 2017.
+"
+		)
 	);
 ?>
