@@ -23,3 +23,14 @@
 		right:12px;
 	}
 }
+
+@media screen and (max-width: 39.9375em) {
+	.article-top-button {
+		opacity: 1 !important;
+		padding-left: 2px;
+
+		.article-top-button-copy {
+			display: none;
+		}
+	}
+}

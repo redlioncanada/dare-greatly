@@ -43,6 +43,7 @@ $(function() {
 	$site = get_blog_details() -> path;
 	$languageIndex = $site == '/fr/' ? 'fr' : 'en';
 
+	include(locate_template('partials/article/article-top_button.php'));
 	include(locate_template('partial-canada150-repeater-data.php'));
 
 	if (get_field('show_mondrian') == "Yes") {

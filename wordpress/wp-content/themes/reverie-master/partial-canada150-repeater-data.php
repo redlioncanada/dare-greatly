@@ -695,8 +695,8 @@
 		),
 		array(
     		"en" => array(
-				"moments_body" => "The Constitution Act passed and was signed into law in 1982. The formal Act of Parliament granted Canada full political independence from the United Kingdom.",
-				"moments_title" => "Fully independent.",
+				"moments_body" => "In 1982, the first Canadian to ever summit Mount Everest completed his journey and attached a Canadian flag to a platform on its peak. He became one of under 100 people to have successfully made it to the summit at the time.",
+				"moments_title" => "Moving up mountains.",
 			),
 			"fr" => array(
 				"moments_body" => "Un alpiniste devient en 1982 le premier Canadien à fouler le sommet du mont Everest, un exploit alors réussi par moins de cent personnes à travers le monde. En hommage à son pays, l’aventurier plante l’unifolié sur la cîme de la montagne.",
@@ -971,18 +971,6 @@
 		),
 		array(
     		"en" => array(
-				"moments_body" => "Two Canadian doctors discovered the existence of transplantable stem cells at the Ontario Cancer Institute in Toronto in 1961—stem cell science was born.",
-				"moments_title" => "The birth of a breakthrough.",
-			),
-			"fr" => array(
-				"moments_body" => "C’est à l’Institut ontarien de la recherche sur le cancer que deux médecins canadiens découvrent, en 1961, l’existence de cellules souches pouvant être transplantées. Ainsi nait la science des cellules souches.",
-				"moments_title" => "La naissance d’une révolution."
-			),
-			"moments_image_size" => 6,
-			"index" => 81
-		),
-		array(
-    		"en" => array(
 				"moments_body" => "A Greek-Canadian restaurant owner experimented with pizza toppings at his Chatham, ON establishment, where he decided to add pineapple slices to a pizza in 1962. He then added ham simply because he was out of everything else at the time, and Hawaiian pizza was born.",
 				"moments_title" => "Getting tired of the same old toppings.",
 			),
@@ -990,8 +978,22 @@
 				"moments_body" => "Un restaurateur canadien d’origine grecque teste différentes garnitures à pizza dans son établissement de Chatham, en Ontario. En 1962, il décide d’ajouter des tranches d’ananas à sa recette. Puis, n’ayant plus que du jambon sous la main, il en ajoute quelques morceaux : on assiste à la naissance de la pizza hawaïenne.",
 				"moments_title" => "Une nouveauté sur le bout de la langue."
 			),
+			"moments_image" => 69,
 			"moments_image_size" => 4,
 			"index" => 82
+		),
+		array(
+    		"en" => array(
+				"moments_body" => "Two Canadian doctors discovered the existence of transplantable stem cells at the Ontario Cancer Institute in Toronto in 1961—stem cell science was born.",
+				"moments_title" => "The birth of a breakthrough.",
+			),
+			"fr" => array(
+				"moments_body" => "C’est à l’Institut ontarien de la recherche sur le cancer que deux médecins canadiens découvrent, en 1961, l’existence de cellules souches pouvant être transplantées. Ainsi nait la science des cellules souches.",
+				"moments_title" => "La naissance d’une révolution."
+			),
+			"moments_image" => 70,
+			"moments_image_size" => 6,
+			"index" => 81
 		),
 		array(
     		"en" => array(
@@ -1218,7 +1220,8 @@
 				"moments_body" => "La société de radiodiffusion et de télédiffusion publique du Canada voit le jour en 1936. Depuis sa création, l’organisme exerce une influence considérable sur le développement du journalisme canadien et permet la diffusion d’œuvres culturelles majeures à la radio, à la télévision ou dans les nouveaux médias.",
 				"moments_title" => "Mise en ondes."
 			),
-			"moments_image_size" => 4,
+			"moments_image" => 49,
+			"moments_image_size" => 3,
 			"index" => 101
 		),
 		array(
@@ -1230,7 +1233,8 @@
 				"moments_body" => "Un Québécois construit la première motoneige en 1935 : un véhicule dirigé par des skis permettant de transporter deux ou trois passagers. Deux ans plus tard, l’inventeur propose une version à sept places du véhicule : celle-ci connaît un vif succès, d’abord chez les médecins, les ambulanciers et les prêtres vivant en région éloignée, puis auprès du grand public.",
 				"moments_title" => "Effet boule de neige."
 			),
-			"moments_image_size" => 3,
+			"moments_image" => 50,
+			"moments_image_size" => 4,
 			"index" => 102
 		),
 		array(
@@ -1439,7 +1443,7 @@
 		),
 		array(
     		"en" => array(
-				"moments_body" => "Police official Sam Steele was so admired that his funeral procession caused a temporary halt to the Winnipeg General Strike as the workers paused to pay their respects to the late officer4<sup>4</sup>.",
+				"moments_body" => "Police official Sam Steele was so admired that his funeral procession caused a temporary halt to the Winnipeg General Strike as the workers paused to pay their respects to the late officer<sup>4</sup>.",
 				"moments_title" => "Paying respect.",
 			),
 			"fr" => array(
