@@ -12,6 +12,7 @@ module.exports = makeTopButton = function(el, targetEl,offset) {
     	} else {
     		TweenLite.to(el.get(0),0.5,{opacity:0});
     	}
+        if (!targetEl) return
         if (targetEl.getBoundingClientRect().top > ($(window).height()-offset) - 100) {
             el.css({
                 position: 'fixed',

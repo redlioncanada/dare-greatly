@@ -15,7 +15,7 @@
 				"moments_title" => "150 and beyond.",
 			),
 			"fr" => array(
-				"moments_body" => "Le 1<sup>er</sup> juillet 2017, le Canada fête officiellement le 150<sup>e</sup> anniversaire de la Confédération. C’est l’occasion parfaite de célébrer tous les moments audacieux qui ont contribué à façonner l’identité du pays au cours des 150 dernières années.",
+				"moments_body" => "Le 1<sup>er</sup> juillet 2017, le Canada fête officiellement le 150<sup>e</sup>&nbsp;anniversaire de la Confédération. C’est l’occasion parfaite de célébrer tous les moments audacieux qui ont contribué à façonner l’identité du pays au cours des 150 dernières années.",
 				"moments_title" => "150 ans d’audace."
 			),
 			"moments_image_size" => 1,
@@ -27,7 +27,7 @@
 				"moments_title" => "Giving relief.",
 			),
 			"fr" => array(
-				"moments_body" => "En 2016, après les feux de forêt ayant ravagé Fort McMurray, en Alberta, les Canadiens font preuve d’une grande générosité : le montant amassé pour venir en aide aux sinistrés se chiffre à 165 millions de dollars. En outre, en vertu d’un programme de jumelage de dons, les gouvernements du Canada et de l’Alberta ont respectivement versé 104 millions de dollars et 30 millions de dollars.",
+				"moments_body" => "En 2016, après les feux de forêt ayant ravagé Fort McMurray, en Alberta, les Canadiens font preuve d’une grande générosité : le montant amassé pour venir en aide aux sinistrés se chiffre à 165&nbsp;millions de dollars. En outre, en vertu d’un programme de jumelage de dons, les gouvernements du Canada et de l’Alberta ont respectivement versé 104 millions de dollars et 30 millions de dollars.",
 				"moments_title" => "Un peuple solidaire."
 			),
 			"moments_image_size" => 4,
@@ -51,7 +51,7 @@
 				"moments_title" => "Call for help.",
 			),
 			"fr" => array(
-				"moments_body" => "En composant simplement le 1-800-O-CANADA, les Canadiens peuvent obtenir des renseignements généraux sur les programmes, les services et les initiatives du Gouvernement, ainsi que des instructions sur les façons d’y accéder.",
+				"moments_body" => "En composant simplement le 1-800-O-CANADA, les Canadiens peuvent obtenir des renseignements généraux sur les programmes, les services et les initiatives du gouvernement, ainsi que des instructions sur les façons d’y accéder.",
 				"moments_title" => "Le Canada au bout du fil."
 			),
 			"moments_image_size" => 3,
@@ -75,7 +75,7 @@
 				"moments_title" => "Canada makes the hits.",
 			),
 			"fr" => array(
-				"moments_body" => "En décembre 2015, sept des six premières positions d’un important palmarès musical américain sont occupées par des artistes canadiens. C’est la première fois qu’un pays peut se targuer d’un tel exploit depuis l’invasion britannique des années 1960.",
+				"moments_body" => "En décembre 2015, sept des dix premières positions d’un important palmarès musical américain sont occupées par des artistes canadiens. C’est la première fois qu’un pays peut se targuer d’un tel exploit depuis l’invasion britannique des années 1960.",
 				"moments_title" => "Le Canada en tête de liste."
 			),
 			"moments_image_size" => 3,
@@ -315,7 +315,7 @@
 				"moments_title" => "Record-breaking benefit.",
 			),
 			"fr" => array(
-				"moments_body" => "En 2003, un concert bénéfice au profit de la lutte contre le SRAS est organisé à Toronto, ville touchée par le virus. L’événement est considéré comme le plus grand concert extérieur payant de l’histoire du pays.",
+				"moments_body" => "En 2003, un concert-bénéfice au profit de la lutte contre le SRAS est organisé à Toronto, ville touchée par le virus. L’événement est considéré comme le plus grand concert extérieur payant de l’histoire du pays.",
 				"moments_title" => "Un concert-bénéfice record."
 			),
 			"moments_image_size" => 5,
@@ -363,7 +363,7 @@
 				"moments_title" => "Rescue down under.",
 			),
 			"fr" => array(
-				"moments_body" => "Deux pilotes de l’Alberta entreprennent une périlleuse mission de sauvetage en Antarctique : à bord d’un petit avion, ils volent au secours d’un médecin ayant besoin de soins médicaux d’urgence. Le duo doit atterrir et décoller dans un froid glacial (les températures avoisinent les  60 °C) et établit ainsi le record du monde à ce titre.",
+				"moments_body" => "Deux pilotes de l’Alberta entreprennent une périlleuse mission de sauvetage en Antarctique : à bord d’un petit avion, ils volent au secours d’un médecin ayant besoin de soins médicaux d’urgence. Le duo doit atterrir et décoller dans un froid glacial (les températures avoisinent les -60 °C) et établit ainsi le record du monde à ce titre.",
 				"moments_title" => "Sauvetage polaire."
 			),
 			"moments_image_size" => 2,
@@ -387,7 +387,7 @@
 				"moments_title" => "The Iceman Cometh.",
 			),
 			"fr" => array(
-				"moments_body" => "En 2001, trois chasseurs de moutons font une trouvaille des plus surprenantes dans un glacier du parc Tatshenshini-Alsek, à plus de 1 500 kilomètres au nord de Vancouver. Le trio découvre d’abord quelques artefacts, puis tombe sur les restes de celui que l’on surnommera l’« homme des glaces canadien ».",
+				"moments_body" => "En 2001, trois chasseurs de moutons font une trouvaille des plus surprenantes dans un glacier du parc Tatshenshini-Alsek, à plus de 1&nbsp;500&nbsp;kilomètres au nord de Vancouver. Le trio découvre d’abord quelques artefacts, puis tombe sur les restes de celui que l’on surnommera l’« homme des glaces canadien ».",
 				"moments_title" => "L’homme des glaces."
 			),
 			"moments_image_size" => 2,
@@ -699,7 +699,7 @@
 				"moments_title" => "Moving up mountains.",
 			),
 			"fr" => array(
-				"moments_body" => "Un alpiniste devient en 1982 le premier Canadien à fouler le sommet du mont Everest, un exploit alors réussi par moins de cent personnes à travers le monde. En hommage à son pays, l’aventurier plante l’unifolié sur la cîme de la montagne.",
+				"moments_body" => "Un alpiniste devient en 1982 le premier Canadien à fouler le sommet du mont Everest, un exploit alors réussi par moins de cent personnes à travers le monde. En hommage à son pays, l’aventurier plante l’unifolié sur la cime de la montagne.",
 				"moments_title" => "Point culminant."
 			),
 			"moments_image_size" => 6,
@@ -843,7 +843,7 @@
 				"moments_title" => "From highways to hilltops.",
 			),
 			"fr" => array(
-				"moments_body" => "Le premier Canadien à remporter une médaille de championnat du monde en ski alpin est originaire de la Saskatchewan, en plein cœur des Prairies. En l’absence de montagnes où s’entraîner, il prend place dans un porte-skis installé dans la caisse du pick-up de son père, lequel le conduit sur l’autoroute à des vitesses pouvant atteindre 100 km/h. Cette méthode d’entraînement inusitée porte ses fruits : l’homme se hisse sur le podium en 1972.",
+				"moments_body" => "Le premier Canadien à remporter une médaille de championnat du monde en ski alpin est originaire de la Saskatchewan, en plein cœur des Prairies. En l’absence de montagnes où s’entraîner, il prend place dans un porte-skis installé dans la caisse du pick-up de son père, lequel le conduit sur l’autoroute à des vitesses pouvant atteindre 100 km/h. Cette méthode d’entraînement inusitée porte ses fruits : l’homme se hisse sur le podium en&nbsp;1972.",
 				"moments_title" => "Une route qui mène au sommet."
 			),
 			"moments_image_size" => 5,
@@ -867,7 +867,7 @@
 				"moments_title" => "On a roll.",
 			),
 			"fr" => array(
-				"moments_body" => "C’est au chef vancouvérois Hidekazu Tojo que l’on doit la popularisation de la cuisine japonaise au Canada et sur la côte Ouest américaine, en partie en raison du rouleau « tojo-maki », l’une de ses créations. Le chef constate rapidement que ses clients sont réticents à goûter aux sushis entourés d’une feuille d’algue : il décide donc de concevoir des rouleaux dont l’algue est à l’intérieur du riz. Ce sushi nouveau genre, connu sous le nom de « rouleau californien », fait aujourd’hui le bonheur des gourmands aux quatre coins du monde.",
+				"moments_body" => "C’est au chef vancouvérois Hidekazu Tojo que l’on doit la popularisation de la cuisine japonaise au Canada et sur la côte Ouest américaine, en partie en raison du rouleau «&nbsp;tojo-maki&nbsp;», l’une de ses créations. Le chef constate rapidement que ses clients sont réticents à goûter aux sushis entourés d’une feuille d’algue : il décide donc de concevoir des rouleaux dont l’algue est à l’intérieur du riz. Ce sushi nouveau genre, connu sous le nom de «&nbsp;rouleau californien&nbsp;», fait aujourd’hui le bonheur des gourmands aux quatre coins du monde.",
 				"moments_title" => "Prendre le succès par les baguettes."
 			),
 			"moments_image_size" => 3,
@@ -903,7 +903,7 @@
 				"moments_title" => "Capturing the world’s imagination.",
 			),
 			"fr" => array(
-				"moments_body" => "L’Expo 67 est inaugurée à Montréal en 1967. L’événement, considéré comme la plus grande exposition universelle du XXe siècle, fracasse des records d’assistance : en une seule journée, 569 500 visiteurs franchissent les tourniquets de l’Expo.",
+				"moments_body" => "L’Expo 67 est inaugurée à Montréal en 1967. L’événement, considéré comme la plus grande exposition universelle du XX<sup>e</sup> siècle, fracasse des records d’assistance : en une seule journée, 569 500 visiteurs franchissent les tourniquets de l’Expo.",
 				"moments_title" => "Terre des Hommes."
 			),
 			"moments_image_size" => 5,
@@ -988,7 +988,7 @@
 				"moments_title" => "The birth of a breakthrough.",
 			),
 			"fr" => array(
-				"moments_body" => "C’est à l’Institut ontarien de la recherche sur le cancer que deux médecins canadiens découvrent, en 1961, l’existence de cellules souches pouvant être transplantées. Ainsi nait la science des cellules souches.",
+				"moments_body" => "C’est à l’Institut ontarien de recherche sur le cancer que deux médecins canadiens découvrent, en 1961, l’existence de cellules souches pouvant être transplantées. Ainsi naît la science des cellules souches.",
 				"moments_title" => "La naissance d’une révolution."
 			),
 			"moments_image" => 70,
@@ -1025,7 +1025,7 @@
 				"moments_title" => "Diving headfirst into history.",
 			),
 			"fr" => array(
-				"moments_body" => "C’est en 1954 que la Canadienne Marilyn Bell réussit la première traversée du lac Ontario à la nage. Il s’agit d’un exploit de 20 heures et de plus de 50 km, où l’athlète affronte des eaux à 21 °C, des vagues allant jusqu’à cinq mètres de haut et des morsures de lamproies sur les bras et les jambes.",
+				"moments_body" => "C’est en 1954 que la Canadienne Marilyn Bell réussit la première traversée du lac Ontario à la nage. Il s’agit d’un exploit de 20 heures et de plus de 50&nbsp;km, où l’athlète affronte des eaux à 21 °C, des vagues allant jusqu’à cinq mètres de haut et des morsures de lamproies sur les bras et les jambes.",
 				"moments_title" => "Plonger dans l’histoire."
 			),
 			"moments_image_size" => 5,
@@ -1037,7 +1037,7 @@
 				"moments_title" => "A revolution in film.",
 			),
 			"fr" => array(
-				"moments_body" => "En 1952, Norman McLaren, cinéaste visionnaire de l’Office national du film du Canada, reçoit un Oscar pour son court-métrage Voisins, un essai subversif sur la guerre. Utilisant des techniques typiquement réservées aux films d’animation, le cinéaste raconte l’animosité croissante entre deux voisins au sujet d’une fleur.",
+				"moments_body" => "En 1952, Norman McLaren, cinéaste visionnaire de l’Office national du film du Canada, reçoit un Oscar pour son court métrage <i>Voisins</i>, un essai subversif sur la guerre. Utilisant des techniques typiquement réservées aux films d’animation, le cinéaste raconte l’animosité croissante entre deux voisins au sujet d’une fleur.",
 				"moments_title" => "Un film révolutionnaire."
 			),
 			"moments_image_size" => 4,
@@ -1061,8 +1061,8 @@
 				"moments_title" => "Safer surgery.",
 			),
 			"fr" => array(
-				"moments_body" => "Au cours des années 1950, un chirurgien canadien développe une technique révolutionnaire ayant recours à l’hypothermie afin de ralentir le métabolisme tissulaire pendant la chirurgie, ce qui protège ainsi le cœur et le cerveau du patient.",
-				"moments_title" => "Chirurgie sous contrôle."
+				"moments_body" => "Au cours des années 1950, un chirurgien canadien développe une technique révolutionnaire ayant recours à l’hypothermie afin de ralentir le métabolisme tissulaire pendant la les interventions chirurgicales, ce qui protège ainsi le cœur et le cerveau du patient.",
+				"moments_title" => "Opérations sous contrôle."
 			),
 			"moments_image_size" => 1,
 			"index" => 88
@@ -1267,7 +1267,7 @@
 				"moments_title" => "Research and development.",
 			),
 			"fr" => array(
-				"moments_body" => "En 1930, trois docteurs mettent au point le Pablum dans un hôpital de Toronto. Cet aliment, qui s’apparente aux céréales et contient vitamines, minéraux et glucides, est conçu pour combler les besoins nutritionnels des nourrissons. Le produit connaît une immense popularité dès son lancement : les profits générés permettent de financer les projets de recherche de l’hôpital pendant 25 ans.",
+				"moments_body" => "En 1930, trois docteurs mettent au point le Pablum dans un hôpital de Toronto. Cet aliment, qui s’apparente aux céréales et contient vitamines, minéraux et glucides, est conçu pour combler les besoins nutritionnels des nourrissons. Le produit connaît une immense popularité dès son lancement&nbsp;: les profits générés permettent de financer les projets de recherche de l’hôpital pendant 25 ans.",
 				"moments_title" => "Recherche et développement."
 			),
 			"moments_image_size" => 5,
@@ -1339,7 +1339,7 @@
 				"moments_title" => "The mystery author.",
 			),
 			"fr" => array(
-				"moments_body" => "Leslie McFarlane, un auteur canadien pratiquement inconnu, écrit plusieurs romans de la populaire série <i>Les Frères Hardy</i>. Entre 1927 et 1946, il rédige, sous un nom de plume, 19 des 25 premiers tomes de la série; on ne lui rendra hommage que plusieurs années plus tard. À ce jour, tous les livres de la série sont publiés sous le même pseudonyme : Franklin W. Dixon.",
+				"moments_body" => "Leslie McFarlane, un auteur canadien pratiquement inconnu, écrit plusieurs romans de la populaire série <i>Les Frères Hardy</i>. Entre 1927 et 1946, il rédige, sous un nom de plume, 19 des 25&nbsp;premiers tomes de la série; on ne lui rendra hommage que plusieurs années plus tard. À ce jour, tous les livres de la série sont publiés sous le même pseudonyme : Franklin W. Dixon.",
 				"moments_title" => "Auteur (de) mystère."
 			),
 			"moments_image_size" => 1,
@@ -1383,11 +1383,11 @@
 		),
 		array(
     		"en" => array(
-				"moments_body" => "Agnes MacPhail became the first and only woman elected to the House of Commons in 1921, the first year that women had the vote. MacPhail went on to become a champion of prison reform, advocating for education and rehabilitation over corporal punishment, becoming one of the first prominent Canadian figures to do so<sup>5</sup>.",
+				"moments_body" => "Agnes Macphail became the first and only woman elected to the House of Commons in 1921, the first year that women had the vote. Macphail went on to become a champion of prison reform, advocating for education and rehabilitation over corporal punishment, becoming one of the first prominent Canadian figures to do so<sup>5</sup>.",
 				"moments_title" => "An important appointment.",
 			),
 			"fr" => array(
-				"moments_body" => "En 1921, première année où les femmes ont le droit de vote, Agnes MacPhail devient la première et seule femme à être élue à la Chambre des communes. La politicienne milite par la suite en faveur de la réforme du système de prisons : elle soutient que les détenus devraient être éduqués et formés, et réclame l’abolition des châtiments corporels<sup>5</sup>.",
+				"moments_body" => "En 1921, première année où les femmes ont le droit de vote, Agnes Macphail devient la première et seule femme à être élue à la Chambre des communes. La politicienne milite par la suite en faveur de la réforme du système de prisons : elle soutient que les détenus devraient être éduqués et formés, et réclame l’abolition des châtiments corporels<sup>5</sup>.",
 				"moments_title" => "Une nomination capitale."
 			),
 			"moments_image_size" => 4,
@@ -1399,7 +1399,7 @@
 				"moments_title" => "One critical coin toss.",
 			),
 			"fr" => array(
-				"moments_body" => "En 1921, le docteur Frederick Banting choisit son assistant pour la période estivale d’un simple coup de pile ou face : Charles Best devient donc aide de laboratoire pour le Dr Banting. Au cours de l’été, les travaux de recherches du duo mènent à la découverte de l’insuline, qui sera utilisée pour traiter le diabète.",
+				"moments_body" => "En 1921, le docteur Frederick Banting choisit son assistant pour la période estivale d’un simple coup de pile ou face : Charles Best devient donc aide de laboratoire pour le D<sup>r</sup>&nbsp;Banting. Au cours de l’été, les travaux de recherches du duo mènent à la découverte de l’insuline, qui sera utilisée pour traiter le diabète.",
 				"moments_title" => "Un pile ou face qui tombe pile."
 			),
 			"moments_image_size" => 3,
@@ -1495,7 +1495,7 @@
 				"moments_title" => "His words will never be forgotten.",
 			),
 			"fr" => array(
-				"moments_body" => "La légende veut que lieutenant-colonel canadien John McCrae ait écrit son célèbre poème « In Flanders Fields » (<i>Au champ d’honneur</i>) à l’arrière d’une ambulance cahoteuse traversant la ferme d’Essex à Ypres, en Belgique. Le coquelicot, qui pousse dans les champs de bataille et les cimetières de la région de Flandre, est aujourd’hui le symbole honorant la mémoire des soldats morts au combat.",
+				"moments_body" => "La légende veut que le lieutenant-colonel canadien John McCrae ait écrit son célèbre poème « In Flanders Fields » (<i>Au champ d’honneur</i>) à l’arrière d’une ambulance cahoteuse traversant la ferme d’Essex à Ypres, en Belgique. Le coquelicot, qui pousse dans les champs de bataille et les cimetières de la région de Flandre, est aujourd’hui le symbole honorant la mémoire des soldats morts au combat.",
 				"moments_title" => "Au champ d’honneur."
 			),
 			"moments_image_size" => 2,
@@ -1842,10 +1842,10 @@ Parks Canada Agency, Government of Canada. \"Suez Crisis.\" <i>Parks Canada Agen
 			"<sup>1</sup>Bibliothèque et Archives Canada. « L’ampoule électrique. » <i>Des inventions incroyables, Un Canada cool, Bibliothèque et Archives Canada</i>. Gouvernement du Canada, 16 novembre 2005. Web. 31 mai 2017.",
 			"<sup>2</sup>Hacker, Carlotta. « Emily Stowe. » <i>L’Encyclopédie canadienne</i>. Toronto : Historica Canada, 2008. Web. 2 avril 2008.",
 			"<sup>3</sup>Regehr, T.D. « Sir Sandford Fleming. » <i>L’Encyclopédie canadienne</i>. Toronto : Historica Canada, 2008. Web. 22 février 2008.",
-			"<sup>4</sup>Stewart, Robert. Sam Steele: <i>Lion of The Frontier</i>. Regina : Centax/Publishing Solutions, PrintWest Group. 1999. Imprimé.",
+			"<sup>4</sup>Stewart, Robert. <i>Sam Steele: Lion of The Frontier</i>. Regina : Centax/Publishing Solutions, PrintWest Group. 1999. Imprimé.",
 			"<sup>5</sup>Bibliothèque et Archives Canada. « Agnes Macphail. » <i>Bibliothèque et Archives Canada</i>. Gouvernement du Canada, 4 mars 2016. Web. 31 mai 2017.",
 			"<sup>6</sup>Anciens Combattants Canada. « Le Canada se souvient - Édition 2013 - Page 3. » <i>Anciens Combattants Canada</i>. Gouvernement du Canada, 23 octobre 2014. Web. 31 mai 2017.",
-			"<sup>7</sup>Parcs Canada. « Lester Bowles Pearson (1897-1972). » Canada.ca. Gouvernement du Canada, 3 avril 2017. Web. 31 mai 2017.
+			"<sup>7</sup>Parcs Canada. « Lester Bowles Pearson (1897-1972). » Canada.ca. Gouvernement du Canada, 3 avril 2017. Web. 31 mai 2017.<br>
 Parcs Canada, Gouvernement du Canada. « Crise de Suez. » <i>Parcs Canada, Gouvernement du Canada. Gouvernement du Canada</i>, 12 avril 2017. Web. 31 mai 2017.
 "
 		)
