@@ -1061,7 +1061,7 @@
 				"moments_title" => "Safer surgery.",
 			),
 			"fr" => array(
-				"moments_body" => "Au cours des années 1950, un chirurgien canadien développe une technique révolutionnaire ayant recours à l’hypothermie afin de ralentir le métabolisme tissulaire pendant la les interventions chirurgicales, ce qui protège ainsi le cœur et le cerveau du patient.",
+				"moments_body" => "Au cours des années 1950, un chirurgien canadien développe une technique révolutionnaire ayant recours à l’hypothermie afin de ralentir le métabolisme tissulaire pendant les interventions chirurgicales, ce qui protège ainsi le cœur et le cerveau du patient.",
 				"moments_title" => "Opérations sous contrôle."
 			),
 			"moments_image_size" => 1,
@@ -1117,11 +1117,11 @@
 		),
 		array(
     		"en" => array(
-				"moments_body" => "Canadian actress Mona Parsons hid Allied soldiers from German forces when she lived in the Netherlands. She was caught and sentenced to hard labour in a German prison camp, where she served four years before escaping and hiking over 125 km to safety<sup>6</sup>.",
+				"moments_body" => "Canadian actress Mona Parsons hid Allied soldiers from German forces when she lived in the Netherlands. She was caught and sentenced to hard labour in a German prison camp, where she served four years before escaping and hiking over 125 km to safety<sup>2</sup>.",
 				"moments_title" => "Escaping the odds.",
 			),
 			"fr" => array(
-				"moments_body" => "C’est pour avoir caché des soldats alliés aux forces armées allemandes alors qu’elle vivait aux Pays-Bas que l’actrice canadienne Mona Parsons est incarcérée dans une prison allemande et condamnée à des travaux forcés. Elle y reste quatre ans avant de s’enfuir, marchant près de 125 km avant de trouver un refuge sûr<sup>6</sup>.",
+				"moments_body" => "C’est pour avoir caché des soldats alliés aux forces armées allemandes alors qu’elle vivait aux Pays-Bas que l’actrice canadienne Mona Parsons est incarcérée dans une prison allemande et condamnée à des travaux forcés. Elle y reste quatre ans avant de s’enfuir, marchant près de 125 km avant de trouver un refuge sûr<sup>2</sup>.",
 				"moments_title" => "Échapper aux probabilités."
 			),
 			"moments_image_size" => 4,
@@ -1745,11 +1745,11 @@ de la surface d’un lac gelé près de Baddeck, en Nouvelle-Écosse, puis monte
 		),
 		array(
     		"en" => array(
-				"moments_body" => "The Toronto Women’s Literary Club was founded in 1876 by Emily Stowe, a doctor and women’s rights leader. The name shielded the club’s actual purpose: advocating for voting rights for women<sup>2</sup>.",
+				"moments_body" => "The Toronto Women’s Literary Club was founded in 1876 by Emily Stowe, a doctor and women’s rights leader. The name shielded the club’s actual purpose: advocating for voting rights for women<sup>6</sup>.",
 				"moments_title" => "Suffragette city.",
 			),
 			"fr" => array(
-				"moments_body" => "Emily Stowe, docteure et ardente défenseure des droits des femmes, fonde le Club littéraire des femmes de Toronto en 1876. Le nom cache la véritable mission du club : militer pour que les femmes obtiennent le droit de vote<sup>2</sup>.",
+				"moments_body" => "Emily Stowe, docteure et ardente défenseure des droits des femmes, fonde le Club littéraire des femmes de Toronto en 1876. Le nom cache la véritable mission du club : militer pour que les femmes obtiennent le droit de vote<sup>6</sup>.",
 				"moments_title" => "Ce que femme veut…"
 			),
 			"moments_image_size" => 1,
@@ -1817,7 +1817,7 @@ de la surface d’un lac gelé près de Baddeck, en Nouvelle-Écosse, puis monte
 		)
 	);
 
-	$default_image_folder = "/wp-content/uploads/1/2017/05/";
+	$default_image_folder = "/wp-content/uploads/1/2017/06/";
 	foreach($moments as $key => $value) {
 		if (array_key_exists('moments_image', $value) == false) {
 			$moments[$key]['moments_image'] = $default_image_folder . strval(150 - $key) . '.jpg';
@@ -1829,22 +1829,22 @@ de la surface d’un lac gelé près de Baddeck, en Nouvelle-Écosse, puis monte
 	$legal = array(
 		"en" => array(
 			"<sup>1</sup>Library and Archives Canada. \"Common Menu Bar Links.\" <i>ARCHIVED - Light Bulb - Incredible Inventions - Cool Canada - Library and Archives Canada</i>. Government of Canada, 16 Nov. 2005. Web. 31 May 2017.",
-			"<sup>2</sup>Hacker, Carlotta. \"Emily Stowe\". The Canadian Encyclopedia.Toronto: Historica Canada, 2008. Web. 2 Apr 2008.",
+			"<sup>2</sup>Veterans Affairs Canada. \"Canada Remembers Times - 2013 Edition - Page 3.\" <i>Veterans Affairs Canada</i>. Government of Canada, 23 Oct. 2014. Web. 31 May 2017.",
 			"<sup>3</sup>Regehr, T.D.. \"Sir Sandford Fleming\". The Canadian Encyclopedia. Toronto: Historica Canada, 2008. Web. 22 Feb 2008.",
 			"<sup>4</sup>Stewart, Robert. <i>Sam Steele: Lion of The Frontier</i>. Regina: Centax /Publishing Solutions, PrintWest Group, 1999. Print.",
 			"<sup>5</sup>Library and Archives Canada. \"Agnes Macphail.\" <i>Library and Archives Canada</i>. Government of Canada, 04 Mar. 2016. Web. 31 May 2017.",
-			"<sup>6</sup>Veterans Affairs Canada. \"Canada Remembers Times - 2013 Edition - Page 3.\" <i>Veterans Affairs Canada</i>. Government of Canada, 23 Oct. 2014. Web. 31 May 2017.",
+			"<sup>6</sup>Hacker, Carlotta. \"Emily Stowe\". The Canadian Encyclopedia.Toronto: Historica Canada, 2008. Web. 2 Apr 2008.",
 			"<sup>7</sup>Parks Canada. \"Lester Bowles Pearson (1897-1972).\" Canada.ca. Government of Canada, 03 Apr. 2017. Web. 31 May 2017.
 Parks Canada Agency, Government of Canada. \"Suez Crisis.\" <i>Parks Canada Agency, Government of Canada</i>. Government of Canada, 12 Apr. 2017. Web. 31 May 2017.
 "
 		),
 		"fr" => array(
 			"<sup>1</sup>Bibliothèque et Archives Canada. « L’ampoule électrique. » <i>Des inventions incroyables, Un Canada cool, Bibliothèque et Archives Canada</i>. Gouvernement du Canada, 16 novembre 2005. Web. 31 mai 2017.",
-			"<sup>2</sup>Hacker, Carlotta. « Emily Stowe. » <i>L’Encyclopédie canadienne</i>. Toronto : Historica Canada, 2008. Web. 2 avril 2008.",
+			"<sup>2</sup>Anciens Combattants Canada. « Le Canada se souvient - Édition 2013 - Page 3. » <i>Anciens Combattants Canada</i>. Gouvernement du Canada, 23 octobre 2014. Web. 31 mai 2017.",
 			"<sup>3</sup>Regehr, T.D. « Sir Sandford Fleming. » <i>L’Encyclopédie canadienne</i>. Toronto : Historica Canada, 2008. Web. 22 février 2008.",
 			"<sup>4</sup>Stewart, Robert. <i>Sam Steele: Lion of The Frontier</i>. Regina : Centax/Publishing Solutions, PrintWest Group. 1999. Imprimé.",
 			"<sup>5</sup>Bibliothèque et Archives Canada. « Agnes Macphail. » <i>Bibliothèque et Archives Canada</i>. Gouvernement du Canada, 4 mars 2016. Web. 31 mai 2017.",
-			"<sup>6</sup>Anciens Combattants Canada. « Le Canada se souvient - Édition 2013 - Page 3. » <i>Anciens Combattants Canada</i>. Gouvernement du Canada, 23 octobre 2014. Web. 31 mai 2017.",
+			"<sup>6</sup>Hacker, Carlotta. « Emily Stowe. » <i>L’Encyclopédie canadienne</i>. Toronto : Historica Canada, 2008. Web. 2 avril 2008.",
 			"<sup>7</sup>Parcs Canada. « Lester Bowles Pearson (1897-1972). » Canada.ca. Gouvernement du Canada, 3 avril 2017. Web. 31 mai 2017.<br>
 Parcs Canada, Gouvernement du Canada. « Crise de Suez. » <i>Parcs Canada, Gouvernement du Canada. Gouvernement du Canada</i>, 12 avril 2017. Web. 31 mai 2017.
 "
