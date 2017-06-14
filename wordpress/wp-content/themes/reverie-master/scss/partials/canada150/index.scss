@@ -3,6 +3,10 @@
 		cursor: initial;
 	}
 
+	sup {
+		font-size: 0.5em;
+	}
+
 	@media screen and (max-width: 39.9375em) {
 		.home-mondrian-summary {
 			padding: 0 30px;

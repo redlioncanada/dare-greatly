@@ -1,0 +1,74 @@
+@keyframes slideIn {
+	0% {max-height: 0;}
+	100% {max-height: 40px;}
+}
+
+@keyframes slideInMobile {
+	0% {max-height: 0;}
+	100% {max-height: 50px;}
+}
+
+.hellobar {
+	height: 40px;
+	max-height: 0;
+	width: 100%;
+	border-bottom: 1px solid $goldlink;
+	background-color: white;
+	position: relative;
+	top: 0;
+	left: 0;
+	display: flex;
+	z-index: 99999;
+	justify-content: center;
+	overflow: hidden;
+	animation: slideIn 0.5s forwards;
+	animation-delay: 1s;
+
+	.text {
+		text-align: center;
+	    width: 100%;
+	    position: relative;
+	    top: 50%;
+	    line-height: 17px;
+	    transform: translateY(-50%);
+	    display: table;
+	}
+
+	.text a {
+		color: $goldlink;
+	}
+
+	.close-button {
+		font-family: $font-family-trim-regular;
+		position: absolute;
+		color: $goldlink;
+		right: 0px;
+		padding: 0 13px;
+		cursor: pointer;
+		transform: translateY(-50%);
+		top: 50%;
+	}
+
+	&.close {
+		animation: slideIn 0.5s forwards;
+		animation-direction: reverse;
+		border-bottom: none;
+	}
+}
+
+@media #{$small-only} {
+	.hellobar {
+		height: 50px;
+		animation: slideInMobile 0.5s forwards;
+
+		.text {
+			line-height: 14px;
+			font-size: 9pt;
+			padding: 0px 42px;
+		}
+
+		&.close {
+			animation: slideInMobile 0.5s forwards;
+		}
+	}
+}

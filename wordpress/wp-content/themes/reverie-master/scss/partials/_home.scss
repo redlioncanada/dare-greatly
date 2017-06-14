@@ -10,11 +10,7 @@
 }
 
 .main-content {
-    margin: rem-calc(107) auto 0;
-    @media #{$small-only} {
-        margin: rem-calc(60) auto 0;
-    }
-    //max-width: 75rem;
+    margin: 0;
     width: 100%;
 }
 

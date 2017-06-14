@@ -43,6 +43,16 @@ $(function() {
 	$site = get_blog_details() -> path;
 	$languageIndex = $site == '/fr/' ? 'fr' : 'en';
 
+	if (get_field('show_hellobar') == "Yes") {
+		$hellobarText = get_field('hellobar_text');
+		$hellobarCTA = get_field('hellobar_cta');
+		$hellobarCTAText = get_field('hellobar_cta_text');
+		$hellobarCategory = 'Find151 LP';
+		$hellobarAction = 'Email Entry Click';
+		$hellobarLabel = 'Hello Bar';
+		include(locate_template('partial-hellobar.php'));
+	}
+
 	include(locate_template('partials/article/article-top_button.php'));
 	include(locate_template('partial-canada150-repeater-data.php'));
 
@@ -53,6 +63,12 @@ $(function() {
 	if (get_field('show_projects_divider') == "Yes") {
 		$dividerTitle = get_field('projects_divider_title');
 		$dividerBody = get_field('projects_divider_body');
+		$dividerCTACopy = get_field('projects_divider_cta_body');
+		$dividerCTALink = get_field('projects_divider_cta_link');
+		$dividerCTAText = get_field('projects_divider_cta_text');
+		$dividerCategory = 'Find151 LP';
+		$dividerAction = 'Email Entry Click';
+		$dividerLabel = 'Body Copy';
 		include(locate_template('partial-canada150-divider.php'));
 	}
 
@@ -63,6 +79,12 @@ $(function() {
 	if (get_field('show_moments_divider') == "Yes") {
 		$dividerTitle = get_field('moments_divider_title');
 		$dividerBody = get_field('moments_divider_body');
+		$dividerCTACopy = null;
+		$dividerCTALink = null;
+		$dividerCTAText = null;
+		$dividerCategory = null;
+		$dividerAction = null;
+		$dividerLabel = null;
 		include(locate_template('partial-canada150-divider.php'));
 	}
 
