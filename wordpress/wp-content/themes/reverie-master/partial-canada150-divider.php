@@ -11,16 +11,18 @@
 	</div>
 </div>
 
-<script>
 <?php if ($dividerCategory !== null && $dividerAction !== null): ?>
-	if ('ga' in window) {
-		$('.canada150-divider a').click(function() {
-			<?php if ($dividerLabel !== null): ?>
-				ga('send', 'event', '<?php echo $dividerCategory; ?>', '<?php echo $dividerAction; ?>', '<?php echo $dividerLabel; ?>');
-			<?php else: ?>
-				ga('send', 'event', '<?php echo $dividerCategory; ?>', '<?php echo $dividerAction; ?>');
-			<?php endif; ?>
-		})
-	}
-<?php endif; ?>
+<script>
+	$(function() {
+		if ('ga' in window) {
+			$('.canada150-divider a').click(function() {
+				<?php if ($dividerLabel !== null): ?>
+					ga('send', 'event', '<?php echo $dividerCategory; ?>', '<?php echo $dividerAction; ?>', '<?php echo $dividerLabel; ?>');
+				<?php else: ?>
+					ga('send', 'event', '<?php echo $dividerCategory; ?>', '<?php echo $dividerAction; ?>');
+				<?php endif; ?>
+			});
+		}
+	});
 </script>
+<?php endif; ?>

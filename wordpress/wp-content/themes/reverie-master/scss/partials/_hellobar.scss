@@ -5,7 +5,7 @@
 
 @keyframes slideInMobile {
 	0% {max-height: 0;}
-	100% {max-height: 50px;}
+	100% {max-height: 60px;}
 }
 
 .hellobar {
@@ -58,17 +58,19 @@
 
 @media #{$small-only} {
 	.hellobar {
-		height: 50px;
+		height: 60px;
 		animation: slideInMobile 0.5s forwards;
 
 		.text {
-			line-height: 14px;
-			font-size: 9pt;
+			line-height: 18px;
+			font-size: 12pt;
 			padding: 0px 42px;
 		}
 
 		&.close {
 			animation: slideInMobile 0.5s forwards;
+			animation-direction: reverse;
+			border-bottom: none;
 		}
 	}
 }

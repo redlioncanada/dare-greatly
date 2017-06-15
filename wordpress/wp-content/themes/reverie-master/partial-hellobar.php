@@ -36,7 +36,7 @@
 					<?php else: ?>
 						ga('send', 'event', '<?php echo $hellobarCategory; ?>', '<?php echo $hellobarAction; ?>');
 					<?php endif; ?>
-				})
+				});
 			}
 		<?php endif; ?>
 	});

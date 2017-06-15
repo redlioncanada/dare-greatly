@@ -9,6 +9,8 @@
         max-width: none;
     }
     .article-left-margin-image-with-play-button {
+        margin-top: 0 !important;
+
         iframe {
             z-index: 1000;
         }
