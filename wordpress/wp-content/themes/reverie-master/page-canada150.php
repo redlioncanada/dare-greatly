@@ -72,6 +72,8 @@ $(function() {
 		include(locate_template('partial-canada150-divider.php'));
 	}
 
+	include(locate_template('partial-canada150-panel.php'));
+
 	if (get_field('show_projects') == "Yes") {
 		include(locate_template('partial-canada150-projects.php'));
 	}
