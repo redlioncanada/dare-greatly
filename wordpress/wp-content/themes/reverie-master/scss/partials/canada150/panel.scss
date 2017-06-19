@@ -1,6 +1,10 @@
 .canada150-panel {
 	margin-bottom: 100px;
 
+	.slick-dots li button:before {
+		font-size: 0.625rem;
+	}
+
 	.canada150-panel-panel {
 		width: 50%;
 		float: left;
@@ -46,6 +50,55 @@
 		}
 	}
 
+	.canada150-carousel-wrapper {
+		// height: 340px;
+	}
+
+	.canada150-carousel-content {
+		display: inline-block;
+
+		.canada150-panel-carousel-content-item {
+			padding: 0px 22px 0 22px;
+		}
+
+		.canada150-panel-carousel-content-item:not(.canada150-panel-carousel-content-item-0) {
+			opacity: 0;
+			display: none;
+		}
+
+		.canada150-panel-carousel-content-item-0 {
+			z-index: 2;
+		}
+
+		.canada150-panel-title {
+			font-family: $font-family-trim-regular;
+			text-transform: uppercase;
+			font-size: 1.4em;
+			margin: 0;
+		}
+
+		.canada150-panel-subtitle {
+			font-family: $font-family-trim-light;
+			text-transform: uppercase;
+			font-size: 1.38em;
+			margin: 0;
+		}
+
+		.canada150-panel-body {
+			margin-top: 9px;
+			margin-bottom: 0;
+			line-height: 1.4em;
+		}
+
+		.canada150-panel-see-more {
+			font-family: $font-family-trim-light;
+			color: $goldlink;
+			border-bottom: 1px solid $goldlink;
+			cursor: pointer;
+			line-height: 2em;
+		}
+	}
+
 	.spotlight-subheader {
 		position: relative;
 		margin-bottom: 30px;
@@ -62,13 +115,15 @@
 		}
 	}
 
-	.canada150-panel-panel:not(:nth-child(2)):not(:nth-child(3)) {
+	.canada150-panel-panel:not(:nth-child(1)):not(:nth-child(2)) {
 		margin-top: 50px;
 	}
 }
 
 @media screen and (max-width: 39.9375em) {
 	.canada150-panel {
+		margin-bottom: 60px;
+
 		.canada150-panel-panel {
 			width: 100%;
 			float: initial;
@@ -78,7 +133,7 @@
 			}
 		}
 
-		.canada150-panel-panel:not(:nth-child(2)) {
+		.canada150-panel-panel:not(:nth-child(1)) {
 			margin-top: 50px;
 		}
 

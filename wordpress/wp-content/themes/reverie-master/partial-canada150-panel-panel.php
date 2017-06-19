@@ -6,7 +6,7 @@
 	$body = $panel['panel_body'];
 ?>
 
-<div class="canada150-panel-panel">
+<div class="canada150-panel-panel canada150-panel-desktop">
 	<div class="canada150-panel-image">
 		<img src="<?php echo $imageURL; ?>" />
 	</div>
