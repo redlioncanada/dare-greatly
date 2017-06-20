@@ -42,6 +42,7 @@ $(function() {
 	<?php
 	$site = get_blog_details() -> path;
 	$languageIndex = $site == '/fr/' ? 'fr' : 'en';
+	$isEnglish = $languageIndex == 'en';
 
 	if (get_field('show_hellobar') == "Yes") {
 		$hellobarText = get_field('hellobar_text');

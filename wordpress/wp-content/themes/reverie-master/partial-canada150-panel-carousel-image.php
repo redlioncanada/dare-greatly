@@ -1,5 +1,5 @@
 <?php
-	$imageURL = $panel['panel_image'];
+	$imageURL = $panel['panel_image_mobile'];
 ?>
 
 

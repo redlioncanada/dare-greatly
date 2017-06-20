@@ -39,19 +39,23 @@
 			margin-top: 9px;
 			margin-bottom: 0;
 			line-height: 1.4em;
+			font-size: 1rem;
 		}
 
 		.canada150-panel-see-more {
 			font-family: $font-family-trim-light;
 			color: $goldlink;
-			border-bottom: 1px solid $goldlink;
 			cursor: pointer;
-			line-height: 2em;
+			line-height: 3em;
 		}
 	}
 
 	.canada150-carousel-wrapper {
 		// height: 340px;
+
+		.canada150-panel-carousel-image {
+			margin: 0 3px;
+		}
 	}
 
 	.canada150-carousel-content {
@@ -88,14 +92,14 @@
 			margin-top: 9px;
 			margin-bottom: 0;
 			line-height: 1.4em;
+			font-size: 1rem;
 		}
 
 		.canada150-panel-see-more {
 			font-family: $font-family-trim-light;
 			color: $goldlink;
-			border-bottom: 1px solid $goldlink;
 			cursor: pointer;
-			line-height: 2em;
+			line-height: 3em;
 		}
 	}
 

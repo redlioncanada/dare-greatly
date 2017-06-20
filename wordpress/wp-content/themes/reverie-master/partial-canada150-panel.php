@@ -1,5 +1,6 @@
 <script>
 	$(function() {
+		<?php if ($isEnglish) {echo 'var isEnglish=true;';} else {echo 'var isEnglish=false;';} ?>
 		$('.canada150-panel-panel .canada150-panel-see-more').click(function(event) {
 			var parent = event.target.closest('.canada150-panel-panel'),
 				preview = $(parent).find('.canada150-panel-preview'),
@@ -9,10 +10,10 @@
 
 			if (isOpen) {
 				$(body).addClass('hide');
-				$(seemore).text('SEE MORE.');
+				$(seemore).text(isEnglish ? 'SEE MORE' : 'PLUS');
 			} else {
 				$(body).removeClass('hide');
-				$(seemore).text('SEE LESS.');
+				$(seemore).text(isEnglish ? 'SEE LESS' : 'MOINS');
 			}
 		});
 
@@ -25,10 +26,10 @@
 
 			if (isOpen) {
 				$(body).addClass('hide');
-				$(seemore).text('SEE MORE.');
+				$(seemore).text(isEnglish ? 'SEE MORE' : 'PLUS');
 			} else {
 				$(body).removeClass('hide');
-				$(seemore).text('SEE LESS.');
+				$(seemore).text(isEnglish ? 'SEE LESS' : 'MOINS');
 			}
 		});
 
@@ -36,7 +37,9 @@
 			centerMode: true,
 			slidesToShow: 1,
 			dots: true,
-			adaptiveHeight: true
+			adaptiveHeight: true,
+			autoplay: true,
+			autoplaySpeed: 4000
 		});
 
 		$('.canada150-carousel-wrapper').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
@@ -49,6 +52,10 @@
 				currentItem.animate({ opacity: 1 }, 200);
 			});
 		});
+
+		$('.canada150-carousel-wrapper, .slick-dots, .canada150-panel-see-more').on('click mousedown touchstart', function() {
+			$('.canada150-carousel-wrapper').slick('slickPause');
+		})
 	})
 </script>
 
