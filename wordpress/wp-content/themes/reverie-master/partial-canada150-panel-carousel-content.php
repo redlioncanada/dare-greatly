@@ -12,5 +12,5 @@
 	<div class="canada150-panel-divider"></div>
 	<p class="canada150-panel-preview canada150-panel-body"><?php echo $preview; ?></p>
 	<p class="canada150-panel-body hide"><?php echo $body; ?></p>
-	<span class="canada150-panel-see-more">SEE MORE</span>
+	<span class="canada150-panel-see-more"><?php if ($isEnglish) {echo 'SEE MORE';} else {echo 'PLUS';} ?></span>
 </div>
