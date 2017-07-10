@@ -1,5 +1,10 @@
+
+
 .canada150-panel {
+	margin: 0 auto;
 	margin-bottom: 100px;
+	max-width: 68.75rem;
+	width: 100%;
 
 	.slick-dots li button:before {
 		font-size: 0.625rem;
@@ -124,8 +129,22 @@
 	}
 }
 
+@media only screen and (min-width: 64.063em) {
+	.canada150-panel:after, .canada150-panel:before {
+		content: " ";
+		display: table;
+	}
+
+	.canada150-panel:after {
+		clear: both;
+	}
+}
+
 @media screen and (max-width: 39.9375em) {
 	.canada150-panel {
+		margin: initial;
+		max-width: initial;
+		width: initial;
 		margin-bottom: 60px;
 
 		.canada150-panel-panel {

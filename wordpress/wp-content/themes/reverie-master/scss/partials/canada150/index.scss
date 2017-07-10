@@ -1,4 +1,9 @@
 #canada150 {
+    -ms-overflow-style: none;  // IE 10+
+    overflow: -moz-scrollbars-none;  // Firefox
+	::-webkit-scrollbar {
+	    display: none;  // Safari and Chrome
+	}
 	.article-mondrian-c {
 		cursor: initial;
 	}

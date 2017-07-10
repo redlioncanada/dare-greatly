@@ -59,7 +59,7 @@
 	})
 </script>
 
-<div class="canada150-panel row">
+<div class="canada150-panel">
 	<div class="row spotlight-subheader">
         <div class="title-section text-left small-only-text-left mobile-stuff">
             <span>PANEL</span>
