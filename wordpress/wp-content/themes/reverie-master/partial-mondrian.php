@@ -4,6 +4,7 @@ $mondrian_image = get_field('featured_article_image')['url'];
 $mondrian_mask = get_field('mondrian_image_template');
 $mondrian_summary = get_field('featured_article_summary');
 $mondrian_CTA = get_field('mondrian_cta');
+$show_play_button = get_field('show_play_button');
 $mondrian_title = get_field('mondrian_title');
 if (!(is_string($mondrian_title) && strlen($mondrian_title) > 0)) {$mondrian_title = "Dare Greatly";}
 $mondrian_link = get_field('mondrian_link');
@@ -32,13 +33,18 @@ if ( $the_query->have_posts() ) {
 ?>
 <div class="row article-mondrian-a article-mondrian-<?php echo strtolower($mondrian_mask); ?> home-mondrian-a home-mondrian-top  medium-collapse article-component home-component">
   <div class='large-centered medium-10 small-10 medium-centered small-centered columns show-for-medium-up'>
-     <div class='article-mondrian js-mondrian-home' data-href='<?php echo $mondrian_link; ?>'>
+     <div class='article-mondrian js-mondrian-home <?php if($mondrian_mask == "D") {echo "no-parallax";} ?>' data-href='<?php echo $mondrian_link; ?>'>
+        <?php if ($show_play_button == 'Yes'): ?>
+        	<div class='mondrian-play'></div>
+    	<?php endif; ?>
         <div class='mondrian-image-clipper'><img class='mondrian-image' src='<?php echo $mondrian_image;?>'></div>
         <img class='mondrian-mask' src='<?php echo get_template_directory_uri(); ?>/img/home/mondrian_mask_<?php echo $mondrian_mask; ?>.png'>
     </div>
 
     <?php if($mondrian_mask == "C"): ?>
         <div class='home-mondrian-summary medium-offset-5' style="pointer-events:visible;">
+    <?php elseif($mondrian_mask == "D"): ?>
+        <div class='home-mondrian-summary' style="pointer-events:visible;">
     <?php else: ?>
         <div class='home-mondrian-summary medium-offset-6' style="pointer-events:visible;">
     <?php endif; ?>
@@ -54,7 +60,10 @@ if ( $the_query->have_posts() ) {
     </div>
 </div>
 
-<div class='small-10 show-for-small-only'>
+<div class='small-10 show-for-small-only' style="position:relative;">
+	<?php if ($show_play_button == 'Yes'): ?>
+    	<div class='mondrian-play'></div>
+	<?php endif; ?>
     <div class='large-centered medium-10 small-10 medium-centered small-centered show-for-small-only'>
         <img src='<?php echo $mondrian_image; ?>'>
     </div>

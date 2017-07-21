@@ -10,7 +10,7 @@
 	<div class="canada150-panel-image">
 		<img src="<?php echo $imageURL; ?>" />
 	</div>
-	<div class="canada150-panel-content">
+	<div class="canada150-panel-carousel-content">
 		<h3 class="canada150-panel-title"><?php echo $title; ?></h3>
 		<h3 class="canada150-panel-subtitle"><?php echo $subtitle; ?></h3>
 		<p class="canada150-panel-preview canada150-panel-body"><?php echo $preview; ?></p>

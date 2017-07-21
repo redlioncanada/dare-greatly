@@ -36,7 +36,15 @@ $(function() {
 	})
 	//end page scroll event
 })
+
+//youtube iframe api
+var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 </script>
+
 
 <div id="canada150">
 	<?php
@@ -73,11 +81,10 @@ $(function() {
 		include(locate_template('partial-canada150-divider.php'));
 	}
 
-	include(locate_template('partial-canada150-panel.php'));
-
 	if (get_field('show_projects') == "Yes") {
 		include(locate_template('partial-canada150-projects.php'));
 	}
+	include(locate_template('partial-canada150-panel.php'));
 
 	if (get_field('show_moments_divider') == "Yes") {
 		$dividerTitle = get_field('moments_divider_title');

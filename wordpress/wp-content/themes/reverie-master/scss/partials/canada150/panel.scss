@@ -20,7 +20,7 @@
 			float: left;
 		}
 
-		.canada150-panel-content {
+		.canada150-panel-carousel-content {
 			width: 70%;
 			float: right;
 			padding: 19px 22px 0 22px;
@@ -55,7 +55,7 @@
 		}
 	}
 
-	.canada150-carousel-wrapper {
+	.canada150-panel-carousel-wrapper {
 		// height: 340px;
 
 		.canada150-panel-carousel-image {
@@ -63,7 +63,7 @@
 		}
 	}
 
-	.canada150-carousel-content {
+	.canada150-panel-carousel-content {
 		display: inline-block;
 
 		.canada150-panel-carousel-content-item {
@@ -89,7 +89,7 @@
 		.canada150-panel-subtitle {
 			font-family: $font-family-trim-light;
 			text-transform: uppercase;
-			font-size: 1.38em;
+			font-size: 1em;
 			margin: 0;
 		}
 

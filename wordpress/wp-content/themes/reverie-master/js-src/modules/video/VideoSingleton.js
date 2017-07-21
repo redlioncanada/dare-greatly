@@ -5,7 +5,7 @@ videoSingleton = (function() {
     var callback;
 
     window.onYouTubeIframeAPIReady = function() {
-        callback();
+        if (typeof callback === 'function') callback();
     };
     var loadAPI = function(aCallback) {
         callback = aCallback;

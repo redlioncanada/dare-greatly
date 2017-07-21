@@ -1,179 +1,240 @@
-<?php
-	if( have_rows('projects') ):
-		$projects = get_field('projects');
-		$projects_announcing_title = get_field('projects_announcing_title');
-		$projects_announcing_body = get_field('projects_announcing_body');
-?>
-		<script>
-			$(function() {
-				var lastIndex = -1, animTimeout = false
-				$('.canada150-project-cta').click(function(event) {
-					event.preventDefault()
-					event.stopImmediatePropagation()
-					var target = $(event.target).closest('.third'),
-						index = target.attr('data-index')
+<script>
+	var videoController = function(target, videoIds, readyCallback) {
+		var parentElement = $(target)
+		var videos = []
+		var readyCount = 0
 
-					if (!!animTimeout) {
-						clearTimeout(animTimeout)
-						animTimeout = false
-					}
+		var video = function(id, callback) {
+			var _video
+			function onReady() {
+				if (typeof callback === 'function') callback.call(this)
+			}
 
-					$('.third-content > div').removeClass('expanded')
-					$('.third').removeClass('expanded')
+			function play() {
+				// _video.playVideo()
+			}
 
-					if (lastIndex !== index) {
-						var shouldRemoveBorder = lastIndex < 3 && index >=3 || lastIndex >=3 && index < 3 //naive approach
-						animTimeout = setTimeout(function() {
-							var element = $('.third-content .content-'+index)
+			function stop() {
+				_video.seekTo(0)
+				_video.stopVideo()
+			}
 
-							if (shouldRemoveBorder) {
-								$('.third-content').removeClass('expanded')
-							}
-							element.addClass('expanded')
-							element.closest('.third-content').addClass('expanded')
-							$('.canada150-projects').addClass('expanded')
-						}, lastIndex == -1 ? 0 : 500)
-						target.addClass('expanded')
+			function pause() {
+				_video.pauseVideo()
+			}
 
-						lastIndex = index
-					} else {
-						$('.canada150-projects').removeClass('expanded')
-						animTimeout = setTimeout(function() {
-							$('.third-content').removeClass('expanded')
-						}, 500)
-						lastIndex = -1
-					}
-				})
-				return false
+
+			var videoElement = $('<div class="video-wrapper" data-id="' + id + '"><div id="video-' + id + '"></div></div>')
+			videoElement.appendTo(parentElement)
+
+			_video = new YT.Player('video-'+id, {
+				videoId: id,
+				playerVars: {
+					'modestbranding': 1,
+					'showinfo': 0,
+					'fs': 0,
+					'autoplay': 0,
+					'rel': 0,
+				},
+				events: {
+					'onReady': onReady
+				}
 			})
-		</script>
-		<div class='canada150-projects home-component row'>
-			<div class="small-10 small-centered show-for-small-only">
-				<div class="third third-left" data-index="0">
-					<?php
-							if (array_key_exists(0, $projects)) {
-								$project_number = 0;
-								$project = $projects[$project_number];
-								include(locate_template('partial-canada150-project.php'));
-							}
-						?>
-				</div>
-				<div class="third-content third-content-left">
-					<div class="content-0"></div>
-				</div>
-				<div class="third third-right" data-index="1">
-					<?php
-							if (array_key_exists(1, $projects)) {
-								$project_number = 1;
-								$project = $projects[$project_number];
-								include(locate_template('partial-canada150-project.php'));
-							}
-						?>
-				</div>
-				<div class="third-content third-content-right">
-					<div class="content-1"></div>
-				</div>
-				<div class="third third-left" data-index="2">
-					<?php
-							if (array_key_exists(2, $projects)) {
-								$project_number = 2;
-								$project = $projects[$project_number];
-								include(locate_template('partial-canada150-project.php'));
-							}
-						?>
-				</div>
-				<div class="third-content third-content-left">
-					<div class="content-2"></div>
-				</div>
-				<div class="third third-right" data-index="3">
-					<?php
-							if (array_key_exists(3, $projects)) {
-								$project_number = 3;
-								$project = $projects[$project_number];
-								include(locate_template('partial-canada150-project.php'));
-							}
-						?>
-				</div>
-				<div class="third-content third-content-right">
-					<div class="content-3"></div>
-				</div>
-				<div class="third third-left" data-index="4">
-					<?php
-							if (array_key_exists(4, $projects)) {
-								$project_number = 4;
-								$project = $projects[$project_number];
-								include(locate_template('partial-canada150-project.php'));
-							}
-						?>
-				</div>
-				<div class="third-content third-content-left">
-					<div class="content-4"></div>
-				</div>
-			</div>
-			<div class="small-10 small-centered columns hide-for-small-only">
-				<div class="third-wrapper first-wrapper">
-					<div class="third" data-index="0">
-						<?php
-							if (array_key_exists(0, $projects)) {
-								$project_number = 0;
-								$project = $projects[$project_number];
-								include(locate_template('partial-canada150-project.php'));
-							}
-						?>
-					</div>
-					<div class="third" data-index="1">
-						<?php
-							if (array_key_exists(1, $projects)) {
-								$project_number = 1;
-								$project = $projects[$project_number];
-								include(locate_template('partial-canada150-project.php'));
-							}
-						?>
-					</div>
-					<div class="third" data-index="2">
-						<?php
-							if (array_key_exists(2, $projects)) {
-								$project_number = 2;
-								$project = $projects[$project_number];
-								include(locate_template('partial-canada150-project.php'));
-							}
-						?>
-					</div>
-				</div>
-				<div class="third-content">
-					<div class="content-0">
-					</div>
-					<div class="content-1">
-					</div>
-					<div class="content-2">
-					</div>
-				</div>
-				<div class="third-wrapper">
-					<div class="third" data-index="3">
-						<?php
-							if (array_key_exists(3, $projects)) {
-								$project_number = 3;
-								$project = $projects[$project_number];
-								include(locate_template('partial-canada150-project.php'));
-							}
-						?>
-					</div>
-					<div class="third" data-index="4">
-						<?php
-							if (array_key_exists(4, $projects)) {
-								$project_number = 4;
-								$project = $projects[$project_number];
-								include(locate_template('partial-canada150-project.php'));
-							}
-						?>
-					</div>
-				</div>
-				<div class="third-content">
-					<div class="content-3">
-					</div>
-					<div class="content-4">
-					</div>
-				</div>
-			</div>
+
+			function onResize() {
+				var width = videoElement.width()
+				$(videoElement).css('height', width / 1.777777777)
+			}
+			window.addEventListener('resize', onResize)
+			onResize()
+
+			return {
+				play: play,
+				pause: pause,
+				stop: stop
+			}
+		}
+
+		function stopAll() {
+			for (var id in videos) {
+				videos[id].stop()
+			}
+		}
+
+		function stop(index) {
+			if (index >= 0 && index < videos.length) videos[index].stop()
+		}
+
+		function pauseAll() {
+			for (var id in videos) {
+				videos[id].pause()
+			}
+		}
+
+		function pause(index) {
+			if (index >= 0 && index < videos.length) videos[index].pause()
+		}
+
+		function play(index) {
+			if (index >= 0 && index < videos.length) videos[index].play()
+		}
+
+		function videoReady() {
+			if (++readyCount === Object.keys(videos).length) {
+				readyCallback.call(this, parentElement)
+			}
+		}
+
+		for (var index in videoIds) {
+			var id = videoIds[index]
+			videos.push(video(id, videoReady))
+		}
+
+		return {
+			videos: videos,
+			stopAll: stopAll,
+			stop: stop,
+			pauseAll: pauseAll,
+			pause: pause,
+			play: play,
+			element: parentElement
+		}
+	}
+
+	var ready = 0
+	var iframeAPIInterval = setInterval(function() {	//sometimes the api will fail to call APIReady()
+		if (ready == 1 && (!!window.YT && 'Player' in window.YT)) {
+			clearInterval(iframeAPIInterval)
+			initLightbox()
+		}
+	}, 100)
+
+	function initLightbox() {
+		var videos = videoController('.canada150-projects-lightbox-slick', ['nX1YzS_CYIw', 'cbP2N1BQdYc', 'iRXJXaLV0n4', 'hY7m5jjJ9mM', '7zIZVrl-ya0'], function(element) {
+			$(element).slick()
+		})
+		var lightboxElement = $('.canada150-projects-lightbox')
+		var lightboxSlickElement = $('.canada150-projects-lightbox-slick')
+		var lightboxCloseElement = $('.canada150-projects-lightbox-close')
+		var lightboxBackgroundElement = $('<div/>', {
+			class: 'canada150-lightbox-background',
+			style: 'position: fixed; top: 0; left: 0; background: black; opacity: 0.6; z-index: 1001; width: 100%; height: 100%; visibility: hidden; opacity: 0;'
+		})
+
+		$('body').append(lightboxBackgroundElement)
+
+		$('.canada150-projects-see-more, .canada150-projects-image').click(function(event) {
+			var index = $(event.target).closest('.canada150-projects-panel').index()
+			lightboxSlickElement.slick('slickGoTo', index, true)
+			showLightbox(index)
+		})
+
+		$('.canada150-projects-carousel-image img').click(function(event) {
+			var index = +$(event.target).closest('.canada150-projects-carousel-image').attr('data-slick-index')
+			lightboxSlickElement.slick('slickGoTo', index, true)
+			showLightbox(index)
+		})
+
+		$('.home-mondrian-top .cta a, .home-mondrian-top .article-mondrian, .home-mondrian-top > .show-for-small-only > .show-for-small-only, .mondrian-play').click(function() {
+			lightboxSlickElement.slick('slickGoTo', 0, true)
+			showLightbox(0)
+		})
+
+		lightboxSlickElement.on('afterChange', function(event, slick, currentSlide) {
+			videos.stop(currentSlide - 1)
+			videos.play(currentSlide)
+		})
+
+		lightboxBackgroundElement.click(function() {
+			videos.pauseAll()
+			hideLightbox()
+		})
+
+		lightboxCloseElement.click(function() {
+			videos.pauseAll()
+			hideLightbox()
+		})
+
+		function showLightbox(index) {
+			lightboxElement.stop(true).css('visibility', 'visible').animate({ opacity: 1 }, function() {
+				videos.play(index)
+			})
+			lightboxBackgroundElement.css('visibility', 'visible').animate({ opacity: 0.6 })
+		}
+
+		function hideLightbox() {
+			lightboxElement.stop(true).animate({ opacity: 0 }, function() {
+				lightboxElement.css('visibility', 'hidden')
+				videos.stopAll()
+			})
+			lightboxBackgroundElement.stop(true).animate({ opacity: 0 }, function() {
+				lightboxBackgroundElement.css('visibility', 'hidden')
+			})
+		}
+	}
+	$(function() {
+		ready++
+
+		$('.canada150-projects-carousel-wrapper').slick({
+			centerMode: true,
+			slidesToShow: 1,
+			dots: true,
+			adaptiveHeight: true,
+			autoplay: true,
+			autoplaySpeed: 4000,
+			arrows: false
+		});
+
+		$('.canada150-projects-carousel-wrapper').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+			var items = $('.canada150-projects-carousel-content-item');
+			items.stop(true).animate({ opacity: 0 }, 200, function() {
+				items.css({ 'zIndex': 1, display: 'none' });
+
+				var currentItem = $('.canada150-projects-carousel-content-item-'+nextSlide)
+				currentItem.css({ zIndex: 2, display: 'block' })
+				currentItem.animate({ opacity: 1 }, 200);
+			});
+		});
+
+		$('.canada150-projects-carousel-wrapper, .slick-dots, .canada150-projects-see-more').on('click mousedown touchstart', function() {
+			$('.canada150-projects-carousel-wrapper').slick('slickPause');
+		})
+	})
+</script>
+
+<div class="canada150-projects">
+	<div class="canada150-projects-lightbox">
+		<div class="canada150-projects-lightbox-slick"></div>
+		<div class="canada150-projects-lightbox-close"></div>
+	</div>
+	<div class="row spotlight-subheader">
+        <div class="title-section text-left small-only-text-left mobile-stuff">
+            <span>PROJECTS</span>
+        </div>
+        <div class="spotlight-line"></div>
+    </div>
+    <div class="canada150-projects-wrapper hide-for-small-only">
+		<?php
+			$panelData = get_field('projects');
+			foreach($panelData as $index => $panel) {
+				include(locate_template('partial-canada150-projects-panel.php'));
+			}
+		?>
+	</div>
+	<div class="canada150-projects-wrapper show-for-small-only">
+		<div class="canada150-projects-carousel-wrapper">
+			<?php
+				foreach($panelData as $index => $panel) {
+					include(locate_template('partial-canada150-projects-carousel-image.php'));
+				}
+			?>
 		</div>
-<?php endif; ?>
+		<div class="canada150-projects-carousel-content">
+			<?php
+				foreach($panelData as $index => $panel) {
+					include(locate_template('partial-canada150-projects-carousel-content.php'));
+				}
+			?>
+		</div>
+	</div>
+</div>

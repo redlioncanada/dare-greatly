@@ -1,234 +1,252 @@
+
+
 .canada150-projects {
-	margin-top: 40px;
+	margin: 0 auto;
 	margin-bottom: 100px;
-	$padding: 0.825;
+	max-width: 68.75rem;
+	width: 100%;
 
-	.third {
-		width: 33.3333333333333333333333%;
-		float: left;
-		padding: 0 #{$padding / 3 + 'rem'};
+	.slick-dots li button:before {
+		font-size: 0.625rem;
 	}
 
-	.third-wrapper .third:nth-child(1) {
-		padding-left: 0;
-		padding-right: #{$padding / 3 * 2 + 'rem'};
-	}
-
-	.third-wrapper .third:nth-child(3) {
-		padding-right: 0;
-		padding-left: #{$padding / 3 * 2 + 'rem'};
-	}
-
-	.third-wrapper:not(.first-wrapper) {
-		margin-top: 55px;
-	}
-
-	.third.expanded {
-		.canada150-project-cta {
-			background-color: $goldlink;
-			.plus, .link, .minus {
-				color: $white;
-			}
-
-			.plus {
-				opacity: 0;
-			}
-
-			.minus {
-				opacity: 1;
-			}
-		}
-	}
-
-	.third-content, .third-wrapper {
-		width: 100%;
-		float: left;
-	}
-
-	.third-content {
-		margin-top: -1px;
-	}
-
-	.third-content.expanded {
-		border-top: 1px solid $goldlink;
-		border-bottom: 1px solid $goldlink;
-	}
-
-	.third-content > div {
-		max-height: 0;
-		height: 200px;
-		transition: max-height 0.5s;
-		overflow: hidden;
+	.canada150-projects-lightbox {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		width: 1100px;
+		max-width: 80%;
+		z-index: 1002;
+		transform: translate(-50%, -50%);
 		opacity: 0;
-	}
+		visibility: hidden;
+		transition: opacity 0.4s;
 
-	.third-content > div.expanded {
-		max-height: 2000px;
-		opacity: 1;
-	}
-
-	.canada150-project {
-		.canada150-project-text-container {
-			padding: 15px 0 0 0;
+		.canada150-projects-lightbox-close {
+			width: 40px;
+		    height: 40px;
+		    position: absolute;
+		    top: -20px;
+		    right: -20px;
+		    background: url(/wp-content/themes/reverie-master/img/lightbox-close.png);
+		    background-size: cover;
+		    cursor: pointer;
 		}
 
-		> img {
-			opacity: 1;
-			transition: opacity 0.5s;
-		}
-
-		.indicator {
-			display: inline-block;
+		.video-wrapper {
 			position: relative;
-			width: 10px;
+			width: 100%;
+			background: white;
+		}
+
+		.video-wrapper iframe {
+			margin-top: 10px;
+			margin-left: 10px;
+			width: calc(100% - 20px);
+			height: calc(100% - 20px);
+		}
+
+		.slick-next {
+			background: url(/wp-content/themes/reverie-master/img/lightbox-right.png);
+		}
+
+		.slick-prev {
+			background: url(/wp-content/themes/reverie-master/img/lightbox-left.png);
+			background-size: cover;
+		}
+
+		.slick-arrow {
+			cursor: pointer;
+			background-size: contain;
+		    width: 22px;
+    		height: 39px;
+		}
+	}
+
+	.canada150-projects-lightbox-slick {
+		margin: 0 !important;
+	}
+
+	.canada150-projects-panel {
+		width: 50%;
+		float: left;
+		display: inline-block;
+
+		.canada150-projects-image {
+			width: 30%;
 			float: left;
-			margin: 0 3px 0 5px;
+			cursor: pointer;
 		}
 
-		.indicator .minus {
-			opacity: 0;
-			left: 2px;
+		.canada150-projects-content {
+			width: 70%;
+			float: right;
+			padding: 19px 22px 0 22px;
 		}
 
-		.indicator > span {
-			position: absolute;
-			left: 2px;
-			top: 0;
-			color: $goldlink;
-		}
-
-		.link {
-			padding-left: 20px;
-		}
-
-		.canada150-project-text {
-			margin: 0;
-			line-height: 1.5em;
-		}
-
-		.canada150-project-cta {
-			display: inline-block;
-			color: $goldlink;
+		.canada150-projects-title {
+			font-family: $font-family-trim-regular;
 			text-transform: uppercase;
-			font-family: $font-family-sans-serif;
-       		font-size:rem-calc(16);
-       		padding-top: 3px;
-       		margin-top: 10px;
-       		width: 100%;
+			font-size: 1.1em;
+			margin: 0;
 		}
 
-		.canada150-project-cta:hover {
-			background-color: $goldlink;
-			.plus, .minus, .link {
-				color: $white;
-			}
-		}
-	}
-}
-
-.canada150-projects > .show-for-small-only {
-	.third:not(:first-child) {
-		margin-top: 40px;
-	}
-
-	.canada150-project {
-		.canada150-project-text-container {
-			padding: 0 30px;
+		.canada150-projects-subtitle {
+			font-family: $font-family-trim-light;
+			text-transform: uppercase;
+			font-size: 1.08em;
+			margin: 0;
 		}
 
-		.canada150-project-text {
+		.canada150-projects-body {
+			margin-top: 9px;
+			margin-bottom: 0;
+			line-height: 1.4em;
 			font-size: 1rem;
 		}
 
-		.canada150-project-cta {
-			padding-top: 0;
-			margin-top: 0;
-		}
-
-		.canada150-project-cta:hover, .canada150-project-cta:active {
-			background-color: initial;
-			.plus, .minus, .link {
-				color: $goldlink;
-			}
-		}
-
-		.canada150-project-cta .indicator {
-			margin-left: -2px;
-		}
-
-		.canada150-project-cta .link {
-			margin-left: -6px;
-		}
-
-		img {
-			margin-bottom: 10px;
+		.canada150-projects-see-more {
+			font-family: $font-family-trim-light;
+			color: $goldlink;
+			cursor: pointer;
+			line-height: 3em;
 		}
 	}
 
-	.third.third-left {
-		.canada150-project {
-			img {
-				float: left;
-				padding-right: 30px;
-			}
+	.canada150-projects-carousel-wrapper {
+		// height: 340px;
+
+		.canada150-projects-carousel-image {
+			margin: 0 3px;
 		}
 	}
 
-	.third-content-left:before, .third-content-left:after {
-		content: ' ';
-		position: absolute;
-		height: 1px;
-		left: 0;
-		width: calc(100% - 30px);
-		background-color: $goldlink;
-	}
+	.canada150-projects-carousel-content {
+		display: inline-block;
 
-	.third-content {
-		border-top: initial;
-		border-bottom: initial;
-		margin-bottom: 20px;
-	}
+		.canada150-projects-carousel-content-item {
+			padding: 0px 22px 0 22px;
+		}
 
-	.third.third-right .canada150-project {
-		img {
-			float: right;
-			padding-left: 30px;
+		.canada150-projects-carousel-content-item:not(.canada150-projects-carousel-content-item-0) {
+			opacity: 0;
+			display: none;
+		}
+
+		.canada150-projects-carousel-content-item-0 {
+			z-index: 2;
+		}
+
+		.canada150-projects-title {
+			font-family: $font-family-trim-regular;
+			text-transform: uppercase;
+			font-size: 1.4em;
+			margin: 0;
+		}
+
+		.canada150-projects-subtitle {
+			font-family: $font-family-trim-light;
+			text-transform: uppercase;
+			font-size: 1.38em;
+			margin: 0;
+		}
+
+		.canada150-projects-body {
+			margin-top: 9px;
+			margin-bottom: 0;
+			line-height: 1.4em;
+			font-size: 1rem;
+		}
+
+		.canada150-projects-see-more {
+			font-family: $font-family-trim-light;
+			color: $goldlink;
+			cursor: pointer;
+			line-height: 3em;
 		}
 	}
 
-	.third.expanded {
-		.canada150-project-cta {
-			background-color: initial;
-			.plus, .link, .minus {
-				color: $goldlink;
-			}
+	.spotlight-subheader {
+		position: relative;
+		margin-bottom: 30px;
+		margin-left: 0;
+
+		.spotlight-line {
+			height: 1px;
+			position: absolute;
+			bottom: 0;
+			width: 2000px;
+			left: -1906px;
+			background-color: #4b4b4b;
+			opacity: 0.3;
 		}
 	}
 
-	.third-content-right:before, .third-content-right:after {
-		content: ' ';
-		position: absolute;
-		height: 1px;
-		left: 30px;
-		width: calc(100% - 30px);
-		background-color: $goldlink;
-		border-top: initial;
-		padding-left: 30px;
+	.canada150-projects-panel:not(:nth-child(1)):not(:nth-child(2)) {
+		margin-top: 50px;
 	}
 }
 
-.canada150-projects.expanded {
-	.third:not(.expanded) .canada150-project img {
-		opacity: 0.6;
+@media (max-width: 1207px) {
+	.slick-arrow {
+		display: block !important;
+	}
+}
+
+@media(max-width: 1374px) {
+	.canada150-projects {
+		.canada150-projects-lightbox {
+			width: 80%;
+		}
+	}
+}
+
+@media only screen and (min-width: 64.063em) {
+	.canada150-projects:after, .canada150-projects:before {
+		content: " ";
+		display: table;
+	}
+
+	.canada150-projects:after {
+		clear: both;
 	}
 }
 
 @media screen and (max-width: 39.9375em) {
 	.canada150-projects {
-		.third {
+		margin: initial;
+		max-width: initial;
+		width: initial;
+		margin-bottom: 60px;
+
+		.canada150-projects-panel {
 			width: 100%;
 			float: initial;
-			padding: 0;
+
+			.canada150-projects-content {
+				padding-top: 0;
+			}
 		}
+
+		.canada150-projects-panel:not(:nth-child(1)) {
+			margin-top: 50px;
+		}
+
+		.spotlight-subheader {
+			position: relative;
+			margin-bottom: 30px;
+
+			.spotlight-line {
+				left: -1902px;
+			}
+		}
+	}
+
+	.slick-next {
+		right: -33px;
+	}
+
+	.slick-prev {
+		left: -33px;
 	}
 }

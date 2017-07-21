@@ -17,7 +17,7 @@
 			}
 		});
 
-		$('.canada150-carousel-content .canada150-panel-see-more').click(function(event) {
+		$('.canada150-panel-carousel-content .canada150-panel-see-more').click(function(event) {
 			var parent = event.target.closest('.canada150-panel-carousel-content-item'),
 				preview = $(parent).find('.canada150-panel-preview'),
 				body = $(parent).find('.canada150-panel-body').eq(1),
@@ -33,16 +33,17 @@
 			}
 		});
 
-		$('.canada150-carousel-wrapper').slick({
+		$('.canada150-panel-carousel-wrapper').slick({
 			centerMode: true,
 			slidesToShow: 1,
 			dots: true,
 			adaptiveHeight: true,
 			autoplay: true,
-			autoplaySpeed: 4000
+			autoplaySpeed: 4000,
+			arrows: false
 		});
 
-		$('.canada150-carousel-wrapper').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+		$('.canada150-panel-carousel-wrapper').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
 			var items = $('.canada150-panel-carousel-content-item');
 			items.stop(true).animate({ opacity: 0 }, 200, function() {
 				items.css({ 'zIndex': 1, display: 'none' });
@@ -53,8 +54,8 @@
 			});
 		});
 
-		$('.canada150-carousel-wrapper, .slick-dots, .canada150-panel-see-more').on('click mousedown touchstart', function() {
-			$('.canada150-carousel-wrapper').slick('slickPause');
+		$('.canada150-panel-carousel-wrapper, .slick-dots, .canada150-panel-see-more').on('click mousedown touchstart', function() {
+			$('.canada150-panel-carousel-wrapper').slick('slickPause');
 		})
 	})
 </script>
@@ -75,14 +76,14 @@
 		?>
 	</div>
 	<div class="canada150-panel-wrapper show-for-small-only">
-		<div class="canada150-carousel-wrapper">
+		<div class="canada150-panel-carousel-wrapper">
 			<?php
 				foreach($panelData as $index => $panel) {
 					include(locate_template('partial-canada150-panel-carousel-image.php'));
 				}
 			?>
 		</div>
-		<div class="canada150-carousel-content">
+		<div class="canada150-panel-carousel-content">
 			<?php
 				foreach($panelData as $index => $panel) {
 					include(locate_template('partial-canada150-panel-carousel-content.php'));

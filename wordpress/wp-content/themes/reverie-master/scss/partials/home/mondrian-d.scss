@@ -1,0 +1,30 @@
+.article-mondrian-d {
+	.home-mondrian-summary {
+		padding-left: 0;
+		max-width: 50%;
+		padding-top: 28%;
+	}
+
+	.article-mondrian {
+		z-index: 2;
+	}
+
+	.mondrian-image {
+		top: -33%;
+	}
+}
+
+
+@media(max-width: 39.9375em) {
+	.article-mondrian-d {
+	    .home-mondrian-summary {
+	        padding-top: 9%;
+	        padding-right:5%;
+	        max-width: 100%;
+	    }
+
+	    .mondrian-image {
+	    	top: initial;
+	    }
+	}
+}

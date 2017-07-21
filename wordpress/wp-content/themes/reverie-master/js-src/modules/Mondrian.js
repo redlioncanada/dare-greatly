@@ -1,7 +1,6 @@
 $ = window.jQuery;
 var whereIsElementInViewport = require('./WhereIsElementInViewport');
 var makeMondrian = function(el, isHomeMondrian) {
-
     var mask = $(el).find('.mondrian-mask');
     var image = $(el).find('.mondrian-image');
     var clipper = $(el).find('.mondrian-image-clipper');
@@ -35,6 +34,10 @@ var makeMondrian = function(el, isHomeMondrian) {
         clipper.css('width', mask.get(0).clientWidth - 4);
         clipper.css('left','2px');
         clipper.css('top','2px');
+
+        if ($(el).hasClass('no-parallax')) {
+			return;
+		}
 
         if (isHomeMondrian) {
             timeline.set(image.get(0), {
@@ -89,6 +92,9 @@ var makeMondrian = function(el, isHomeMondrian) {
     calculateSize();
     respondToScrollEvent();
     function respondToScrollEvent(){
+			if ($(el).hasClass('no-parallax')) {
+				return;
+			}
 
             var rat;
             if(isHomeMondrian) {
