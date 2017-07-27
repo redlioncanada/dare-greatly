@@ -1,5 +1,11 @@
 
     <?php
+   $site = get_blog_details() -> path;
+   $language = $site == '/fr/' ? 'fr' : 'en';
+   $chapter = "Chapter";
+   if($language == "fr"){
+      $chapter ="CHAPITRE";
+   }
 
 $series_label = get_field('series_label','options');
 
@@ -86,7 +92,7 @@ if(!$series_label){
    echo "<div class='series-blurb'>" . $series_blurb . "</div>";
    echo "<ul class='series-menu'><div class='rule-line'></div>";
    foreach($series_posts as $key => $series_post){
-   		echo "<li  data-index=\"" . $key .  "\"><a href='". $series_post['permalink'] . "'>" . $series_post['title'] . "<span class='series-number-indicator'>(Chapter " . $series_post['number'] . " of " . $number_of_posts . ")</span></a></li>";
+   		echo "<li  data-index=\"" . $key .  "\"><a href='". $series_post['permalink'] . "'>" . $series_post['title'] . "<span class='series-number-indicator'>(" .$chapter. " " . $series_post['number'] . " of " . $number_of_posts . ")</span></a></li>";
    }
    echo "</ul>"
 
@@ -114,7 +120,7 @@ if(!$series_label){
 		foreach ($series_posts as $key => $series_post){
 			echo "<div class=\"series-carousel-item small-8 small-centered  \"><div class=\"series-image js-dots-go-under \"><a href=\"". $series_post['permalink'] . "\"><img src=\"".$series_post['image']."\"></a></div>";
 			echo "<div class=\"series-copy \"><a href=\"". $series_post['permalink'] . "\">".$series_post['title']. "</a>";
-			echo "<div class='series-number-indicator'>Chapter " . $series_post['number'] . " of " . $number_of_posts . "</div></div></div>";
+			echo "<div class='series-number-indicator'>" .$chapter. " " . $series_post['number'] . " of " . $number_of_posts . "</div></div></div>";
 		}
 
 		?>   			
