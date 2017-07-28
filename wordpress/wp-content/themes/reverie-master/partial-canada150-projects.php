@@ -1,9 +1,27 @@
 <script>
+<?php
+   $site = get_blog_details() -> path;
+    $language = $site == '/fr/' ? 'fr' : 'en';
+
+    ?>
+
+var videoLink =[];
+	<?php if( have_rows('projects_video') ): ?>
+
+	<?php while( have_rows('projects_video') ): the_row(); 
+		// vars
+		$videoLinks = get_sub_field('video_link');
+		?>
+		<?php if( $videoLinks ): ?>
+				videoLink.push('<?php echo $videoLinks ?>');
+			<?php endif; ?>
+
+		<?php endwhile; ?>
+<?php endif; ?>
 	var videoController = function(target, videoIds, readyCallback) {
 		var parentElement = $(target)
 		var videos = []
 		var readyCount = 0
-
 		var video = function(id, callback) {
 			var _video
 			function onReady() {
@@ -110,7 +128,7 @@
 	}, 100)
 
 	function initLightbox() {
-		var videos = videoController('.canada150-projects-lightbox-slick', ['nX1YzS_CYIw', 'cbP2N1BQdYc', 'iRXJXaLV0n4', 'hY7m5jjJ9mM', '7zIZVrl-ya0'], function(element) {
+		var videos = videoController('.canada150-projects-lightbox-slick', videoLink, function(element) {
 			$(element).slick()
 		})
 		var lightboxElement = $('.canada150-projects-lightbox')
@@ -209,9 +227,20 @@
 	</div>
 	<div class="row spotlight-subheader">
         <div class="title-section text-left small-only-text-left mobile-stuff">
-            <span>PROJECTS</span>
+        <?php if($language=='en'){ ?>
+           <span>PROJECTS</span>
+            <?php } ?>
+        <?php if($language=='fr'){ ?>
+           <span>PROJETS</span>
+            <?php } ?>
+          
         </div>
+        <?php if($language=='en'){ ?>
         <div class="spotlight-line"></div>
+        <?php } ?>
+        <?php if($language=='fr'){ ?>
+        <div class="spotlight-line" style= "width: 1987px;" ></div>
+        <?php } ?>
     </div>
     <div class="canada150-projects-wrapper hide-for-small-only">
 		<?php
