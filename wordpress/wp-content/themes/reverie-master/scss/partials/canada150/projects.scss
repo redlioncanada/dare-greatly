@@ -40,10 +40,21 @@
 		}
 
 		.video-wrapper iframe {
+			z-index: 1;
+		}
+
+		.video-wrapper iframe, .video-wrapper .video-thumbnail {
 			margin-top: 10px;
 			margin-left: 10px;
 			width: calc(100% - 20px);
 			height: calc(100% - 20px);
+		}
+
+		.video-wrapper .video-thumbnail {
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			left: 0;
 		}
 
 		.slick-next {

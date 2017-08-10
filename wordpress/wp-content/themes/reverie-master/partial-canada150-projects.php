@@ -1,49 +1,66 @@
 <script>
+var videoLink = [];
+
 <?php
-   $site = get_blog_details() -> path;
-    $language = $site == '/fr/' ? 'fr' : 'en';
+	$site = get_blog_details() -> path;
+	$language = $site == '/fr/' ? 'fr' : 'en';
 
-    ?>
+	if (have_rows('projects_video')) {
+		while (have_rows('projects_video')): the_row();
+			$videoLinks = get_sub_field('video_link');
+			if ($videoLinks): ?>
+videoLink.push('<?php echo $videoLinks ?>');
+			<?php endif;
+		endwhile;
+	}
+?>
 
-var videoLink =[];
-	<?php if( have_rows('projects_video') ): ?>
-
-	<?php while( have_rows('projects_video') ): the_row(); 
-		// vars
-		$videoLinks = get_sub_field('video_link');
-		?>
-		<?php if( $videoLinks ): ?>
-				videoLink.push('<?php echo $videoLinks ?>');
-			<?php endif; ?>
-
-		<?php endwhile; ?>
-<?php endif; ?>
 	var videoController = function(target, videoIds, readyCallback) {
 		var parentElement = $(target)
 		var videos = []
+
 		var readyCount = 0
 		var video = function(id, callback) {
 			var _video
+			var _thumb
 			function onReady() {
 				if (typeof callback === 'function') callback.call(this)
 			}
 
 			function play() {
-				// _video.playVideo()
+				_thumb.delay(600).stop(true).animate({ opacity: 0 }, 400, function() {
+					_thumb.css('zIndex', '0')
+				})
+				_video.playVideo()
 			}
 
 			function stop() {
+				_thumb.delay(600).stop(true).animate({ opacity: 1 }, 400, function() {
+					_thumb.css('zIndex', '2')
+				})
 				_video.seekTo(0)
 				_video.stopVideo()
 			}
 
 			function pause() {
+				_thumb.delay(600).stop(true).animate({ opacity: 1 }, 400, function() {
+					_thumb.css('zIndex', '2')
+				})
 				_video.pauseVideo()
 			}
 
 
-			var videoElement = $('<div class="video-wrapper" data-id="' + id + '"><div id="video-' + id + '"></div></div>')
+			var videoElement = $('\
+				<div class="video-wrapper video-wrapper-' + id + '" data-id="' + id + '"> \
+					<div class="video-thumbnail">\
+						<img src="https://img.youtube.com/vi/' + id + '/maxresdefault.jpg" />\
+					</div>\
+					<div id="video-' + id + '"></div>\
+				</div>\
+			')
 			videoElement.appendTo(parentElement)
+
+			_thumb = $('.video-wrapper-' + id + ' .video-thumbnail')
 
 			_video = new YT.Player('video-'+id, {
 				videoId: id,
@@ -173,26 +190,6 @@ var videoLink =[];
 			hideLightbox()
 		})
 
-		function showLightbox(index) {
-			lightboxElement.stop(true).css('visibility', 'visible').animate({ opacity: 1 }, function() {
-				videos.play(index)
-			})
-			lightboxBackgroundElement.css('visibility', 'visible').animate({ opacity: 0.6 })
-		}
-
-		function hideLightbox() {
-			lightboxElement.stop(true).animate({ opacity: 0 }, function() {
-				lightboxElement.css('visibility', 'hidden')
-				videos.stopAll()
-			})
-			lightboxBackgroundElement.stop(true).animate({ opacity: 0 }, function() {
-				lightboxBackgroundElement.css('visibility', 'hidden')
-			})
-		}
-	}
-	$(function() {
-		ready++
-
 		$('.canada150-projects-carousel-wrapper').slick({
 			centerMode: true,
 			slidesToShow: 1,
@@ -217,6 +214,26 @@ var videoLink =[];
 		$('.canada150-projects-carousel-wrapper, .slick-dots, .canada150-projects-see-more').on('click mousedown touchstart', function() {
 			$('.canada150-projects-carousel-wrapper').slick('slickPause');
 		})
+
+		function showLightbox(index) {
+			lightboxElement.stop(true).css('visibility', 'visible').animate({ opacity: 1 }, function() {
+				videos.play(index)
+			})
+			lightboxBackgroundElement.css('visibility', 'visible').animate({ opacity: 0.6 })
+		}
+
+		function hideLightbox() {
+			lightboxElement.stop(true).animate({ opacity: 0 }, function() {
+				lightboxElement.css('visibility', 'hidden')
+				videos.stopAll()
+			})
+			lightboxBackgroundElement.stop(true).animate({ opacity: 0 }, function() {
+				lightboxBackgroundElement.css('visibility', 'hidden')
+			})
+		}
+	}
+	$(function() {
+		ready++
 	})
 </script>
 
