@@ -2,7 +2,7 @@
 <?php
    $site = get_blog_details() -> path;
     $language = $site == '/fr/' ? 'fr' : 'en';
-
+    $startingVideo = get_field('starting_video');
     ?>
 
 var videoLink =[];
@@ -154,8 +154,8 @@ var videoLink =[];
 		})
 
 		$('.home-mondrian-top .cta a, .home-mondrian-top .article-mondrian, .home-mondrian-top > .show-for-small-only > .show-for-small-only, .mondrian-play').click(function() {
-			lightboxSlickElement.slick('slickGoTo', 0, true)
-			showLightbox(0)
+			lightboxSlickElement.slick('slickGoTo', <?php echo $startingVideo ?>, true)
+			showLightbox(<?php echo $startingVideo ?>)
 		})
 
 		lightboxSlickElement.on('afterChange', function(event, slick, currentSlide) {
