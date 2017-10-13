@@ -8,7 +8,7 @@ if(!$article_title){
 	$article_title = get_title_with_fallback();
 }
 $article_presented_with_logo = get_sub_field('presented_with_logo');
-$article_presented_with_text = get_field('presented_in_partnership_with');
+$article_presented_with_text = get_sub_field('presented_in_partnership_with');
 $article_presented_with = $article_presented_with_text or $article_presented_with_logo;
 
 $produced_with_bottom_label = get_field('produced_with_bottom_label','options');
@@ -38,7 +38,7 @@ function image_tag_with_size_or_text($image_object,$text,$max_height){
 	</div>
 	<?php if($article_presented_with) : ?>
 	<div class="row article-component">
-		<div class='presented-with columns large-6 medium-8 small-8 small-centered'><span><?php echo $produced_with_bottom_label; ?></span>
+		<div class='presented-with columns large-8 medium-8 small-8 small-centered'><span><?php echo $produced_with_bottom_label; ?></span>
 
 			<?php echo image_tag_with_size_or_text($article_presented_with_logo,$article_presented_with_text,20); ?>
 
