@@ -45,6 +45,8 @@ if ( $the_query->have_posts() ) {
         <div class='home-mondrian-summary medium-offset-5' style="pointer-events:visible;">
     <?php elseif($mondrian_mask == "D"): ?>
         <div class='home-mondrian-summary' style="pointer-events:visible;">
+    <?php elseif($mondrian_mask == "E"): ?>
+        <div class='home-mondrian-summary medium-offset-5' style="pointer-events:visible;">
     <?php else: ?>
         <div class='home-mondrian-summary medium-offset-6' style="pointer-events:visible;">
     <?php endif; ?>

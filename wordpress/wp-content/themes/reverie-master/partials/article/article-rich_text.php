@@ -17,8 +17,7 @@ $no_image = $image_url == "";
        <?php } ?>
 		<?php if($has_image){ ?>
 		<!--       content with picture -->
-	<div class="row" style="display: inline;">
-        <div class="" style="display: inline;">
+        <div class="row small-collapse" style="display: inline;">
         	<div class="withImage large-uncentered medium-uncentered small-centered columns medium-4 large-5 small-8">
           <?php echo $content_block ?>
           </div>
@@ -31,4 +30,3 @@ $no_image = $image_url == "";
             </div>
             <?php } ?>
         </div>
-    </div>

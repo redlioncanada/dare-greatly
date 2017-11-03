@@ -1,0 +1,20 @@
+.article-mondrian-e {
+	.home-mondrian-summary {
+        padding-top: 28%;
+        padding-left: 5%;
+        padding-right:1%;
+	}
+
+}
+
+
+@media(max-width: 39.9375em) {
+	.article-mondrian-e {
+	    .home-mondrian-summary {
+	        padding-top:1.5rem;
+	        padding-right:3%;
+	        max-width: 100%;
+	    }
+
+	}
+}
