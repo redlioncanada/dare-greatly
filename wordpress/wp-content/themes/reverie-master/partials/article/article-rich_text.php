@@ -14,11 +14,12 @@ $no_image = $image_url == "";
     <div class="row article-copy article-component">
         <div class="large-6 medium-8 small-8 small-centered columns">
        <?php echo $content_block ?>
+     </div>
        <?php } ?>
 		<?php if($has_image){ ?>
 		<!--       content with picture -->
         <div class="row small-collapse" style="display: inline;">
-        	<div class="withImage large-uncentered medium-uncentered small-centered columns medium-4 large-5 small-8">
+        	<div class="article-component withImage large-uncentered medium-uncentered small-centered columns medium-4 large-5 small-8">
           <?php echo $content_block ?>
           </div>
 

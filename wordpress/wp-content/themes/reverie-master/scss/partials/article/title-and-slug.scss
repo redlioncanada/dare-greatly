@@ -31,6 +31,8 @@
         text-transform: uppercase;
          @media #{$small-only} {
         letter-spacing: rem-calc(1.25);
+        padding-right:0px;
+        padding-left:0px;
     }
         .article-category::after {
             content: " |";

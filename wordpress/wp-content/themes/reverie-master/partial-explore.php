@@ -1,5 +1,5 @@
  <div class="row show-for-small-only">
-    <div class="title-section text-left columns large-5 small-only-text-center">
+    <div class="title-section text-left columns large-5 mobile-stuff-ex">
             <span>Explore</span>            
         </div>
     
@@ -107,7 +107,7 @@ $maxInRow = 3;
 
 </a>
 		</div>
-		<div alt="<?php echo get_field('8x5_horizontal')['caption']; ?>" class="<?php echo $whichcaption ?> large-8 medium-10 small-10">
+		<div alt="<?php echo get_field('8x5_horizontal')['caption']; ?>" class="<?php echo $whichcaption ?> mobile-stuff-ex exploreCaption large-8 medium-10 small-10">
 			
 			<p class='category'><?php echo $main_category; ?></p>
 			<p class='title'><a href="<?php echo get_the_permalink(); ?>"><?php echo get_title_with_fallback() ?></a></p>
@@ -118,7 +118,7 @@ $maxInRow = 3;
 
 			?>
 		</div>
-		<div class="summary large-8 medium-10 small-10">
+		<div class="summary large-8 medium-10 small-10 mobile-stuff-ex">
 			<p><?php 
 			$raw_summary = get_field('article_summary');
 			if(strlen($raw_summary) > $character_limit){
